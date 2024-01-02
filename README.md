@@ -1,8 +1,8 @@
 # How To Set Up Your Computer for Computational Biology
 
-* [Install `Ubuntu` on Windows](install_wsl_ubuntu.md)
+* [Install `Ubuntu` on WindowsOS](install_wsl_ubuntu.md)
 
-* [Install `Windows Terminal` from the microsoft store](https://learn.microsoft.com/en-us/windows/terminal/install).
+* [Install `Windows Terminal` from the microsoft store on WindowsOS](https://learn.microsoft.com/en-us/windows/terminal/install).
 
 * [Install `Homebrew` on MacOS](https://brew.sh/)
 
