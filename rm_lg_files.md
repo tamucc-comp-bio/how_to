@@ -21,7 +21,7 @@ If you're encountering warnings and errors from GitHub about large files in your
 
 1. Manually Undo the large files in the last commit.
    
-   If large files were committed in the most recent commit, then BFG Repo Cleaner can't touch them in the next steps.
+   If large files were committed in the most recent commit, then BFG Repo Cleaner (step 2) can't touch them.
    
    If the only large files were added in the last commit, then this step will get you back to where you can either employ git lfs or .gitignore to handle the large files.
    
