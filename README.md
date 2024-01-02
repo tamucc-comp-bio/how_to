@@ -6,6 +6,8 @@
 
 * [Install `Homebrew` on MacOS](https://brew.sh/)
 
+* Install a text editor designed for coding on [PC (Notepad++)](https://notepad-plus-plus.org/downloads/) or [MacOS (BBEdit)](https://www.barebones.com/products/textwrangler/download.html)
+
 * [Create GitHub Account](howto_github_acct.md)
 
 * [Set up SSH Keys For Easy Access to Remote Servers & GitHub](howto_sshkeys.md)
