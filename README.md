@@ -10,5 +10,10 @@
 
 * [Install RStudio](install_rstudio.md)
 
+
+---
+
+## Additional Resources
+
 * [CSB Guide to Downloading Software](https://computingskillsforbiologists.com/setup/)
 
