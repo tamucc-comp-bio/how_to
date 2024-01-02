@@ -4,6 +4,8 @@
 
 * [Install `Windows Terminal` from the microsoft store](https://learn.microsoft.com/en-us/windows/terminal/install).
 
+* [Install `Homebrew` on MacOS](https://brew.sh/)
+
 * [Create GitHub Account](howto_github_acct.md)
 
 * [Set up SSH Keys For Easy Access to Remote Servers & GitHub](howto_sshkeys.md)
