@@ -5,7 +5,7 @@
 * [Install `Windows Terminal` from the microsoft store](https://learn.microsoft.com/en-us/windows/terminal/install).
 
 * [Create GitHub Account](howto_github_acct.md)
-  
+
 * [Set up SSH Keys For Easy Access to Remote Servers & GitHub](howto_sshkeys.md)
 
 * [Install R](install_r.md)
@@ -16,6 +16,8 @@
 ---
 
 ## Additional Resources
+
+* [Git & GitHub for Beginners](https://www.freecodecamp.org/news/git-and-github-for-beginners/)
 
 * [CSB Guide to Downloading Software](https://computingskillsforbiologists.com/setup/)
 
