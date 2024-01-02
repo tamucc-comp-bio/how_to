@@ -4,6 +4,8 @@
 
 If you're encountering warnings from GitHub about large files in your repository, it's recommended to use Git Large File Storage (Git LFS) to handle these files efficiently. Below are the steps to install and use Git LFS on Ubuntu. You can also refer to the [Git Large File Storage Page](https://git-lfs.com/) for MacOS installation.
 
+_*Before installing Git LFS, if you are encountering errors in pushing your commits to GitHub, then you should first [remedy the large files committed](rm_lg_files.md)*_
+
 1. Open an Ubuntu terminal and execute the following commands to install Git LFS:
 
    ```bash
