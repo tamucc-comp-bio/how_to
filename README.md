@@ -8,6 +8,8 @@
 
 * [Set up SSH Keys For Easy Access to Remote Servers & GitHub](howto_sshkeys.md)
 
+* [Install Git Large File Storage Extension](install_git_lfs.md)
+
 * [Install R](install_r.md)
 
 * [Install RStudio](install_rstudio.md)
