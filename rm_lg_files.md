@@ -1,11 +1,23 @@
-# prj_rotablue_data
-
----
 # Removing Large Files from GitHub Repo
 
 ---
 
-If you're encountering warnings from GitHub about large files in your repository, chances are, you need to undo the large files you added, committed and pushed to GitHub
+If you're encountering warnings and errors from GitHub about large files in your repository, chances are, you need to undo the large files you added, committed and pushed to GitHub
+
+0. _*To avoid data loss, make a copy of your local repo and the github copy of the repo*_
+
+   ```bash
+   # update variable to match your repo path
+   MYREPOPATH=/mnt/c/Users/cbird/Downloads/prj_rotablue_data
+   MYREPOSSH=git@github.com:tamucc-gcl/prj_rotablue_data.git
+   MYREPONAME=prj_rotablue_data
+   
+   cp -r ${MYREPOPATH} ${MYREPOPATH}_backup_local
+   cd $(echo $MYREPOPATH | sed "s/${MYREPONAME}//")
+   git clone $MYREPOSSH ${MYREPONAME}_backup_github
+   ```
+   
+   If something goes wrong below and you lose progress, then you can use
 
 1. Install Java Runtime Enviroment
 
@@ -53,56 +65,3 @@ If you're encountering warnings from GitHub about large files in your repository
    
    ```
    
-1. Open an Ubuntu terminal and execute the following commands to install Git LFS:
-
-   ```bash
-   sudo apt update
-   sudo apt upgrade
-   curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
-   sudo aptget install git-lfs
-   ```
-
-2. Set up Git LFS by running:
-
-   ```bash
-   git lfs install
-   ```
-
-## Track Large Files
-
-3. Before committing large files, specify which files to track with Git LFS in this repository. For example, to track all MOV files:
-
-   ```bash
-   # Edit this path to be correct
-   cd ~/prj_rotablue_data
-   git lfs track "*.MOV"
-   ```
-
-   This will add the specified patterns to the `.gitattributes` file in your repository.
-
-## Commit and Push
-
-4. Add and commit the tracked files as usual, then push them to the repository:
-
-   ```bash
-   git add .
-   git commit -m "Add large files with Git LFS"
-   git push
-   ```
-
-## Migrate Existing Large Files
-
-5. If you've already committed large files without Git LFS, migrate these files to LFS using:
-
-   ```bash
-   git lfs migrate import --include="*.MOV"
-   git push --force
-   ```
-
-   **Note:** Use `--force` push cautiously, as it can overwrite history in remote repositories.
-
-After completing these steps, your large files will be managed by Git LFS, and you should avoid warnings about file sizes when pushing to GitHub. Ensure that everyone collaborating on the repository has Git LFS installed and initialized.
-
-
-
-### II. 
