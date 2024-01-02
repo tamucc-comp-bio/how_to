@@ -1,4 +1,4 @@
-# how_to
+# How To Set Up Your Computer for Computational Biology
 
 * [Install `Ubuntu` on Windows](install_wsl_ubuntu.md)
 
