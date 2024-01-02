@@ -25,5 +25,5 @@
 
 * [CSB Guide to Downloading Software](https://computingskillsforbiologists.com/setup/)
 
-* [Remove Large Files From Your GitHub Repo](https://rtyley.github.io/bfg-repo-cleaner/)
+* [Remove Large Files From Your GitHub Repo](rm_lg_files.md)
 
