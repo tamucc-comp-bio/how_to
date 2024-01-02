@@ -35,4 +35,4 @@
 
 ### Additional Resources
 - [GitHub Help Documentation](https://docs.github.com/en/github)
-- [GitHub Learning Lab](https://lab.github.com/)
+- [Git & GitHub for Beginners](https://www.freecodecamp.org/news/git-and-github-for-beginners/)
