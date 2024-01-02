@@ -21,7 +21,7 @@ If you're encountering warnings and errors from GitHub about large files in your
 
 1. Manually Undo the large files in the last commit.
    
-   If large files were committed in the most recent commit, then BFG Repo Cleaner (step 2) can't touch them.
+   If large files were committed in the most recent commit, then BFG Repo Cleaner (step 3) can't touch them.
    
    If the only large files were added in the last commit, then this step will get you back to where you can either employ git lfs or .gitignore to handle the large files.
    
@@ -108,5 +108,22 @@ If you're encountering warnings and errors from GitHub about large files in your
 
     `git gc --prune=now --aggressive`: The git gc (garbage collect) command cleans up unnecessary files and optimizes the local repository. The --prune=now option removes objects that are no longer in use. The --aggressive flag makes the garbage collection more thorough, potentially leading to better compression and cleaner storage, but takes longer to complete.
    
+6. If all else fails, burn down the repo and start it overwrite
 
+   If your github repo is ok, then 
+   
+   * rename your local repo, 
+   * clone the github repo to your local computer, 
+   * address the large file issue with `git lfs` or `.gitignore`, 
+   * add commit and push your changes
+   * copy and paste the updated files from your deprecated local repo
+   * add commit and push your changes
+
+   If your github repo is not ok, then
+   
+   * delete the repo from github (you made a local copy in step 0 above)
+   * create a new repo on github
+   * follow the previous bulleted list
+   
+   When all is well with your repo, delete the backup repos
    
