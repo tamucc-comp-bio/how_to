@@ -18,6 +18,11 @@
 
 * [Install RStudio](install_rstudio.md)
 
+---
+
+# How To Set Up Your Launch HPC Account for RStudio & Terminal in a Web Page
+
+* [Instructions](https://hprc.tamu.edu/kb/Quick-Start/Launch/)
 
 ---
 
