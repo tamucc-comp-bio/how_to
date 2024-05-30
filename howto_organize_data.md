@@ -20,3 +20,20 @@ Figure 2. From R for Data Science. It is best to store your project data into mu
 
 For the data in your projects, you will generally have at least a `specimens` tidy data file that stores the information you've collected on each specimen, as well as a `sampling location` tidy data file that stores the information about the locations from which the specimens were collected.  The common column between the two files should be `location_id`. In the `sampling_location` file, each sampling location is listed once and the `location_id` column is a *primary key*.  In the `specimens` data file, the same location will occur in several rows if several specimens were collected from a location and the `location_id` column is a *foreign_key*.  As you add more tidy data files to your relational database, you will want to be sure you have matching primary and foreign keys to link them to the existing files.
 
+---
+
+## Naming Files and Columns
+
+All files and columns should be named using human readable and understandable words (not abbreviations).  The contents of the file and the columns should be self evident from their names.
+
+---
+
+## Directory Structure
+
+All raw data files should be stored in you `git` repository in a directory named `data`.  Avoid unnecessary creation of additional directories and especially try to avoid nesting directories unless neccessary for organizational purposes (avoid creating a maze).  One rule to follow is that for every dir you create, you need to put a `README.md` in that dir to describe the contents.
+
+---
+
+## Documentation of Data Files and Organization
+
+A `README.md` file should occur in every dir and should describe the files and their contents.  It's also a good idea to make a diagram, like Fig 2 above, describing the relationships among your data files.
