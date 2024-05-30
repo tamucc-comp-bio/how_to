@@ -20,6 +20,10 @@
 
 ---
 
+# [How To Organize Biological Data](howto_organize_data.md)
+
+---
+
 # How To Set Up Your Launch HPC Account for RStudio & Terminal in a Web Page
 
 * [Instructions](https://hprc.tamu.edu/kb/Quick-Start/Launch/)
