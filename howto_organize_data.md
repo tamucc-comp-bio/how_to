@@ -31,7 +31,7 @@ All files and columns should be named using human readable and understandable wo
 ## Directory Structure
 
 ``` css
-project_root/
+project_name/
 ├── data_raw/
 ├── data_processed/
 ├── scripts/
@@ -44,7 +44,7 @@ Figure 3. Simple default directory structure for basic projects
 All raw data files should be stored in you `git` repository in a directory named `data`.  Avoid unnecessary creation of additional directories and especially try to avoid nesting directories unless neccessary for organizational purposes (avoid creating a maze).  One rule to follow is that for every dir you create, you need to put a `README.md` in that dir to describe the contents. [Consult this guide to formatting the contents of a *.md file](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ``` css
-project_root/
+project_name/
 ├── data/
 │   ├── raw_data/
 │   └── processed_data/
@@ -120,7 +120,7 @@ Figure 4. More complex directory structure with 2 levels of nesting for more com
 
 ## Documentation of Data Files and Organization
 
-A `README.md` file should occur in every dir and should describe the files and their contents.  It's also a good idea to make a diagram, like Fig 2 below, describing the relationships among your data files.
+A `README.md` file should occur in every dir and should describe the files and their contents.  It's also a good idea to make a diagram, like Fig 2, describing the relationships among your data files and displaying that in the README.md.
 
 
 ---
