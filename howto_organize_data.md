@@ -37,9 +37,6 @@ project_root/
 ├── scripts/
 ├── results/
 ├── documentation/
-│   ├── manuals/
-│   ├── protocols/
-│   └── notebooks/
 └── references/
 ```
 Figure 3. Simple default directory structure for basic projects
@@ -71,7 +68,7 @@ project_root/
 │   └── tests/
 └── config/
 ```
-Figure 4. More complex directory structure for more complex projects
+Figure 4. More complex directory structure with 2 levels of nesting for more complex projects.  Generally students should use Fig 3 as the model.
 
 1. Data
 
