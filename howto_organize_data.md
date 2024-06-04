@@ -6,7 +6,7 @@ It is important to be deliberate and methodical in the organization of your data
 
 ## Naming Files and Columns
 
-All files and columns should be named using human readable and understandable words (not abbreviations).  The contents of the file and the columns should be self evident from their names.
+All files and columns should be named using human readable and understandable words (not abbreviations).  The contents of the file and the columns should be self evident from their names.  Avoid using spaces, use `gps_waypoints.gpx` instead of `gps waypoints.gpx`.
 
 ---
 
