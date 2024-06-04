@@ -73,6 +73,43 @@ project_root/
 ```
 Figure 4. More complex directory structure for more complex projects
 
+1. Data
+
+    raw_data/: Contains unprocessed raw data files.
+    processed_data/: Contains data that has been cleaned and processed.
+
+2. Scripts
+
+    data_processing/: Scripts for cleaning and processing raw data.
+    analysis/: Scripts for analyzing the data and generating results.
+    visualization/: Scripts for creating visualizations (graphs, plots, etc.).
+
+3. Results
+
+    figures/: Contains generated figures, graphs, and plots.
+    tables/: Contains any tables of results generated from the analysis.
+    reports/: Final reports or intermediate analysis results.
+
+4. Documentation
+
+    manuals/: Any manuals or supplementary documentation.
+    protocols/: Detailed protocols for experiments or analyses.
+    notebooks/: Jupyter or R notebooks with exploratory analyses or step-by-step procedures.
+
+5. References
+
+    papers/: Relevant research papers and articles.
+    notes/: Notes and summaries of key literature.
+
+6. Code
+
+    src/: Source code for any custom scripts, functions, or modules.
+    tests/: Unit tests and other tests for your code.
+
+7. Config
+
+    config/: Configuration files for software or analysis tools (e.g., YAML, JSON).
+   
 ---
 
 ## Documentation of Data Files and Organization
