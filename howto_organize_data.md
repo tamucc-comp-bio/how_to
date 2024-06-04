@@ -12,6 +12,35 @@ All files and columns should be named using human readable and understandable wo
 
 ## Directory Structure
 
+``` css
+project_root/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── data/
+│   ├── raw_data/
+│   └── processed_data/
+├── scripts/
+│   ├── data_processing/
+│   ├── analysis/
+│   └── visualization/
+├── results/
+│   ├── figures/
+│   ├── tables/
+│   └── reports/
+├── documentation/
+│   ├── manuals/
+│   ├── protocols/
+│   └── notebooks/
+├── references/
+│   ├── papers/
+│   └── notes/
+├── code/
+│   ├── src/
+│   └── tests/
+└── config/
+```
+
 All raw data files should be stored in you `git` repository in a directory named `data`.  Avoid unnecessary creation of additional directories and especially try to avoid nesting directories unless neccessary for organizational purposes (avoid creating a maze).  One rule to follow is that for every dir you create, you need to put a `README.md` in that dir to describe the contents. [Consult this guide to formatting the contents of a *.md file](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ---
