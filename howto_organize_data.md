@@ -14,9 +14,6 @@ All files and columns should be named using human readable and understandable wo
 
 ``` css
 project_root/
-├── README.md
-├── LICENSE
-├── .gitignore
 ├── data_raw/
 ├── data_processed/
 ├── scripts/
