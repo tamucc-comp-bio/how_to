@@ -12,7 +12,7 @@ _*Before installing Git LFS, if you are encountering errors in pushing your comm
    sudo apt update
    sudo apt upgrade
    curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
-   sudo aptget install git-lfs
+   sudo apt-get install git-lfs
    ```
 
 2. Set up Git LFS by running:
