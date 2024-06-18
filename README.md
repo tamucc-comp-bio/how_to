@@ -32,6 +32,9 @@
 
 # [Manage Genetic MetaData With Geome DB](https://geome-db.org/)
 
+* Create an account
+* Send email to your supervisor asking to be added to the appropriate project
+
 ---
 
 ## Additional Resources
