@@ -11,7 +11,7 @@ After data is digitized, *all manipulations of the data should be documented and
 
 ## Tidy Data
 
-It is important to be deliberate and methodical in the organization of your data.  You will likely work with many data formats, most of them being unwieldy.  You do, however, have control over your metadata and the information that you extract from raw data files of varying formats.  For most biologists, the format that be the most benficial and easy to understand will be tidy formatted data files organized as a relational database.
+It is important to be deliberate and methodical in the organization of your data.  You will likely work with many data formats, most of them being unwieldy.  You do, however, have control over your metadata and the information that you extract from raw data files of varying formats.  For most biologists, the format that be the most benficial and easy to understand will be tidy formatted data files organized as a [relational database](https://en.wikipedia.org/wiki/Relational_database).
 
 ![tidy-1](https://github.com/Ph-IRES/2024_LastName_ProjName/assets/12803659/b3c8f084-9b89-405b-8bd2-1b02e0acf8f0)
 
