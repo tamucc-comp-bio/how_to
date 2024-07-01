@@ -1,4 +1,4 @@
-# How to Organize Data
+# How to Organize Biological Data
 
 It is important to be deliberate and methodical in the organization of your data.  You will likely work with many data formats, most of them being unwieldy.  You do, however, have control over your metadata and the information that you extract from raw data files of varying formats.  For most biologists, the format that be the most benficial and easy to understand will be tidy formatted data files organized as a relational database.
 
