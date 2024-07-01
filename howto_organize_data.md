@@ -4,7 +4,7 @@ It is important to be deliberate and methodical in the organization of your data
 
 ---
 
-# Data Science Philosophy
+## Data Science Philosophy
 
 ---
 
