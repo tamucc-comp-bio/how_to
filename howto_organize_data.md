@@ -1,6 +1,5 @@
 # How to Organize Biological Data
 
-It is important to be deliberate and methodical in the organization of your data.  You will likely work with many data formats, most of them being unwieldy.  You do, however, have control over your metadata and the information that you extract from raw data files of varying formats.  For most biologists, the format that be the most benficial and easy to understand will be tidy formatted data files organized as a relational database.
 
 ---
 
@@ -8,11 +7,13 @@ It is important to be deliberate and methodical in the organization of your data
 
 ---
 
-The data science philosophy is, after data is digitized, *all manipulations of the data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data.
+The data science philosophy is, after data is digitized, *all manipulations of the data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. 
 
 ---
 
 ## Tidy Data
+
+It is important to be deliberate and methodical in the organization of your data.  You will likely work with many data formats, most of them being unwieldy.  You do, however, have control over your metadata and the information that you extract from raw data files of varying formats.  For most biologists, the format that be the most benficial and easy to understand will be tidy formatted data files organized as a relational database.
 
 ![tidy-1](https://github.com/Ph-IRES/2024_LastName_ProjName/assets/12803659/b3c8f084-9b89-405b-8bd2-1b02e0acf8f0)
 
