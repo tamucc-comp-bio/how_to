@@ -124,7 +124,7 @@ If you have trouble with this, then consult the [CSB instructions](http://comput
 <details><summary>Install R on Mac</summary>
 <p>
 
-1. Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Win or Mac OS X Download link.
+1. Goto the [R download page](https://cloud.r-project.org/) and select the Win or Mac OS X Download link.
 
 2. [Determine if you have an Intel or Apple cpu.](https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor/)
 
