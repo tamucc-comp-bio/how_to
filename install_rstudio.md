@@ -7,7 +7,7 @@ _Note: you will not be installing R Studio on Ubuntu. If you have a Windows comp
 <details><summary>Install `R`</summary>
 <p>
 
-[You can find R install instructions here](../resources/install_r.md). If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu. 
+[You can find R install instructions here](install_r.md). If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu. 
 
 ---
 </p>
