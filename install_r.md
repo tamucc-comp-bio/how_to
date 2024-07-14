@@ -115,7 +115,8 @@ If the above instructions did not work, you can consult the [full README](https:
 2. Select "install R for the first time"
    
 3. Select "Download R-____ for Windows"
-
+   
+4. Run the file that was downloaded
 
 If you have trouble with this, then consult the [CSB instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
 
