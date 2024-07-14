@@ -1,4 +1,4 @@
-# AB1 DNA Barcode Editing Software Installation
+# Installing `*.ab1` DNA Barcode Editing Software
 
 [Download UGENE](http://ugene.net/download-all.html) and [Installation Instructions](https://doc.ugene.net/wiki/display/UM/Download+and+Installation)
 
