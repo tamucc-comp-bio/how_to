@@ -4,7 +4,7 @@ It is critically important that you keep R up to date on your computer.  If you 
 
 _Note: when you reinstall R, you generally lose all of your packages from the old version, and you will have to install them again.  While this is arduous, it does ensure a match between your packages and your R version._
 
-<details><summary>Checking to see if you have R</summary>
+<details><summary>Checking to see if you have R in Ubuntu</summary>
 <p>
 
 Note that there are differences here if you have a Mac or Windows computer.
