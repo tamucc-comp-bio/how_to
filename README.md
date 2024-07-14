@@ -6,7 +6,7 @@
 
 * [Install `Homebrew` on MacOS](https://brew.sh/)
 
-* Install a text editor designed for coding on [PC (Notepad++)](https://notepad-plus-plus.org/downloads/) or [MacOS (BBEdit)](https://www.barebones.com/products/textwrangler/download.html)
+* [Install a text editor designed for coding](install_text_editor.md) 
 
 * [Create GitHub Account](howto_github_acct.md)
 
