@@ -14,6 +14,7 @@ _Note: you will not be installing R Studio on Ubuntu. If you have a Windows comp
 </details>
 
 <details><summary>Install `R Studio` on Ubuntu</summary>
+
 Regardless of your operating system, if you have not already installed R studio, you need to do that now.  
   
 For those with windows computers, you can install R studio in Windows and/or Ubuntu.  If you are "afraid" to change your R and R studio, then install R Studio in Ubuntu.  If you followed the [instructions on setting up Ubuntu](install_wsl_ubuntu.md), it should work.
