@@ -110,7 +110,7 @@ If the above instructions did not work, you can consult the [full README](https:
 <details><summary>Install R on Win</summary>
 <p>
 
-1. Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Win or Mac OS X Download link.
+1. Goto the [R download page](https://cloud.r-project.org/) and select the Win or Mac OS X Download link.
 
 2. Select "install R for the first time"
 
