@@ -38,5 +38,7 @@ For those with Windows OS, install a [linux](https://en.wikipedia.org/wiki/Linux
 
 ## Optional
 
+If you are working with one or more files that are >100 MB each, then GitLFS adds the capability to handle these large files.
+
 * [Install Git Large File Storage Extension](install_git_lfs.md)
 
