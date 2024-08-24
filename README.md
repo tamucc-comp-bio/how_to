@@ -24,9 +24,7 @@
 
 ---
 
-# How To Set Up Your Launch HPC Account for RStudio & Terminal in a Web Page
-
-* [Instructions](https://hprc.tamu.edu/kb/Quick-Start/Launch/)
+# [How To Set Up Your Launch HPC Account for RStudio & Terminal in a Web Page](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
 ---
 
