@@ -4,19 +4,19 @@ This repo was created to centralize tutorials for software installation, compute
 
 ---
 
-## [How To Set Up Your Computer for Computational Biology](howto_setup_computer.md)
-
-Students in Computational Biology, a workshop, or the lab of Dr. Chris Bird should click the link above to set up Win, Mac, or Linux computers. 
-
-_Neither ChromeOS, iOS, nor Android are supported by R Studio, therefore it is going to be best for you to use a remote server like the [TAMU Launch HPC](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login) which allows you to run both a Linux terminal and RStudio in a webpage._
-
----
-
 ## [How To Set Up Your Launch HPC Account (RStudio, Python & Terminal in a Web Page)](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
 Students in Computational Biology or the lab of Dr. Chris Bird should click the link above to create a Launch account.
 
 The Launch HPC at TAMU-College Station enables you to run a Linux terminal, RStudio (R IDE), and Jupyter (Python IDE) in a webpage.
+
+---
+
+## [How To Set Up Your Computer for Computational Biology](howto_setup_computer.md)
+
+Students in Computational Biology, a workshop, or the lab of Dr. Chris Bird should click the link above to set up Win, Mac, or Linux computers. 
+
+_Neither ChromeOS, iOS, nor Android are supported by R Studio, therefore it is going to be best for you to use a remote server like the [TAMU Launch HPC](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login) which allows you to run both a Linux terminal and RStudio in a webpage._
 
 ---
 
