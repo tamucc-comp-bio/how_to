@@ -22,6 +22,8 @@ This is a quick orientation to modern principals of data organization for biolog
 
 # Manage Genetic Data With [Geome DB](https://geome-db.org/)
 
+If your research involves genetics/genomics of wild organisms, then
+
 * Create an account
 * Send email to your supervisor with the email you used to create the account and ask to be added to the appropriate project
 
