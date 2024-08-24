@@ -102,4 +102,6 @@ git clone git@github.com:tamucc-comp-bio-2022/CSB.git
 </p>
 </details>
 
+---
 
+### [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
