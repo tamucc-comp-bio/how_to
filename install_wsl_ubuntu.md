@@ -64,14 +64,9 @@ Once installation is complete, if you want to add a [GUI](https://en.wikipedia.o
 
 ---
 
-If that didn't work and you have an older version of Windows then try following the instructions here:
-
-1. [Manual installation steps for older versions of WSL](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
-
----
-
 If you are reading this and you've successfully installed Ubuntu, then you can exit this page.  Otherwise, try the instructions here:
 
 1. [Install Ubuntu on Windows with WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)
+2. [Install Ubuntu on WSL2](https://canonical-ubuntu-wsl.readthedocs-hosted.com/en/latest/guides/install-ubuntu-wsl2/)
 
 
