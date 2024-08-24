@@ -24,11 +24,11 @@ You can install everything you need to run Windows Subsystem for Linux (WSL) by 
 wsl --install
 ```
 
- While this is running, check out the [About WSL](https://learn.microsoft.com/en-us/windows/wsl/about) and the [WSL FAQ](https://learn.microsoft.com/en-us/windows/wsl/faq) to learn more about WSL.
+ * While this is running, check out the [About WSL](https://learn.microsoft.com/en-us/windows/wsl/about) and the [WSL FAQ](https://learn.microsoft.com/en-us/windows/wsl/faq) to learn more about WSL.
 
 2. Follow the prompts until you are asked to enter your User Name in the Ubuntu window, then move on to the next step.
 
- If you encounter errors while installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
+ * If you encounter errors while installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
   * If you have under 3GB of free space, then it is likely that you don't have enough space on your computer to istall Ubuntu (a fresh install takes up 1.6 GB). You should skip installing Ubuntu and use the TAMU Launch HPC which allows you to run Linux in a webpage.
 
@@ -42,7 +42,7 @@ wsl --install
 cbird@xps13plus:~
 ```
 
-Here, the User Name is `cbird`, the computer name is `xps13plus`, and the present working directory is `~`.
+ * Here, the User Name is `cbird`, the computer name is `xps13plus`, and the present working directory is `~`.
  
 4. If you were unsuccessful installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
