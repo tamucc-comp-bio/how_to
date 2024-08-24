@@ -1,8 +1,8 @@
 # How to Set Up Your Computer for Computational Biology
 
-Identify the operating system of your computer: Windows, Mac, or Linux.  
+Identify the operating system (OS) of your computer: Windows, Mac, or Linux. Then, follow each of the tasks below for your OS.  
 
-Neither ChromeOS, iOS, nor Android are  supported by [R Studio](https://en.wikipedia.org/wiki/RStudio), therefore it is going to be best for you to use a remote server like the TAMU Launch HPC which allows you to run RStudio in a webpage. 
+_Neither ChromeOS, iOS, nor Android are  supported by [R Studio](https://en.wikipedia.org/wiki/RStudio), therefore it is going to be best for you to use a remote server like the TAMU Launch HPC which allows you to run RStudio in a webpage._ 
 
 ---
 
