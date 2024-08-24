@@ -1,6 +1,6 @@
 # Installing WSL2 (Windows Subsystem Linux) Ubuntu 
 
-This is only for those who have Windows computers, not Mac or Linux.
+This is only for those who have Windows computers, not Mac or Linux. 
 
 ---
 
@@ -15,6 +15,8 @@ You can now install everything you need to run Windows Subsystem for Linux (WSL)
 ```powershell
 wsl --install
 ```
+
+While this is running, check out the [FAQ](https://learn.microsoft.com/en-us/windows/wsl/faq) to learn more about WSL
 
 ---
 
