@@ -16,7 +16,7 @@ The Launch HPC at TAMU-College Station enables you to run a Linux terminal, RStu
 
 # [How To Organize Biological Data](howto_organize_data.md)
 
-
+This is a quick orientation to modern principals of data organization for biologists.  
 
 ---
 
