@@ -132,3 +132,5 @@ A `README.md` file should occur in every dir and should describe the files and t
 
 ---
 
+### [Return to how_to/README.md](https://github.com/tamucc-comp-bio/how_to/blob/main/README.md)
+
