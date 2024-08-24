@@ -2,11 +2,11 @@
 
 ---
 
-# [How To Organize Biological Data](howto_organize_data.md)
+# [How To Set Up Your Launch HPC Account for RStudio & Terminal in a Web Page](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
 ---
 
-# [How To Set Up Your Launch HPC Account for RStudio & Terminal in a Web Page](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
+# [How To Organize Biological Data](howto_organize_data.md)
 
 ---
 
