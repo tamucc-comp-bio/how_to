@@ -72,7 +72,7 @@ If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
     
 * For [GitHub](https://github.com) consult the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) (Required)
     
-* For any remote server/computer, copy your public to your `~/.ssh` dir on the remote computer as follows (Optional: if you don't have a supercomputer account or a remote server then don't do this now):
+* For any remote server/computer, copy your public to your `~/.ssh` dir on the remote computer as follows (Optional: if you don't have a [TAMUCC Crest HPC](https://www.tamucc.edu/engineering/departments/computer-science/high-performance-computing/index.php) account or a remote server then don't do this now):
     
    ```bash
    # you must be on/in your laptop (or local machine) not the remote server when you run this command
@@ -82,7 +82,7 @@ If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
    # you will be prompted for your password on the remote computer
    ```
         
-   Example: for me (`cbird`) on the new TAMUCC supercomputer (`crest_login.tamucc.edu`)
+   Example: for me (`cbird`) on the new TAMUCC Crest HPC (`crest_login.tamucc.edu`)
         
    ```
    cbird@3950x:~$ ssh-copy-id cbird@hpcm.tamucc.edu
