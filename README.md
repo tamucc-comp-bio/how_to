@@ -1,6 +1,6 @@
 # how_to
 
-This repo was created to centralize tutorials for software installation, computer set up, and account creation that is relevant to Biologists seeking to employ core Data Science principals to organize, wrangle, analyze, and present their data.
+This repo was created to centralize tutorials for software installation, computer set up, account creation, and organization of digitized data that is relevant to Biologists seeking to employ core Data Science principals to organize, wrangle, analyze, and present their data.
 
 ---
 
