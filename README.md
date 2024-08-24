@@ -1,4 +1,10 @@
-# [How To Set Up Your Computer for Computational Biology](howto_setup_computer.md)
+# how_to
+
+This repo was created to centralize tutorials for software installation, computer set up, and account creation that is relevant to Biologists seeking to employ core Data Science principals to organize, wrangle, analyze, and present their data.
+
+---
+
+## [How To Set Up Your Computer for Computational Biology](howto_setup_computer.md)
 
 Students in Computational Biology, a workshop, or the lab of Dr. Chris Bird should click the link above to set up Win, Mac, or Linux computers. 
 
@@ -6,7 +12,7 @@ _Neither ChromeOS, iOS, nor Android are supported by R Studio, therefore it is g
 
 ---
 
-# [How To Set Up Your Launch HPC Account (RStudio, Python & Terminal in a Web Page)](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
+## [How To Set Up Your Launch HPC Account (RStudio, Python & Terminal in a Web Page)](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
 Students in Computational Biology or the lab of Dr. Chris Bird should click the link above to create a Launch account.
 
@@ -14,13 +20,13 @@ The Launch HPC at TAMU-College Station enables you to run a Linux terminal, RStu
 
 ---
 
-# [How To Organize Biological Data](howto_organize_data.md)
+## [How To Organize Biological Data](howto_organize_data.md)
 
 This is a quick orientation to modern principals of data organization for biologists.  
 
 ---
 
-# Manage Genetic Data With [Geome DB](https://geome-db.org/)
+## Manage Genetic Data With [Geome DB](https://geome-db.org/)
 
 If you are a student in the lab of Dr. Chris Bird and your research involves genetics/genomics of wild organisms, then
 
