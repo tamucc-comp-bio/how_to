@@ -28,16 +28,11 @@ For those with Windows OS, install a [linux](https://en.wikipedia.org/wiki/Linux
 
 * [Create GitHub Account](howto_github_acct.md)
 
+* [Set up SSH Keys For Easy Access to Remote Servers & GitHub](howto_sshkeys.md)
+
 * [Install R](install_r.md)
 
 * [Install RStudio](install_rstudio.md)
-
----
-
-## Ubuntu (in Windows) and Mac
-
-* [Set up SSH Keys For Easy Access to Remote Servers & GitHub](howto_sshkeys.md)
-
 
 ---
 
