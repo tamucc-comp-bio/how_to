@@ -25,3 +25,9 @@ If that didn't work, then try following the instructions here:
 2. [Add GUI App Support](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps)
 
 	GUI = Graphical User Interface
+
+--- 
+
+If that didn't work and you have an older version of Windows then try following the instructions here:
+
+1. [Manual installation steps for older versions of WSL](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
