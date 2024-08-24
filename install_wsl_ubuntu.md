@@ -22,9 +22,7 @@ If that didn't work, then try following the instructions here:
 
 1. [Install Ubuntu on Windows with WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-2. [Add GUI App Support](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps)
-
-	GUI = Graphical User Interface
+2. This link used to be required, but is no longer.  If you want to add a [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) app to Ubuntu, then skip down to that section in this tutorial: [Add GUI App Support](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps)
 
 --- 
 
