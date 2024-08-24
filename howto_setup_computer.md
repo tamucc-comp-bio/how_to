@@ -2,7 +2,7 @@
 
 Identify the operating system of your computer: Windows, Mac, or Linux.  
 
-Neither ChromeOS, iOS, nor Android are  supported by [R Studio](https://en.wikipedia.org/wiki/RStudio), therefore it is going to be best for you to use a remote server like the TAMU Launch HPC. 
+Neither ChromeOS, iOS, nor Android are  supported by [R Studio](https://en.wikipedia.org/wiki/RStudio), therefore it is going to be best for you to use a remote server like the TAMU Launch HPC which allows you to run RStudio in a webpage. 
 
 ---
 
