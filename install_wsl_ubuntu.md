@@ -6,7 +6,7 @@ The terminal scripting language native to Windows was not adopted by biologists 
 
 ---
 
-You can install everything you need to run Windows Subsystem for Linux (WSL) by entering this command in an administrator PowerShell or Windows Command Prompt and then restarting your machine.
+You can install everything you need to run Windows Subsystem for Linux (WSL) by entering one command in an administrator PowerShell or Windows Command Prompt and then restarting your machine.
 
 1. Open the Start menu
 2. type `Windows PowerShell`
@@ -20,9 +20,10 @@ wsl --install
 
 While this is running, check out the [About WSL](https://learn.microsoft.com/en-us/windows/wsl/about) and the [WSL FAQ](https://learn.microsoft.com/en-us/windows/wsl/faq) to learn more about WSL.
 
-6. You will eventually be prompted for your User Name. I suggest using your [IslandID](https://islandid.tamucc.edu/identity/self-service/tcc/forgotuserid.jsf).  _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR USER NAME_
-7. After entering your User Name, you will be asked to enter your password.  The screen will not respond as you type it in.  Be sure to use a password you will remember. _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR PASSWORD_
-8. If you were unsuccessful installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
+6. Follow the prompts
+7. You will eventually be prompted for your User Name. I suggest using your [IslandID](https://islandid.tamucc.edu/identity/self-service/tcc/forgotuserid.jsf).  _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR USER NAME_
+8. After entering your User Name, you will be asked to enter your password.  The screen will not respond as you type it in.  Be sure to use a password you will remember. _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR PASSWORD_
+9. If you were unsuccessful installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
   * If you have under 3GB of free space, then there it is likely that you don't have enough space on your computer to istall Ubuntu (a fresh install takes up 1.6 GB). You should skip installing Ubuntu and use the TAMU Launch HPC which allows you to run Linux in a webpage.
 
