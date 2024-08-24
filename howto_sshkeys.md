@@ -92,3 +92,7 @@ If you are here, you're probably wanting to set up an ssh key which allows your 
     and check to make sure that only the key(s) you wanted were added.
 
     ```
+
+---
+
+### [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
