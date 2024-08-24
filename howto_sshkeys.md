@@ -85,14 +85,14 @@ If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
    Example: for me (`cbird`) on the new TAMUCC Crest HPC (`crest_login.tamucc.edu`)
         
    ```
-   cbird@3950x:~$ ssh-copy-id cbird@hpcm.tamucc.edu
+   cbird@3950x:~$ ssh-copy-id cbird@crest_login.tamucc.edu
    /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
    /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-   (cbird@hpcm.tamucc.edu) Password: 
+   (cbird@crest_login.tamucc.edu) Password: 
 
    Number of key(s) added: 1
 
-   Now try logging into the machine, with:   "ssh 'cbird@hpcm.tamucc.edu'"
+   Now try logging into the machine, with:   "ssh 'cbird@crest_login.tamucc.edu'"
    and check to make sure that only the key(s) you wanted were added.
 
    ```
