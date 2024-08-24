@@ -28,7 +28,7 @@
 
 ---
 
-# [Manage Genetic Data With Geome DB](https://geome-db.org/)
+# Manage Genetic Data With [Geome DB](https://geome-db.org/)
 
 * Create an account
 * Send email to your supervisor with the email you used to create the account and ask to be added to the appropriate project
