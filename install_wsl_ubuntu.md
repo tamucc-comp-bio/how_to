@@ -20,9 +20,9 @@ You can install everything you need to run Windows Subsystem for Linux (WSL) by 
 
 1. Copy and paste this command into PowerShell and hit the `Enter` key
 
-```powershell
-wsl --install
-```
+   ```powershell
+   wsl --install
+   ```
 
  * While this is running, check out the [About WSL](https://learn.microsoft.com/en-us/windows/wsl/about) and the [WSL FAQ](https://learn.microsoft.com/en-us/windows/wsl/faq) to learn more about WSL.
 
