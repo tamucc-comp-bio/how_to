@@ -52,3 +52,6 @@ _*Before installing Git LFS, if you are encountering errors in pushing your comm
 
 After completing these steps, your large files will be managed by Git LFS, and you should avoid warnings about file sizes when pushing to GitHub. Ensure that everyone collaborating on the repository has Git LFS installed and initialized.
 
+---
+
+### [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
