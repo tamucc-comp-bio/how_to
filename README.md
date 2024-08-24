@@ -22,10 +22,10 @@ This is a quick orientation to modern principals of data organization for biolog
 
 # Manage Genetic Data With [Geome DB](https://geome-db.org/)
 
-If your research involves genetics/genomics of wild organisms, then
+If you are a student in the lab of Dr. Chris Bird and your research involves genetics/genomics of wild organisms, then
 
 * Create an account
-* Send email to your supervisor with the email you used to create the account and ask to be added to the appropriate project
+* Send a Slack message to Dr. Bird with the email address you used to create the account and ask to be added to the appropriate project
 
 ---
 
