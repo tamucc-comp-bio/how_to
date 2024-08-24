@@ -1,5 +1,7 @@
 # How to Set Up Your Computer for Computational Biology
 
+Identify the operating system of your computer: Windows, Mac, or Linux.  ChromeOS, iOS, or Android, are not supported by [R Studio](https://en.wikipedia.org/wiki/RStudio), therefore it is going to be best for you to use a remote server like the TAMU Launch HPC. 
+
 ---
 
 ## Windows Only
@@ -18,7 +20,7 @@ For those with Windows OS, install a [linux](https://en.wikipedia.org/wiki/Linux
 
 ---
 
-## Both Win and Mac
+## Win and Mac and Linux (not Ubuntu in Windows)
 
 * [Install a text editor designed for coding](install_text_editor.md) 
 
