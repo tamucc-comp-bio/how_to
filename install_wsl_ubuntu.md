@@ -25,7 +25,7 @@ While this is running, check out the [About WSL](https://learn.microsoft.com/en-
 8. After entering your User Name, you will be asked to enter your password.  The screen will not respond as you type it in.  Be sure to use a password you will remember. _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR PASSWORD_
 9. If you were unsuccessful installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
-  * If you have under 3GB of free space, then there it is likely that you don't have enough space on your computer to istall Ubuntu (a fresh install takes up 1.6 GB). You should skip installing Ubuntu and use the TAMU Launch HPC which allows you to run Linux in a webpage.
+  * If you have under 3GB of free space, then it is likely that you don't have enough space on your computer to istall Ubuntu (a fresh install takes up 1.6 GB). You should skip installing Ubuntu and use the TAMU Launch HPC which allows you to run Linux in a webpage.
 
 Once installation is complete, if you want to add a [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) app to Ubuntu, then you should be able to follow the installation instructions for that software.  Many genetic software packages are much more usable when run from Ubuntu than windows, e.g. [IGV](https://igv.org/doc/desktop/). If you were successful in installing Ubuntu and you want to try to install a GUI app in Ubuntu for the fun of it, then skip down to that section in this tutorial: [Add GUI App Support](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps)
 
