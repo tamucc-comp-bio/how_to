@@ -31,9 +31,7 @@ You can install everything you need to run Windows Subsystem for Linux (WSL) by 
 
    * If you have under 3GB of free space, then it is likely that you don't have enough space on your computer to istall Ubuntu (a fresh install takes up 1.6 GB). You should skip installing Ubuntu and use the TAMU Launch HPC which allows you to run Linux in a webpage.
   
-   * If the troubleshooting link didn't solve your error and you have an older version of Windows then try following the instructions here:
-
-      1. [Manual installation steps for older versions of WSL](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
+   * If you have enough space, the troubleshooting link didn't solve your error, and you have an older version of Windows then try following the [manual installation steps for older versions of WSL](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
 
 ## Step 3.  Create your User Name and Password for Ubuntu
 
