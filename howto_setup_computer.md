@@ -42,3 +42,6 @@ If you are working with one or more files that are >100 MB each, then GitLFS add
 
 * [Install Git Large File Storage Extension](install_git_lfs.md)
 
+---
+
+### [Return to how_to Repo](https://github.com/tamucc-comp-bio/how_to)
