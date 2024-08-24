@@ -4,6 +4,8 @@
 
 # [How To Set Up Your Launch HPC Account for RStudio & Terminal in a Web Page](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
+This will take you to the official instructions for creating the accounts you need to log into the Launch HPC at TAMU-College Station.
+
 ---
 
 # [How To Organize Biological Data](howto_organize_data.md)
