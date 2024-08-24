@@ -14,7 +14,6 @@ You can install everything you need to run Windows Subsystem for Linux (WSL) by 
 2. type `Windows PowerShell`
 3. select `Windows PowerShell`
 4. select `Run as administrator`.
-5. type the following into the PowerShell terminal:
 
 ## Step 2. Install WSL and the Default Version of Ubuntu
 
