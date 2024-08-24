@@ -44,4 +44,4 @@ If you are working with one or more files that are >100 MB each, then GitLFS add
 
 ---
 
-### [Return to how_to Repo](https://github.com/tamucc-comp-bio/how_to)
+### [Return to how_to/README.md](https://github.com/tamucc-comp-bio/how_to/blob/main/README.md)
