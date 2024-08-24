@@ -6,7 +6,7 @@ The terminal scripting language native to Windows was not adopted by biologists 
 
 ---
 
-You can install everything you need to run Windows Subsystem for Linux (WSL) by entering one command in an administrator PowerShell or Windows Command Prompt and then restarting your machine.
+You can install everything you need to run Windows Subsystem for Linux (WSL) by completing steps 1-3.
 
 ## Step 1. Open Administrator/Elevated PowerShell Window
 
