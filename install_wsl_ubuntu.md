@@ -71,4 +71,4 @@ If you are reading this and you've successfully installed Ubuntu, then you can [
 
 ---
 
-## [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
+### [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
