@@ -21,15 +21,15 @@ If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
  
 ## Step 2. Create a key pair
     
-You only need 1 key pair, so if you *don't* have files named `id_???` and `id_???.pub` in your `~/.ssh` dir, then you need to generate them as follows:
+1. You only need 1 key pair, so if you *don't* have files named `id_???` and `id_???.pub` in your `~/.ssh` dir, then you need to generate them as follows:
     
    ```bash
    ssh-keygen -t rsa
    # you will be prompted for a pass phrase, etc
-   # i recommend hitting enter at each prompt
+   # i recommend not entering a pass phrase and hitting the `Enter/Return` key at each prompt
    ```
     
-When the key pair is created, you should see something like this:
+   When the key pair is created, you should see something like this:
     
    ```
     Generating public/private rsa key pair.
@@ -55,14 +55,14 @@ When the key pair is created, you should see something like this:
 
    ```
     
-Run the following commands in your terminal
+2. Run the following commands in your terminal
     
    ```bash
     cd ~
     ls .ssh
     ```
     
-If you see the following files (or something very similar), you have a key. Goto step 3.
+   If you see the following files printed to the screen (or something very similar), you have a key. Goto step 3.
 
    ```
    id_rsa  id_rsa.pub
@@ -70,9 +70,9 @@ If you see the following files (or something very similar), you have a key. Goto
 
 ## Step 3.  Placing your public key on remote servers
     
-   * For [GitHub](https://github.com) consult the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) 
+* For [GitHub](https://github.com) consult the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) 
     
-   * For any remote server/computer, copy your public to your `~/.ssh` dir on the remote computer as follows:
+* For any remote server/computer, copy your public to your `~/.ssh` dir on the remote computer as follows:
     
    ```bash
    # you must be on/in your laptop (or local machine) not the remote server when you run this command
