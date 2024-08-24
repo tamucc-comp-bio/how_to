@@ -22,7 +22,7 @@ For those with Windows OS, install a [linux](https://en.wikipedia.org/wiki/Linux
 
 ---
 
-## Win and Mac and Linux (not Ubuntu in Windows)
+## Win and Mac and Linux
 
 * [Install a text editor designed for coding](install_text_editor.md) 
 
