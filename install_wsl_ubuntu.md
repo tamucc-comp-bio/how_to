@@ -31,12 +31,6 @@ Once installation is complete, if you want to add a [GUI](https://en.wikipedia.o
 
 ---
 
-
-
-
-
---- 
-
 If that didn't work and you have an older version of Windows then try following the instructions here:
 
 1. [Manual installation steps for older versions of WSL](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
