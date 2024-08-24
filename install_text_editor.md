@@ -9,3 +9,5 @@
 * [MacOS (BBEdit)](https://www.barebones.com/products/textwrangler/download.html)
 
 ---
+
+### [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
