@@ -34,16 +34,27 @@ You can install everything you need to run Windows Subsystem for Linux (WSL) by 
 ## Step 3.  Create your User Name and Password for Ubuntu
 
 1. You will eventually be prompted for your User Name. I suggest using your [IslandID](https://islandid.tamucc.edu/identity/self-service/tcc/forgotuserid.jsf).  _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR USER NAME_
-2. After entering your User Name, you will be asked to enter your password.  The screen will not respond as you type it in.  Be sure to use a password you will remember. _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR PASSWORD_
-3. If you were successful, you should see the following in your Ubuntu terminal window:
 
-```bash
-cbird@xps13plus:~
-```
+   ```bash
+   UserName: cbird
+   ```
+   
+3. After entering your User Name, you will be asked to enter your password.  The screen will not respond as you type it in.  Be sure to use a password you will remember. _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR PASSWORD_
+
+   ```bash
+   UserName: cbird
+   Password:
+   ```
+
+5. If you were successful, you should see the following in your Ubuntu terminal window:
+
+   ```bash
+   cbird@xps13plus:~
+   ```
 
    * Here, the User Name is `cbird`, the computer name is `xps13plus`, and the present working directory is `~`.
  
-4. If you were unsuccessful installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
+6. If you were unsuccessful installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
 
 
