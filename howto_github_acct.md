@@ -42,3 +42,7 @@ To share your data, and track your analysis, we are going to utilize github. Ple
 ### Additional Resources
 - [GitHub Help Documentation](https://docs.github.com/en/github)
 - [Git & GitHub for Beginners](https://www.freecodecamp.org/news/git-and-github-for-beginners/)
+
+---
+
+### [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
