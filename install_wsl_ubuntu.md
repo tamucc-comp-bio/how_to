@@ -8,11 +8,17 @@ The terminal scripting language native to Windows was not adopted by biologists 
 
 You can install everything you need to run Windows Subsystem for Linux (WSL) by entering one command in an administrator PowerShell or Windows Command Prompt and then restarting your machine.
 
+## Step 1. Open Administrator/Elevated PowerShell Window
+
 1. Open the Start menu
 2. type `Windows PowerShell`
 3. select `Windows PowerShell`
 4. select `Run as administrator`.
 5. type the following into the PowerShell terminal:
+
+## Step 2. Install WSL and the Default Version of Ubuntu
+
+1. Copy and paste this command into PowerShell and hit the `Enter` key
 
 ```powershell
 wsl --install
@@ -20,12 +26,27 @@ wsl --install
 
 While this is running, check out the [About WSL](https://learn.microsoft.com/en-us/windows/wsl/about) and the [WSL FAQ](https://learn.microsoft.com/en-us/windows/wsl/faq) to learn more about WSL.
 
-6. Follow the prompts
-7. You will eventually be prompted for your User Name. I suggest using your [IslandID](https://islandid.tamucc.edu/identity/self-service/tcc/forgotuserid.jsf).  _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR USER NAME_
-8. After entering your User Name, you will be asked to enter your password.  The screen will not respond as you type it in.  Be sure to use a password you will remember. _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR PASSWORD_
-9. If you were unsuccessful installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
+2. Follow the prompts until you are asked to enter your User Name in the Ubuntu window, then move on to the next step.
+
+If you encounter errors while installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
   * If you have under 3GB of free space, then it is likely that you don't have enough space on your computer to istall Ubuntu (a fresh install takes up 1.6 GB). You should skip installing Ubuntu and use the TAMU Launch HPC which allows you to run Linux in a webpage.
+
+## Step 3.  Create your User Name and Password for Ubuntu
+
+1. You will eventually be prompted for your User Name. I suggest using your [IslandID](https://islandid.tamucc.edu/identity/self-service/tcc/forgotuserid.jsf).  _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR USER NAME_
+2. After entering your User Name, you will be asked to enter your password.  The screen will not respond as you type it in.  Be sure to use a password you will remember. _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR PASSWORD_
+3. If you were successful, you should see the following in your Ubuntu terminal window:
+
+```bash
+cbird@xps13plus:~
+```
+
+Here, the User Name is `cbird`, the computer name is `xps13plus`, and the present working directory is `~`.
+ 
+4. If you were unsuccessful installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
+
+
 
 Once installation is complete, if you want to add a [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) app to Ubuntu, then you should be able to follow the installation instructions for that software.  Many genetic software packages are much more usable when run from Ubuntu than windows, e.g. [IGV](https://igv.org/doc/desktop/). If you were successful in installing Ubuntu and you want to try to install a GUI app in Ubuntu for the fun of it, then skip down to that section in this tutorial: [Add GUI App Support](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps)
 
