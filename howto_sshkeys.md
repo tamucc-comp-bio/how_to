@@ -82,7 +82,7 @@ If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
    # you will be prompted for your password on the remote computer
    ```
         
-   Example: for me (`cbird`) on the old TAMUCC supercomputer (`hpcm.tamucc.edu`)
+   Example: for me (`cbird`) on the new TAMUCC supercomputer (`crest_login.tamucc.edu`)
         
    ```
    cbird@3950x:~$ ssh-copy-id cbird@hpcm.tamucc.edu
