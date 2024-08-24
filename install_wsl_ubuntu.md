@@ -41,7 +41,7 @@ You can install everything you need to run Windows Subsystem for Linux (WSL) by 
 cbird@xps13plus:~
 ```
 
-    * Here, the User Name is `cbird`, the computer name is `xps13plus`, and the present working directory is `~`.
+   Here, the User Name is `cbird`, the computer name is `xps13plus`, and the present working directory is `~`.
  
 4. If you were unsuccessful installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
