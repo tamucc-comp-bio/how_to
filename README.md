@@ -6,7 +6,7 @@ _Neither ChromeOS, iOS, nor Android are supported by R Studio, therefore it is g
 
 ---
 
-# [How To Set Up Your Launch HPC Account for RStudio & Terminal in a Web Page](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
+# [How To Set Up Your Launch HPC Account (RStudio, Python & Terminal in a Web Page)](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
 Students in Computational Biology or the lab of Dr. Chris Bird should click the link above to create a Launch account.
 
