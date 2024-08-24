@@ -70,9 +70,9 @@ If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
 
 ## Step 3.  Placing your public key on remote servers
     
-* For [GitHub](https://github.com) consult the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) 
+* For [GitHub](https://github.com) consult the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) (Required)
     
-* For any remote server/computer, copy your public to your `~/.ssh` dir on the remote computer as follows:
+* For any remote server/computer, copy your public to your `~/.ssh` dir on the remote computer as follows (Optional: if you don't have a supercomputer account or a remote server then don't do this now):
     
    ```bash
    # you must be on/in your laptop (or local machine) not the remote server when you run this command
