@@ -144,7 +144,7 @@ A `README.md` file should occur in every dir and should describe the files and t
 
 ---
 
-## Tracking Changes and Sharing Your Project with Git and GitHub
+## Tracking Changes and Sharing Your Project with [Git](https://en.wikipedia.org/wiki/Git) and [GitHub](https://en.wikipedia.org/wiki/GitHub)
 
 All raw data files should be stored in your `git` repository in a directory named `data`.  
 
