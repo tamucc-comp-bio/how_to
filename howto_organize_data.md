@@ -3,27 +3,29 @@
 
 ---
 
-## Data Science Philosophy
-
-After data is digitized, *all manipulations of the data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. 
-
-As an example, if you collect latitude and longitude of locations using a GPS, you should not be moving that data over into MS Excel because there is no record of how that transfer of the data occurred that could be evaluated by an independent observer.  Rather, you would write the commands to [join](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) the GPS waypoints to the other [metadata](https://en.wikipedia.org/wiki/Metadata) associated with the locations in a file (script) that can be executed by a computer.
-
----
-
 ## Tidy Data
 
 It is important to be deliberate and methodical in the organization of your data.  You will likely work with many data formats, most of them being unwieldy and not "[tidy](https://vita.had.co.nz/papers/tidy-data.pdf)".  You do, however, have control over the data that you record manually and the information that you extract and wrangle in computer code from raw data files of varying formats.  For most biologists, the tidy format be the most benficial and easy to understand.
 
 ![tidy-1](https://r4ds.hadley.nz/images/tidy-1.png)
 
-Figure 1.  From [R for Data Science](https://r4ds.hadley.nz/).  In tidy data, one file holds one table. In each table, the rows are observations and the columns are variables that store information about the observations.  Each row should contain only 1 observation.  Each column should contain only 1 variable.  Notes about an observation can be made in a column named `notes`.  One column should contain the `observation_id` which is a unique name assigned to that observation.
+Figure 1.  From [R for Data Science](https://r4ds.hadley.nz/).  In tidy data, one file holds one table. In each table, the rows are observations and the columns are variables that store information about the observations.  Each row should contain only 1 observation.  Each column should contain only 1 variable.  Notes about an observation can be made in a column named `notes`.  One column should contain the `observation_id` which is a [unique identifier](https://en.wikipedia.org/wiki/Unique_identifier) assigned to that observation.
+
+---
+
+## Data Science Philosophy
+
+After data is digitized, *all manipulations of the data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. 
+
+As an example, if you collect latitude and longitude of locations using a GPS, you should not be moving that data over into MS Excel because there is no record of how that transfer of the data occurred that could be evaluated by an independent observer.  Rather, you would write the commands in a file (script) that can be executed by a computer to [join](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) the GPS waypoints to the other [metadata](https://en.wikipedia.org/wiki/Metadata) associated with the locations. Extending this out to all data for a MS Thesis, Ph.D. Dissertation chapter, or a publication in a scientific journal; most projects will involve many data files which need to be organized into a [database](https://en.wikipedia.org/wiki/Database). 
 
 ---
 
 ## Relationships Between Data Files
 
-Most scientific biological projects have several sources of data and thus many data files (or at least they should).  These files should be organized based upon the relational model (Codd 1970) as a [relational database](https://en.wikipedia.org/wiki/Relational_database).  
+We will focus on organizing our data based upon the relational model (Codd 1970) as a [relational database](https://en.wikipedia.org/wiki/Relational_database).  The relational database we describe here consists of several tidy data files that are connected by common columns of data (keys).  
+
+The [primary key](https://en.wikipedia.org/wiki/Primary_key) is the column with a unique value for each observation (row).  Similar to a primary key, there may be a set of columns, collectively referred to as a [natural key](https://en.wikipedia.org/wiki/Natural_key), whose values uniquely classify the observation (row)that uniquely define the subject of each row.   
 
 ![relational-1](https://d33wubrfki0l68.cloudfront.net/245292d1ea724f6c3fd8a92063dcd7bfb9758d02/5751b/diagrams/relational-nycflights.png)
 
