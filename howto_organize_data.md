@@ -25,7 +25,9 @@ As an example, if you collect latitude and longitude of locations using a GPS, y
 
 We will focus on organizing our data based upon the relational model (Codd 1970) as a [relational database](https://en.wikipedia.org/wiki/Relational_database).  The relational database we describe here consists of several tidy data files that are connected by common columns of data (keys).  
 
-The [primary key](https://en.wikipedia.org/wiki/Primary_key) is the column with a unique value for each observation (row).  Similar to a primary key, there may be a set of columns, collectively referred to as a [natural key](https://en.wikipedia.org/wiki/Natural_key), whose values uniquely classify the observation (row)that uniquely define the subject of each row.   
+The [primary key](https://en.wikipedia.org/wiki/Primary_key) is the column with a unique value for each observation (row) or a set of columns that uniquely define an observation when combined. In Fig. 2 below, the column named `faa` is the primary key for the `airports` data file.
+
+A [foreign key](https://en.wikipedia.org/wiki/Foreign_key) is a column in one data file that contains the same values as the primary key of another data file. Foreign keys typically contain values that are duplicated in several rows. In Fig. 2 below, the columns named `origin` and `dest` in the `flights` data file are both foreign keys in relation to the `faa` primary key of the `airports` data file.  These columns all contain FAA airport codes. In `airports`, every row of the `faa` column contains a unique aiport code.  On the other hand, since there are many flights that share the same airport code, the `flights` data file contains many rows with the same airport codes in the `origin` and `dest` columns. 
 
 ![relational-1](https://d33wubrfki0l68.cloudfront.net/245292d1ea724f6c3fd8a92063dcd7bfb9758d02/5751b/diagrams/relational-nycflights.png)
 
