@@ -8,7 +8,7 @@ This repo was created to centralize tutorials for software installation, compute
 
 Students in Computational Biology or the lab of Dr. Chris Bird should click the link above to create a Launch account.
 
-The Launch HPC at TAMU-College Station enables you to run a Linux terminal, RStudio (R IDE), and Jupyter (Python IDE) in a webpage.
+The Launch HPC at TAMU-College Station enables you to run a Linux terminal, RStudio (R [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)), and Jupyter (Python IDE) in a webpage.
 
 ---
 
