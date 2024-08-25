@@ -140,7 +140,7 @@ Figure 4. More complex directory structure with 2 levels of nesting for more com
 
 ## Documentation of Data Files and Organization
 
-A `README.md` file should occur in every dir and should describe the files and their contents.  It's also a good idea to make a diagram, like Fig 2, describing the relationships among your data files and displaying that in the README.md.
+A `README.md` file should occur in every dir and should describe the files and their contents.  Make an ERD, like Fig 2, describing the relationships among your data files and displaying that in the README.md.
 
 ---
 
