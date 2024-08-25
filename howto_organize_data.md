@@ -150,6 +150,7 @@ The changes to your project directory should be tracked with `git` and stored on
 
 All files associated with the project should be stored in the repo.  All work conducted on the files in the project should be conducted in the repo.  Only one copy of the repo should be on one computer to avoid confusion.  Every time you sit down to work at the computer, you should `pull` all changes to the repo from `GitHub`. Everytime you walk away from your computer, you should push your changes back to `GitHub`.  
 
+Box 1.  Commonly used `git` commands.
 ```bash
 # copy the repo from GitHub to your local computer
 git clone replace_this_text_with_the_path_to_your_repo
@@ -164,7 +165,7 @@ git commit -m "replace this text with your own unique message describing the cha
 # update the repo on GitHub to match your local repo
 git push
 ```
-Fig. 5 Commonly used `git` commands.
+
 
 ---
 
