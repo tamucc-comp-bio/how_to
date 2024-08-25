@@ -7,11 +7,13 @@
 
 After data is digitized, *all manipulations of the data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. 
 
+As an example, if you collect latitude and longitude of locations using a GPS, you should not be moving that data over into MS Excel because there is no record of how that transfer of the data occurred that could be evaluated by an independent observer.  Rather, you would write a script that [joins](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) the GPS waypoints to the other [metadata](https://en.wikipedia.org/wiki/Metadata) associated with the locations.
+
 ---
 
 ## Tidy Data
 
-It is important to be deliberate and methodical in the organization of your data.  You will likely work with many data formats, most of them being unwieldy and not "[tidy](https://vita.had.co.nz/papers/tidy-data.pdf)".  You do, however, have control over your metadata and the information that you extract from raw data files of varying formats.  For most biologists, the format that be the most benficial and easy to understand will be tidy formatted data files organized as a [relational database](https://en.wikipedia.org/wiki/Relational_database).
+It is important to be deliberate and methodical in the organization of your data.  You will likely work with many data formats, most of them being unwieldy and not "[tidy](https://vita.had.co.nz/papers/tidy-data.pdf)".  You do, however, have control over your metadata and the information that you extract from raw data files of varying formats.  For most biologists, the tidy format be the most benficial and easy to understand will be tidy formatted data files organized as a [relational database](https://en.wikipedia.org/wiki/Relational_database).
 
 ![tidy-1](https://github.com/Ph-IRES/2024_LastName_ProjName/assets/12803659/b3c8f084-9b89-405b-8bd2-1b02e0acf8f0)
 
