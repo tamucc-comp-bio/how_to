@@ -7,7 +7,7 @@
 
 After data is digitized, *all manipulations of the data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. 
 
-As an example, if you collect latitude and longitude of locations using a GPS, you should not be moving that data over into MS Excel because there is no record of how that transfer of the data occurred that could be evaluated by an independent observer.  Rather, you would write a script that [joins](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) the GPS waypoints to the other [metadata](https://en.wikipedia.org/wiki/Metadata) associated with the locations.
+As an example, if you collect latitude and longitude of locations using a GPS, you should not be moving that data over into MS Excel because there is no record of how that transfer of the data occurred that could be evaluated by an independent observer.  Rather, you would write the commands to [join](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) the GPS waypoints to the other [metadata](https://en.wikipedia.org/wiki/Metadata) associated with the locations in a file (script) that can be executed by a computer.
 
 ---
 
