@@ -21,7 +21,7 @@ As an example, if you collect latitude and longitude of locations using a GPS, y
 
 ---
 
-## Relationships Between Data Files
+## Relationships Between Data Files (Databases)
 
 We will focus on organizing our data based upon the relational model (Codd 1970) as a [relational database](https://en.wikipedia.org/wiki/Relational_database).  The relational database we describe here consists of several tidy data files that are connected by common columns of data (keys).  
 
