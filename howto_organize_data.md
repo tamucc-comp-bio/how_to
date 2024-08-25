@@ -144,9 +144,31 @@ A `README.md` file should occur in every dir and should describe the files and t
 
 ---
 
-## Tracking Changes and Sharing Your Project with [Git](https://en.wikipedia.org/wiki/Git) and [GitHub](https://en.wikipedia.org/wiki/GitHub)
+## Tracking Changes and Sharing Your Project with [`git`](https://en.wikipedia.org/wiki/Git) and [`GitHub`](https://en.wikipedia.org/wiki/GitHub)
 
-All raw data files should be stored in your `git` repository in a directory named `data`.  
+The changes to your project directory should be tracked with `git` and stored on `GitHub`.  `git` is version control software that tracks all changes to text files in a [repository](https://en.wikipedia.org/wiki/Repository_(version_control)). You will make your project directory, including all subdirectories and files, a `git` repository.  You then store your repository (repo) on `GitHub`, a cloud storage platform that is free for academics and includes several useful tools for collaboration. 
+
+All files associated with the project should be stored in the repo.  All work conducted on the files in the project should be conducted in the repo.  Only one copy of the repo should be on one computer to avoid confusion.  Every time you sit down to work at the computer, you should `pull` all changes to the repo from `GitHub`. Everytime you walk away from your computer, you should push your changes back to `GitHub`.  
+
+```bash
+# copy the repo from GitHub to your local computer
+git clone replace_this_text_with_the_path_to_your_repo
+
+# pull down changes from the repo version on GitHub to the repo on your local computer
+git pull
+
+# record changes made to your repo
+git add --all
+git commit -m "replace this text with your own unique message describing the changes made"
+
+# update the repo on GitHub to match your local repo
+git push
+```
+Fig. 5 Commonly used `git` commands.
+
+```
+
+
 
 ---
 
