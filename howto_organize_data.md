@@ -166,10 +166,6 @@ git push
 ```
 Fig. 5 Commonly used `git` commands.
 
-```
-
-
-
 ---
 
 ### [Return to how_to/README.md](https://github.com/tamucc-comp-bio/how_to/blob/main/README.md)
