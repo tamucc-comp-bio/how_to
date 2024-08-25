@@ -15,11 +15,12 @@ Figure 1.  From [R for Data Science](https://r4ds.hadley.nz/data-tidy).  In tidy
 
 ## Data Science Philosophy (Document All Data Manipulations)
 
-After data is digitized, *all manipulations of the data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. 
+After data is digitized, *all manipulations and analyses of the data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. 
 
 As an example, if you collect latitude and longitude of locations using a GPS, you should not be moving that data over into MS Excel because there is no record of how that transfer of the data occurred that could be evaluated by an independent observer.  Rather, you would write the commands in a file (script) that can be executed by a computer to [join](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) the GPS waypoints to the other [metadata](https://en.wikipedia.org/wiki/Metadata) associated with the locations. 
 
 If your digitized data is not tidy, then you would write a script to tidy it. It follows that, ultimately, all of your data will be organized into tidy tables. When considering all data for a MS Thesis, Ph.D. Dissertation chapter, or a publication in a scientific journal; most projects will involve many unique tidy tables which need to be organized into a [database](https://en.wikipedia.org/wiki/Database). 
+
 
 ---
 
@@ -39,32 +40,34 @@ It is advisable to create an ERD such as that displayed in Fig. 2 for your resea
 
 ---
 
-## Naming Files and Columns
+## Naming of Files, Columns, and Directories
 
 All files and columns should be named using human readable and understandable words (not abbreviations).  The contents of the file and the columns should be self evident from their names.  Avoid using spaces, use `gps_waypoints.gpx` instead of `gps waypoints.gpx`.
 
 ---
 
-## Directory Structure
+## Universal Directory Structure
+
+For the vast majority of biological projects, the files can and should be organized in a common directory (folder) structure. This facilitates transparency and collaboration among multiple scientists.  If we do not deliberately plan the directory structure of a project and be disciplined in following that plan, the resulting computer directory names and structure can often only be navigated by the person who created it.  And if enough time passes, not even the creator of the project directory can efficiently navigate it.  
 
 ``` css
 project_name/
 ├── data_raw/
 ├── data_processed/
+├── documentation/
 ├── scripts/
 ├── results/
-├── documentation/
 └── references/
 ```
 Figure 3. Simple default directory structure for basic projects
 
-All raw data files should be stored in you `git` repository in a directory named `data`.  Avoid unnecessary creation of additional directories and especially try to avoid nesting directories unless neccessary for organizational purposes (avoid creating a maze).  One rule to follow is that for every dir you create, you need to put a `README.md` in that dir to describe the contents. [Consult this guide to formatting the contents of a *.md file](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Avoid unnecessary creation of additional directories and especially try to avoid nesting directories unless deemed neccessary for organizational purposes (avoid creating a maze).  One rule to follow is that for every dir you create, you need to put a `README.md` in that dir to describe the contents. [Consult this guide to formatting the contents of a *.md file](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). This will become particularly useful when navigating the project in [GitHub](https://en.wikipedia.org/wiki/GitHub), which will employ for storing, tracking changes of, collaborating on, and sharing the project.
 
 ``` css
 project_name/
 ├── data/
-│   ├── raw_data/
-│   └── processed_data/
+│   ├── raw/
+│   └── processed/
 ├── scripts/
 │   ├── data_processing/
 │   ├── analysis/
@@ -85,13 +88,13 @@ project_name/
 │   └── tests/
 └── config/
 ```
-Figure 4. More complex directory structure with 2 levels of nesting for more complex projects.  Generally students should use Fig 3 as the model.
+Figure 4. More complex directory structure with 2 levels of nesting for more complex projects.  Generally students should use Fig 3 as the model and only add an additional level of nesting if necessary to organize large numbers of files. 
 
 1. Data
 
-    raw_data/: Contains unprocessed raw data files.
+    `data/raw/`: Contains unprocessed raw data files.
    
-    processed_data/: Contains data that has been cleaned and processed.
+    `data/processed/`: Contains data that has been cleaned and processed.
 
 3. Scripts
 
@@ -139,6 +142,11 @@ Figure 4. More complex directory structure with 2 levels of nesting for more com
 
 A `README.md` file should occur in every dir and should describe the files and their contents.  It's also a good idea to make a diagram, like Fig 2, describing the relationships among your data files and displaying that in the README.md.
 
+---
+
+## Tracking Changes and Sharing Your Project with Git and GitHub
+
+All raw data files should be stored in your `git` repository in a directory named `data`.  
 
 ---
 
