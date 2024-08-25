@@ -1,4 +1,4 @@
-# how_to
+# how_to: Computational Biology
 
 This repo was created to centralize tutorials for software installation, computer set up, account creation, and organization of digitized data that is relevant to Biologists seeking to employ core Data Science principals to organize, wrangle, analyze, and present their data.
 
