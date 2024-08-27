@@ -32,7 +32,9 @@ For manually recoreded data, you can type it into a spreadsheet in the tidy form
 
 ## Data Science Philosophy (Document All Data Manipulations)
 
-After data is digitized, *all manipulations and analyses of the data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. 
+After data is digitized, *all manipulations and analyses of the data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and verification.   
+
+In today’s research environment, transparency and reproducibility are not just ideals but requirements. Many scientific journals now require that you provide the scripts used to process your data as part of your publication. This practice is increasingly important because it ensures that your research can be independently verified and built upon by others.
 
 As an example, if you collect latitude and longitude of locations using a GPS, you should not be moving that data over into MS Excel because there is no record of how that transfer of the data occurred that could be evaluated by an independent observer.  Rather, you would write the commands in a file (script) that can be executed by a computer to [join](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) the GPS waypoints to the other [metadata](https://en.wikipedia.org/wiki/Metadata) associated with the locations. 
 
