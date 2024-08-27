@@ -144,9 +144,6 @@ Examples of Naming Conventions
 * Avoid Spaces: Use underscores or hyphens instead of spaces in file, column, and directory names. For example, `sample_data.csv` is preferred over `sample data.csv`.
 * Use Lowercase: Stick to lowercase for names to avoid issues with case sensitivity on different operating systems.
 * Be Descriptive: Names should provide enough information so that anyone (including your future self) can understand what the file, column, or directory contains without having to open it.
-* Avoid unnecessary creation of additional directories and especially try to avoid nesting directories unless deemed neccessary for organizational purposes (avoid creating a maze).
-* Create a `README.md` file in each directory to describe the contents. [Consult this guide to formatting the contents of a *.md file](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-   * This will become particularly useful when navigating the project in [GitHub](https://en.wikipedia.org/wiki/GitHub), which will employ for storing, tracking changes of, collaborating on, and sharing the project.
 
 By following these conventions, you create a structure that is not only easy to navigate but also facilitates collaboration with others. Clear and consistent naming helps ensure that your project remains organized and accessible, both now and in the future.
 
@@ -155,6 +152,19 @@ By following these conventions, you create a structure that is not only easy to 
 ## Universal Directory Structure
 
 For the vast majority of biological projects, the files can and should be organized in a common directory (folder) structure. This facilitates transparency and collaboration among multiple scientists. However, it’s important to remember that these structures are starting points and can be adapted to fit the specific needs of your project. If we do not deliberately plan the directory structure of a project and be disciplined in following that plan, the resulting computer directory names and structure can often only be navigated by the person who created it.  And if enough time passes, not even the creator of the project directory can efficiently navigate it. The goal is create a directory structure that can be navigated by anybody without your assistance.
+
+#### General Guidelines
+
+* Minimize the number of directories by only creating those that are needed to organize the files adequately
+   * Use Descriptive Filenames: Rather than creating new directories for each file type or stage, use descriptive filenames that include relevant information, such as `data_processed_2023.csv` or `data_cleaned_v2.txt`. This approach can reduce the need for additional directories while maintaining clarity
+   * Combine Similar Tasks: Where possible, combine similar tasks into a single directory. For instance, if you have scripts for both data processing and analysis, you might keep them in a single `scripts/` directory rather than creating separate `data_processing/` and `analysis/` directories.
+   * Different Stages of Workflow: If your workflow involves distinct stages that produce very different types of outputs (e.g., raw vs. final results), use directories to separate these stages, but keep this to a minimum. For example, you might have just `data/`, `scripts/`, and `results/`.
+* Minimize the number of nested directories.
+   * Flat Structure with Contextual Naming: Aim for a flat directory structure where possible. Use filenames that provide context, so additional subdirectories aren't necessary. For example, store all raw and processed data in a single `data/` directory, but distinguish between them with filenames like `raw_data_2023.csv` and `processed_data_2023.csv`.
+   * Significant File Volume: Create a new directory only when a single directory becomes unmanageable (e.g., more than 20-30 files), and only if grouping files by type or purpose would significantly enhance clarity.
+   * 
+* Create a `README.md` file in each directory to describe the contents. [Consult this guide to formatting the contents of a *.md file](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+   * This will become particularly useful when navigating the project in [GitHub](https://en.wikipedia.org/wiki/GitHub), which will employ for storing, tracking changes of, collaborating on, and sharing the project.
 
 #### Simple Project: Baseline Structure
 
