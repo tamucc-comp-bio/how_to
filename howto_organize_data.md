@@ -102,9 +102,7 @@ write_csv(combined_data, "combined_location_data.csv", row.names = FALSE)
 
 ## Relationships Between Data Files (Databases)
 
-When considering all data for a MS Thesis, Ph.D. Dissertation chapter, or a publication in a scientific journal; most projects will involve many unique tidy tables which need to be organized into a [database](https://en.wikipedia.org/wiki/Database). 
-
-We will focus on organizing our data based upon the relational model (Codd 1970) as a [relational database](https://en.wikipedia.org/wiki/Relational_database).  The relational database we describe here consists of several tidy data files that are connected by common columns of values (keys).  
+When considering all data for a MS Thesis, Ph.D. Dissertation chapter, or a publication in a scientific journal; most projects will involve many unique tidy tables which need to be organized into a [database](https://en.wikipedia.org/wiki/Database). We will focus on organizing our data based upon the relational model (Codd 1970) as a [relational database](https://en.wikipedia.org/wiki/Relational_database).  The relational database we describe here consists of several tidy data files that are connected by common columns of values (keys).  
 
 The [primary key](https://en.wikipedia.org/wiki/Primary_key) is the column with a unique value for each observation (row) or a set of columns that uniquely define an observation when combined. In Fig. 2 below, the column named `faa` is the primary key for the `airports` table. In contrast, the `flights` table has a primary key comprized of the columns named `year`, `month`, `day`, `hour`, and `flight`. 
 
@@ -228,7 +226,7 @@ The changes to your project directory should be tracked with `git` and stored on
 
 All files associated with the project should be stored in the repo.  All work conducted on the files in the project should be conducted in the repo.  Only one copy of the repo should be on one computer to avoid confusion.  Every time you sit down to work at the computer, you should `pull` all changes to the repo from `GitHub`. Everytime you walk away from your computer, you should push your changes back to `GitHub`.  
 
-Box 2.  Commonly used `git` commands.
+Box 3.  Commonly used `git` commands.
 ```bash
 # copy the repo from GitHub to your local computer
 git clone replace_this_text_with_the_path_to_your_repo
