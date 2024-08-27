@@ -125,19 +125,19 @@ Consistent and descriptive naming conventions are crucial for organizing your da
 Examples of Naming Conventions
 
 1. File Names:
-   * GPS Waypoints: Instead of using a generic name like data1.gpx, use a descriptive name like gps_waypoints_siteA_2023.gpx. This name indicates the file contains GPS waypoints for Site A collected in 2023.
-   * Environmental Data: A file containing environmental data collected from a specific site might be named env_data_siteA_2023.csv.
-   * Sample Metadata: Metadata related to biological samples could be named sample_metadata_experiment1.csv, clearly indicating its content and context.
+   * GPS Waypoints: Instead of using a generic name like `data1.gpx`, use a descriptive name like `gps_waypoints_siteA_2023.gpx`. This name indicates the file contains GPS waypoints for Site A collected in 2023.
+   * Environmental Data: A file containing environmental data collected from a specific site might be named `env_data_siteA_2023.csv`.
+   * Sample Metadata: Metadata related to biological samples could be named `sample_metadata_experiment1.csv`, clearly indicating its content and context.
 
 2. Column Names:
-   * Latitude and Longitude: Instead of lat and long, use latitude and longitude to clearly indicate the geographical coordinates.
-   * Species Names: For a column containing species names, instead of using sp_name, use species_name. This avoids confusion and ensures clarity.
-   * Measurement Data: If you're recording measurements, name your columns descriptively, such as leaf_length_mm instead of just length. This indicates that the measurement is of leaf length and is recorded in millimeters.
+   * Latitude and Longitude: Instead of `la`t and `long`, use `latitude` and `longitude` to clearly indicate the geographical coordinates.
+   * Species Names: For a column containing species names, instead of using `sp_name`, use `species_name`. This avoids confusion and ensures clarity.
+   * Measurement Data: If you're recording measurements, name your columns descriptively, such as `leaf_length_mm` instead of just `length`. This indicates that the measurement is of leaf length and is recorded in millimeters. The context given by the word "length" ensures that the abbreviation "mm" will be interpreted as "millimeters", so the abbreviation is ok in this case.
 
 3. Directory Names:
-   * Raw Data: A directory for storing unprocessed data files should be named data_raw/ rather than just raw/ or rawdata/. This clearly indicates that it contains raw data.
-   * Processed Data: Similarly, use data_processed/ for directories containing cleaned and processed data files.
-   * Results and Outputs: A directory containing analysis results could be named results_analysis_2023/, specifying what the results are related to and when they were generated.
+   * Raw Data: A directory for storing unprocessed data files should be named `data_raw/` rather than just `raw/` or `rawdata/`. This clearly indicates that it contains raw data.  Note that if a hierarchical directory structure is chosen, then `data/raw` is acceptable because the word "raw" is contextualized by the name of its parent directory `data/`.
+   * Processed Data: Similarly, use `data_processed/` for directories containing cleaned and processed data files.
+   * Results and Outputs: A directory containing analysis results could be named `results/` or `output/` rather than just saving the files into `data/`.
         
 #### General Guidelines
 
