@@ -24,6 +24,10 @@ Figure 1.  From [R for Data Science](https://r4ds.hadley.nz/data-tidy).  In tidy
 
 For most biologists, working with data in a tidy format is not only beneficial but essential for effective data analysis. Tidy data is structured in a way that makes it easy to manipulate, analyze, and visualize using various statistical tools and programming languages, such as R and Python. The tidy format ensures consistency across datasets, reducing the likelihood of errors and simplifying the process of integrating data from different sources.  This tidy structure also allows for straightforward operations, such as filtering, summarizing, and visualizing data, because the relationships between variables are clear and unambiguous.
 
+#### Making Data Tidy
+
+If your data isn’t already in a tidy format, you can transform it using data wrangling tools like those available in R (e.g., tidyverse packages). You should not manually convert your data to tidy format, e.g. don't use MS Excel.
+
 ---
 
 ## Data Science Philosophy (Document All Data Manipulations)
