@@ -38,11 +38,35 @@ The tradition, in Biology, is for data to be manipulated manually in a spreadshe
 
 On key principle of data science is: *all manipulations and analyses of digitized data should be documented and executed in code*. This facilitates transparency, reproduction of methods, and verification. By documenting all data manipulations and analyses in code, you create a transparent record of your workflow. This not only allows others to follow your methods but also protects you from potential errors that can arise from manual data handling. 
 
+#### Practical Example: Data Cleaning
+
+Let’s say you’ve digitized field data in a spreadsheet that includes observations of various species across different locations and dates. The data needs to be cleaned before analysis, such as standardizing species names, removing duplicates, or filtering out incomplete records. Instead of manually editing the spreadsheet, you should write a script to perform these tasks. This approach not only saves time but also ensures that the process can be easily replicated.
+
+Box 1. Example R code to clean field data typed into a spreadsheet, then converted to a [CSV file](https://en.wikipedia.org/wiki/Comma-separated_values).
+
+```r
+# Load necessary packages
+library(dplyr)
+
+# Import raw data
+raw_data <- read_csv("field_data.csv")
+
+# Clean the data
+clean_data <- raw_data %>%
+  mutate(species = tolower(species)) %>%   # Standardize species names
+  filter(!is.na(location)) %>%              # Remove records with missing locations
+  distinct()                                # Remove duplicate records
+
+# Save the cleaned data
+write_csv(clean_data, "field_data_clean.csv", row.names = FALSE)
+
+```
+
 #### Practical Example: Joining GPS Data with Metadata 
 
-As an example, if you collect latitude and longitude of locations using a GPS, you should not be [joining](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) that data with additional location [metadata](https://en.wikipedia.org/wiki/Metadata) manually in MS Excel because there is no record of how that transfer of the data occurred that could be verified by an independent observer.  Misalignment of the waypoints and location metadata could have large impacts on the results of data analysis and conclusions.  Rather, you would write the commands in a file (script) that can be executed by a computer to join the GPS waypoints to the other metadata associated with the locations. 
+GIS data in a field project will often be collected using a handheld GPS which stores that information in a `gpx` file.  To [join](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) that GPS data with the cleaned field [metadata](https://en.wikipedia.org/wiki/Metadata), you should write the commands in a file (script) that can be executed by a computer to ensure reproducibility and accuracy. 
 
-Box 1. Example R code to join GPS waypoints stored in a `gpx` file with a tidy table with additional information (metadata) about each location.
+Box 2. Example R code to join GPS waypoints stored in a `gpx` file with a tidy table with additional information (metadata) about each location.
 
 ```r
 
@@ -56,7 +80,7 @@ library(tmaptools) # For reading GPX files
 gpx_data <- st_read("waypoints.gpx", layer = "waypoints")
 
 # Import additional metadata from a CSV file
-metadata <- read.csv("location_metadata.csv")
+metadata <- read_csv("field_data_clean.csv")
 
 # Clean and prepare data for joining
 gpx_data_clean <- gpx_data %>%
@@ -70,15 +94,15 @@ combined_data <- gpx_data_clean %>%
   left_join(metadata_clean, by = c("name" = "location_id"))
 
 # Save the combined data to a CSV file for further analysis
-write.csv(combined_data, "combined_location_data.csv", row.names = FALSE)
+write_csv(combined_data, "combined_location_data.csv", row.names = FALSE)
 
 ```
-
-If your digitized data is not tidy, then you would write a script to tidy it. It follows that, ultimately, all of your data will be organized into tidy tables. When considering all data for a MS Thesis, Ph.D. Dissertation chapter, or a publication in a scientific journal; most projects will involve many unique tidy tables which need to be organized into a [database](https://en.wikipedia.org/wiki/Database). 
 
 ---
 
 ## Relationships Between Data Files (Databases)
+
+When considering all data for a MS Thesis, Ph.D. Dissertation chapter, or a publication in a scientific journal; most projects will involve many unique tidy tables which need to be organized into a [database](https://en.wikipedia.org/wiki/Database). 
 
 We will focus on organizing our data based upon the relational model (Codd 1970) as a [relational database](https://en.wikipedia.org/wiki/Relational_database).  The relational database we describe here consists of several tidy data files that are connected by common columns of values (keys).  
 
@@ -204,7 +228,7 @@ The changes to your project directory should be tracked with `git` and stored on
 
 All files associated with the project should be stored in the repo.  All work conducted on the files in the project should be conducted in the repo.  Only one copy of the repo should be on one computer to avoid confusion.  Every time you sit down to work at the computer, you should `pull` all changes to the repo from `GitHub`. Everytime you walk away from your computer, you should push your changes back to `GitHub`.  
 
-Box 1.  Commonly used `git` commands.
+Box 2.  Commonly used `git` commands.
 ```bash
 # copy the repo from GitHub to your local computer
 git clone replace_this_text_with_the_path_to_your_repo
