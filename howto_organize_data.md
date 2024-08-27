@@ -141,7 +141,7 @@ Examples of Naming Conventions
         
 #### General Guidelines
 
-* Avoid Spaces: Use underscores or hyphens instead of spaces in file, column, and directory names. For example, sample_data.csv is preferred over sample data.csv.
+* Avoid Spaces: Use underscores or hyphens instead of spaces in file, column, and directory names. For example, `sample_data.csv` is preferred over `sample data.csv`.
 * Use Lowercase: Stick to lowercase for names to avoid issues with case sensitivity on different operating systems.
 * Be Descriptive: Names should provide enough information so that anyone (including your future self) can understand what the file, column, or directory contains without having to open it.
 
