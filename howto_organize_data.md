@@ -20,6 +20,10 @@ It is important to be deliberate and methodical in the organization of your data
 
 Figure 1.  From [R for Data Science](https://r4ds.hadley.nz/data-tidy).  In tidy data, one file holds one table. In each table, the rows are observations and the columns are variables that store information about the observations.  Each row should contain only 1 observation.  Each column should contain only 1 variable.  Notes about an observation can be made in a column named `notes`.  One column should contain the `observation_id` which is a [unique identifier](https://en.wikipedia.org/wiki/Unique_identifier) assigned to that observation.
 
+#### Why Tidy Data Matters
+
+For most biologists, working with data in a tidy format is not only beneficial but essential for effective data analysis. Tidy data is structured in a way that makes it easy to manipulate, analyze, and visualize using various statistical tools and programming languages, such as R and Python. The tidy format ensures consistency across datasets, reducing the likelihood of errors and simplifying the process of integrating data from different sources.  This tidy structure also allows for straightforward operations, such as filtering, summarizing, and visualizing data, because the relationships between variables are clear and unambiguous.
+
 ---
 
 ## Data Science Philosophy (Document All Data Manipulations)
