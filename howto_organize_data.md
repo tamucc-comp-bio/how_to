@@ -2,7 +2,7 @@
 
 #### Who This Guide is For
 
-This guide is designed for a wide range of individuals engaged in biological research, including undergraduate students, graduate students, and early-career researchers. Whether you are new to organizing data or looking to refine your current practices, this guide will provide you with the foundational principles and practical strategies needed to manage your biological data effectively.
+This guide was designed for students in the classes and lab of Dr. Chris Bird, but might alse benefit a wide range of individuals engaged in biological research, including undergraduate students, graduate students, and early-career researchers. Whether you are new to organizing data or looking to refine your current practices, this guide will provide you with the foundational principles and practical strategies needed to manage your biological data effectively.
 
 #### Why Data Organization Matters
 
