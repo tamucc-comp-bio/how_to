@@ -1,5 +1,14 @@
 # How to Organize Biological Data
 
+#### Who This Guide is For
+
+This guide is designed for a wide range of individuals engaged in biological research, including undergraduate students, graduate students, and early-career researchers. Whether you are new to organizing data or looking to refine your current practices, this guide will provide you with the foundational principles and practical strategies needed to manage your biological data effectively.
+
+#### Why Data Organization Matters
+
+Proper data organization is not just a matter of convenience—it's a critical component of rigorous scientific practice. Well-organized data ensures that your research can be easily understood, reproduced, and built upon by others. In an era where transparency and data sharing are becoming increasingly important, your ability to provide a clear, organized dataset is essential for collaboration and for complying with data management requirements imposed by funding agencies and journals.
+
+By following the principles outlined in this guide, you'll not only streamline your current projects but also future-proof your research, making it easier to revisit, analyze, and share your findings down the line.
 
 ---
 
