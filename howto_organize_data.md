@@ -274,6 +274,7 @@ Proper documentation is crucial for ensuring that your data and its organization
 [Consult this guide to formatting the contents of a *.md file](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 #### Content of `README.md` by Directory
+
 1. `data/`
    * _Directory Purpose_: A brief explanation that this directory holds both raw, unaltered data files as they were originally collected or received and processed or cleaned and is in a tidy format ready for analysis.
    * _File Descriptions_: A list of the data files in the directory with a short description of each file's content. For example:
@@ -318,11 +319,8 @@ File Format Notes: Any important information about the formats of the files (e.g
          * primary results:
             * insert plots, tables, notes here.   
         
-A `README.md` file should occur in every dir to orient then person using  and should describe the files and their contents.  Make an ERD, like Fig 2, describing the relationships among your data files and displaying that in the README.md.
-
-
-
-
+5. `references`
+   * Directory Purpose: A brief explanation that this directory contains all relevant reference materials and literature.
 
 ---
 
