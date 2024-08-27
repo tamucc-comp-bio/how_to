@@ -222,13 +222,13 @@ project_name/
 ```
 Figure 4. More complex directory structure with 2 levels of nesting for more complex projects.  Generally students should use Fig 3 as the model and only add an additional level of nesting if necessary to organize large numbers of files. 
 
-1. `data`
+1. `data/`
 
-    `data/raw/`: Contains unprocessed raw data files.
+    `raw/`: Contains unprocessed raw data files.
    
-    `data/processed/`: Contains data that has been cleaned and processed.
+    `processed/`: Contains data that has been cleaned and processed.
 
-3. `scripts`
+3. `scripts/`
 
     `data_processing/`: Scripts for cleaning and processing raw data.
    
@@ -236,7 +236,7 @@ Figure 4. More complex directory structure with 2 levels of nesting for more com
    
     `visualization/`: Scripts for creating visualizations (graphs, plots, etc.).
 
-5. `results`
+5. `results/`
 
     `figures/`: Contains generated figures, graphs, and plots.
    
@@ -244,7 +244,7 @@ Figure 4. More complex directory structure with 2 levels of nesting for more com
    
     `reports/`: Final reports or intermediate analysis results.
 
-7. `documentation`
+7. `documentation/`
 
     `manuals/`: Any manuals or supplementary documentation.
    
@@ -252,21 +252,19 @@ Figure 4. More complex directory structure with 2 levels of nesting for more com
    
     `notebooks/`: Jupyter or R notebooks with exploratory analyses or step-by-step procedures.
 
-9. `references`
+9. `references/`
 
     `papers/: Relevant research papers and articles.
    
     `notes/`: Notes and summaries of key literature.
 
-11. `code`
+11. `code/`
 
     `src/`: Source code for any custom scripts, functions, or modules.
     
     `tests/`: Unit tests and other tests for your code.
 
-13. `config`
-
-    `config/`: Configuration files for software or analysis tools (e.g., YAML, JSON).
+13. `config/` : Configuration files for software or analysis tools (e.g., YAML, JSON).
    
 ---
 
