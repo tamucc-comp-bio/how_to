@@ -26,7 +26,7 @@ For most biologists, working with data in a tidy format is not only beneficial b
 
 #### Making Data Tidy
 
-If your data isn’t already in a tidy format, you can transform it using data wrangling tools like those available in R (e.g., tidyverse packages). You should not manually convert your data to tidy format, e.g. don't use MS Excel.
+If your data isn’t already in a tidy format, you can transform it using data wrangling tools like those available in R (e.g., tidyverse packages). You should not manually convert your data to tidy format because the changes are not tracked an it will be difficult to correct mistakes, e.g. don't use MS Excel.
 
 ---
 
