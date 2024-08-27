@@ -219,7 +219,6 @@ project_name/
 │   └── tests/
 └── config/
 ```
-Figure 4. More complex directory structure with 2 levels of nesting for more complex projects.  Generally students should use Fig 3 as the model and only add an additional level of nesting if necessary to organize large numbers of files. 
 
 1. `data/`
 
