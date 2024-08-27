@@ -156,13 +156,15 @@ For the vast majority of biological projects, the files can and should be organi
 #### General Guidelines
 
 * Minimize the number of directories by only creating those that are needed to organize the files adequately
-   * Use Descriptive Filenames: Rather than creating new directories for each file type or stage, use descriptive filenames that include relevant information, such as `data_processed_2023.csv` or `data_cleaned_v2.txt`. This approach can reduce the need for additional directories while maintaining clarity
-   * Combine Similar Tasks: Where possible, combine similar tasks into a single directory. For instance, if you have scripts for both data processing and analysis, you might keep them in a single `scripts/` directory rather than creating separate `data_processing/` and `analysis/` directories.
-   * Different Stages of Workflow: If your workflow involves distinct stages that produce very different types of outputs (e.g., raw vs. final results), use directories to separate these stages, but keep this to a minimum. For example, you might have just `data/`, `scripts/`, and `results/`.
+   * _Use Descriptive Filenames_: Rather than creating new directories for each file type or stage, use descriptive filenames that include relevant information, such as `data_processed_2023.csv` or `data_cleaned_v2.txt`. This approach can reduce the need for additional directories while maintaining clarity
+   * _Combine Similar Tasks_: Where possible, combine similar tasks into a single directory. For instance, if you have scripts for both data processing and analysis, you might keep them in a single `scripts/` directory rather than creating separate `data_processing/` and `analysis/` directories.
+   * _Different Stages of Workflow_: If your workflow involves distinct stages that produce very different types of outputs (e.g., raw vs. final results), use directories to separate these stages, but keep this to a minimum. For example, you might have just `data/`, `scripts/`, and `results/`.
+    * Prioritize Simplicity: When in doubt, prioritize simplicity and clarity over the creation of additional directories. This helps maintain an organized and easy-to-navigate project structure.
+      
 * Minimize the number of nested directories.
-   * Flat Structure with Contextual Naming: Aim for a flat directory structure where possible. Use filenames that provide context, so additional subdirectories aren't necessary. For example, store all raw and processed data in a single `data/` directory, but distinguish between them with filenames like `raw_data_2023.csv` and `processed_data_2023.csv`.
-   * Significant File Volume: Create a new directory only when a single directory becomes unmanageable (e.g., more than 20-30 files), and only if grouping files by type or purpose would significantly enhance clarity.
-   * 
+   * _Flat Structure with Contextual Naming_: Aim for a flat directory structure where possible. Use filenames that provide context, so additional subdirectories aren't necessary. For example, store all raw and processed data in a single `data/` directory, but distinguish between them with filenames like `raw_data_2023.csv` and `processed_data_2023.csv`.
+   * _Significant File Volume_: Create a new directory only when a single directory becomes unmanageable (e.g., more than 20-30 files), and only if grouping files by type or purpose would significantly enhance clarity.
+
 * Create a `README.md` file in each directory to describe the contents. [Consult this guide to formatting the contents of a *.md file](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
    * This will become particularly useful when navigating the project in [GitHub](https://en.wikipedia.org/wiki/GitHub), which will employ for storing, tracking changes of, collaborating on, and sharing the project.
 
