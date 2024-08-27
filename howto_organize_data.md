@@ -274,7 +274,7 @@ Proper documentation is crucial for ensuring that your data and its organization
 
 #### Content of `README.md` by Directory
 
-1. `data/`
+1. `data/README.md`
    * _Directory Purpose_: A brief explanation that this directory holds both raw, unaltered data files as they were originally collected or received and processed or cleaned and is in a tidy format ready for analysis.
    * _File Descriptions_: A list of the data files in the directory with a short description of each file's content. For example:
 
@@ -289,10 +289,10 @@ Proper documentation is crucial for ensuring that your data and its organization
    * _Processing Summary_: A high-level summary of the steps taken to process the raw data, such as outlier removal, data normalization, or data transformation and the person who conducted this.
 File Format Notes: Any important information about the formats of the files (e.g., CSV, TXT) and how they should be interpreted.
 
-2. `documentation/`
+2. `documentation/README.md`
    * Directory Purpose: A brief explanation that this directory contains all relevant documentation, including manuals, protocols, and other supporting documents.
 
-3. `scripts/`
+3. `scripts/README.md`
    * Directory Purpose: A brief explanation that this directory contains all scripts written to process, analyze, and visualize data.
    * Script Descriptions: A list of scripts with brief descriptions of their purpose, inputs and outputs. For example:
       * `data_cleaning.R`: Script used to clean and tidy the raw plant growth data.
@@ -306,7 +306,7 @@ File Format Notes: Any important information about the formats of the files (e.g
    * Execution Instructions: Basic instructions on how to run each script, including any dependencies or required input files.
       * A relationship diagram depicting the interdepencenies of the scripts, their inputs and their outputs can be useful if there is complexity
 
-4. `results`
+4. `results/README.md`
    * Directory Purpose: A brief explanation that this directory holds the results of data analysis, including any generated figures, tables, or reports.
    * File Descriptions: A list of results files with descriptions. For example:
       *  `growth_analysis_output.csv`: Results of the regression analysis on plant growth data.
@@ -318,7 +318,7 @@ File Format Notes: Any important information about the formats of the files (e.g
          * primary results:
             * insert plots, tables, notes here.   
         
-5. `references`
+5. `references/README.md`
    * Directory Purpose: A brief explanation that this directory contains all relevant reference materials and literature.
 
 ---
