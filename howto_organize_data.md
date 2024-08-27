@@ -118,7 +118,34 @@ It is advisable to create an ERD such as that displayed in Fig. 2 for your resea
 
 ## Naming of Files, Columns, and Directories
 
-All files and columns should be named using human readable and understandable words (not abbreviations).  The contents of the file and the columns should be self evident from their names.  Avoid using spaces, use `gps_waypoints.gpx` instead of `gps waypoints.gpx`.
+#### Consistency in Naming
+
+Consistent and descriptive naming conventions are crucial for organizing your data in a way that is intuitive and easy to navigate. All files, columns, and directories should be named using human-readable and understandable words or widely used acronyms, avoiding abbreviations that might not be clear to others (or to yourself in the future). The contents of the file and the columns should be self-evident from their names.
+
+Examples of Naming Conventions
+
+1. File Names:
+   * GPS Waypoints: Instead of using a generic name like data1.gpx, use a descriptive name like gps_waypoints_siteA_2023.gpx. This name indicates the file contains GPS waypoints for Site A collected in 2023.
+   * Environmental Data: A file containing environmental data collected from a specific site might be named env_data_siteA_2023.csv.
+   * Sample Metadata: Metadata related to biological samples could be named sample_metadata_experiment1.csv, clearly indicating its content and context.
+
+2. Column Names:
+   * Latitude and Longitude: Instead of lat and long, use latitude and longitude to clearly indicate the geographical coordinates.
+   * Species Names: For a column containing species names, instead of using sp_name, use species_name. This avoids confusion and ensures clarity.
+   * Measurement Data: If you're recording measurements, name your columns descriptively, such as leaf_length_mm instead of just length. This indicates that the measurement is of leaf length and is recorded in millimeters.
+
+3. Directory Names:
+   * Raw Data: A directory for storing unprocessed data files should be named data_raw/ rather than just raw/ or rawdata/. This clearly indicates that it contains raw data.
+   * Processed Data: Similarly, use data_processed/ for directories containing cleaned and processed data files.
+   * Results and Outputs: A directory containing analysis results could be named results_analysis_2023/, specifying what the results are related to and when they were generated.
+        
+#### General Guidelines
+
+* Avoid Spaces: Use underscores or hyphens instead of spaces in file, column, and directory names. For example, sample_data.csv is preferred over sample data.csv.
+* Use Lowercase: Stick to lowercase for names to avoid issues with case sensitivity on different operating systems.
+* Be Descriptive: Names should provide enough information so that anyone (including your future self) can understand what the file, column, or directory contains without having to open it.
+
+By following these conventions, you create a structure that is not only easy to navigate but also facilitates collaboration with others. Clear and consistent naming helps ensure that your project remains organized and accessible, both now and in the future.
 
 ---
 
