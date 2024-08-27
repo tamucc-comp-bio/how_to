@@ -161,7 +161,7 @@ For the vast majority of biological projects, the files can and should be organi
    * _Different Stages of Workflow_: If your workflow involves distinct stages that produce very different types of outputs (e.g., raw vs. final results), use directories to separate these stages, but keep this to a minimum. For example, you might have just `data/`, `scripts/`, and `results/`.
     * Prioritize Simplicity: When in doubt, prioritize simplicity and clarity over the creation of additional directories. This helps maintain an organized and easy-to-navigate project structure.
       
-* Minimize the number of nested directories.
+* Minimize the number of hierarchically nested directories and the number of hierarchical levels.
    * _Flat Structure with Contextual Naming_: Aim for a flat directory structure where possible. Use filenames that provide context, so additional subdirectories aren't necessary. For example, store all raw and processed data in a single `data/` directory, but distinguish between them with filenames like `raw_data_2023.csv` and `processed_data_2023.csv`.
    * _Significant File Volume_: Create a new directory only when a single directory becomes unmanageable (e.g., more than 20-30 files), and only if grouping files by type or purpose would significantly enhance clarity.
 
