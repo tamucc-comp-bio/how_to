@@ -42,6 +42,8 @@ On key principle of data science is: *all manipulations and analyses of digitize
 
 As an example, if you collect latitude and longitude of locations using a GPS, you should not be [joining](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) that data with additional location [metadata](https://en.wikipedia.org/wiki/Metadata) manually in MS Excel because there is no record of how that transfer of the data occurred that could be verified by an independent observer.  Misalignment of the waypoints and location metadata could have large impacts on the results of data analysis and conclusions.  Rather, you would write the commands in a file (script) that can be executed by a computer to join the GPS waypoints to the other metadata associated with the locations. 
 
+Box 1. Example R code to join GPS waypoints stored in a `gpx` file with a tidy table with additional information (metadata) about each location.
+
 ```r
 
 # Load necessary packages
@@ -53,14 +55,8 @@ library(tmaptools) # For reading GPX files
 # Import GPS waypoints from GPX file
 gpx_data <- st_read("waypoints.gpx", layer = "waypoints")
 
-# Preview the GPX data structure
-head(gpx_data)
-
 # Import additional metadata from a CSV file
 metadata <- read.csv("location_metadata.csv")
-
-# Preview the metadata structure
-head(metadata)
 
 # Clean and prepare data for joining
 gpx_data_clean <- gpx_data %>%
