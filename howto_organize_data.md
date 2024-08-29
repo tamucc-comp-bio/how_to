@@ -62,7 +62,7 @@ write_csv(clean_data, "field_data_clean.csv", row.names = FALSE)
 
 ```
 
-#### Practical Example: Joining GPS Data with Metadata 
+#### Practical Example: Joining Data Tables 
 
 GIS data in a field project will often be collected using a handheld GPS which stores that information in a `gpx` file.  To [join](https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators) that GPS data with the cleaned field [metadata](https://en.wikipedia.org/wiki/Metadata), you should write the commands in a file (script) that can be executed by a computer to ensure reproducibility and accuracy. 
 
