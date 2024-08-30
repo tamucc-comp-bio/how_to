@@ -4,6 +4,8 @@ If you are here, you're probably wanting to set up an ssh key which allows your 
 
 Note: you have to complete steps 1-3 for each computer that you are operating and using to connect to GitHub and other remote servers; e.g., your laptop AND your HPC/Supercomputing account AND any other computer that might use for this class/workshop.
 
+---
+
 ## Step 1. Determine if you've already created a key
     
 Run the following commands in your terminal
@@ -20,7 +22,9 @@ If you see the following files (or something very similar), you have a key. Goto
    ```
     
 If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
- 
+
+---
+
 ## Step 2. Create a key pair
     
 1. You only need 1 key pair, so if you *don't* have files named `id_???` and `id_???.pub` in your `~/.ssh` dir, then you need to generate them as follows:
@@ -70,6 +74,8 @@ If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
    id_rsa  id_rsa.pub
    ```
 
+---
+
 ## Step 3.  Placing your public key on remote servers
     
 * For [GitHub](https://github.com) consult the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) (Required)
@@ -98,6 +104,13 @@ If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
    and check to make sure that only the key(s) you wanted were added.
 
    ```
+
+---
+
+## Step 4.  Goto Step 1
+
+You have to complete steps 1-3 for each computer that you are operating and using to connect to GitHub and other remote servers; e.g., your laptop AND your HPC/Supercomputing account AND any other computer that might use for this class/workshop.
+
 
 ---
 
