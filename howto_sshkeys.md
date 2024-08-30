@@ -2,7 +2,7 @@
 
 If you are here, you're probably wanting to set up an ssh key which allows your laptop to connect to a remote server, like one of our [high performance computing systems, aka supercomptuers](https://hpc.tamucc.edu/) or [GitHub](https://github.com). Follow these steps to get it setup
 
-Note: you have to complete these steps for each computer that you are operating and using to connect to GitHub and other remote servers; e.g., your laptop AND your HPC/Supercomputing account AND any other computer that might use for this class/workshop.
+Note: you have to complete steps 1-3 for each computer that you are operating and using to connect to GitHub and other remote servers; e.g., your laptop AND your HPC/Supercomputing account AND any other computer that might use for this class/workshop.
 
 ## Step 1. Determine if you've already created a key
     
