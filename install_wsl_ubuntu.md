@@ -35,6 +35,8 @@ You can install everything you need to run Windows Subsystem for Linux (WSL) by 
 
 ## Step 3.  Create your User Name and Password for Ubuntu
 
+If you are not prompted for your username, then restart your computer and type "ubuntu" into your windows search.  
+
 1. You will eventually be prompted for your User Name. I suggest using your [IslandID](https://islandid.tamucc.edu/identity/self-service/tcc/forgotuserid.jsf).  _DO NOT HIT `Enter` KEY UNTIL YOU HAVE TYPED YOUR USER NAME_
 
    ```bash
