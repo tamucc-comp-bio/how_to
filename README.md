@@ -10,11 +10,16 @@ Students in Computational Biology or the lab of Dr. Chris Bird should click the 
 
 The Launch HPC at TAMU-College Station enables you to run a Linux terminal, RStudio (R [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)), and Jupyter (Python IDE) in a webpage.
 
-Once you are logged in for the first time, run the following command to load the `nano` text editor automatically on your next login.
+Once you are logged in for the first time, select `Clusters/>_launch Shell Access` at the top pulldown menu to open the terminal. In the terminal, run the following command to load the `nano` text editor automatically on your next login.
 
 ```bash
+# Add the nano module loading to the .bashrc file
+
 printf '\n# Load Nano Text Editor\nmodule load GCCcore/12.3.0\nmodule load nano/8.0\n' >> ~/.bashrc
+
+# After running the previous line, close the terminal and reopen it
 ```
+
 
 ---
 
