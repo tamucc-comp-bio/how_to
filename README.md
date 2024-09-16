@@ -13,8 +13,7 @@ The Launch HPC at TAMU-College Station enables you to run a Linux terminal, RStu
 Once you are logged in for the first time, run the following command to load the `nano` text editor automatically on your next login.
 
 ```bash
-printf '\n# Load Nano Text Editor\nmodule load GCCcore/12.3.0\nmodule load nano/8.0\n' >> ~/.bashrcp
-rintf 'module load GCCcore/12.3.0\nmodule load nano/8.0\n' >> ~/.bashrc
+printf '\n# Load Nano Text Editor\nmodule load GCCcore/12.3.0\nmodule load nano/8.0\n' >> ~/.bashrc
 ```
 
 ---
