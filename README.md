@@ -6,9 +6,18 @@ This repo was created to centralize tutorials for software installation, compute
 
 ## [How To Set Up Your Launch HPC Account (RStudio, Python & Terminal in a Web Page)](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
-Students in Computational Biology or the lab of Dr. Chris Bird should click the link above to create a Launch account.
+Students in Computational Biology or the lab of Dr. Chris Bird should click the link above to create a Launch account. 
 
 The Launch HPC at TAMU-College Station enables you to run a Linux terminal, RStudio (R [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)), and Jupyter (Python IDE) in a webpage.
+
+You will create an ACCESS account. Then you will register for an account on Launch.  There will be a waiting period between when you create the account and it is approved for you to log on.  
+
+Once you are logged in for the first time, run the following command to load the `nano` text editor automatically on your next login.
+
+```bash
+printf '\n# Load Nano Text Editor\nmodule load GCCcore/12.3.0\nmodule load nano/8.0\n' >> ~/.bashrcp
+rintf 'module load GCCcore/12.3.0\nmodule load nano/8.0\n' >> ~/.bashrc
+```
 
 ---
 
