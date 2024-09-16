@@ -14,6 +14,7 @@ Once you are logged in for the first time, select `Clusters/>_launch Shell Acces
 
 ```bash
 # Add the nano module loading to the .bashrc file
+# you only need to do this one time, ever
 
 printf '\n# Load Nano Text Editor\nmodule load GCCcore/12.3.0\nmodule load nano/8.0\n' >> ~/.bashrc
 
