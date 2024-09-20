@@ -6,6 +6,10 @@
 
 * [PC (Notepad++)](https://notepad-plus-plus.org/downloads/)
   
+  * After installing, open `NotePad++` and goto `Settings/Preferences/New Document` and select the options in the screenshot below
+  
+  ![](notepad_eol_preferences.png)
+  
 * [MacOS (BBEdit)](https://www.barebones.com/products/textwrangler/download.html)
 
 ---
