@@ -4,6 +4,14 @@
 
 * Ubuntu should already have [gedit](https://help.gnome.org/users/gedit/stable/) installed
 
+  * If not, you should be able to install it with the following commands
+  
+  ```bash
+  sudo apt update
+  sudo apt upgrade
+  sudo apt install gedit
+  ```
+
 * [PC (Notepad++)](https://notepad-plus-plus.org/downloads/)
   
   * After installing, open `NotePad++` and goto `Settings/Preferences/New Document` and select the options in the screenshot below
