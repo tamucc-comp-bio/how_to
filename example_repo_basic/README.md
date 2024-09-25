@@ -6,14 +6,12 @@ This repository contains all files necessary for understanding, processing, and 
 ### Directory Structure
 Below is a summary of the key directories and their contents:
 
-``` css
 project_name/
 ├── data/
 ├── documentation/
 ├── scripts/
 ├── results/
 └── references/
-```
 
 ---
 
