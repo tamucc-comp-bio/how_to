@@ -141,6 +141,49 @@ If you have trouble with this, then consult the [CSB instructions](http://comput
 </p>
 </details>
 
+<details><summary>Loading R Module on TAMU Launch HPC</summary>
+<p>
+
+The Launch HPC has many software packages, but they are stored in modules.
+
+You can view a listing of all available modules using the following command
+
+```bash
+module spider
+```
+
+`module spider` opens up a `less` subshell with each software package listed. Recall that you can search inside of `less` using `/` followed by the search pattern.  Try typing `/R: ` and hit enter. This takes you to the first match.  Continue to press the `N` key until you get to the line that starts with `R:`.  It's there!
+
+```bash
+R: R/4.2.1, R/4.2.2, R/4.3.2, R/4.3.3, R/4.4.0, R/4.4.1
+  R is a free software environment for statistical computing and graphics.
+```
+
+Copy the newest version of R.
+
+To see which modules are needed to load R type the following:
+
+```bash
+module spider R/4.4.1
+```
+
+Note which modules are needed:
+
+```bash
+	You will need to load all module(s) on any one of the lines below before the "R/4.4.1" module is available to load.
+		  GCC/13.2.0
+```
+
+Now we can load R with the following commands
+
+```bash
+module load GCC/13.2.0
+module load R/4.4.1
+```
+
+---
+</p>
+</details>
 
 <details><summary>Running R from terminal</summary>
 <p>
