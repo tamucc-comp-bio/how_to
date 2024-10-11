@@ -36,7 +36,12 @@ Next, download the RStudio `.deb` package from the [RStudio website](https://pos
 
 ```bash
 cd ~/Downloads
-wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.09.0-463-amd64.deb
+
+# Ubuntu 24
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.09.0-375-amd64.deb
+
+# Ubuntu 22
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.09.0-375-amd64.deb
 ```
 
 3. Install R Studio
