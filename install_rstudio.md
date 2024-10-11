@@ -52,7 +52,11 @@ wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.09.0-375-am
 Once the download is complete, you can install RStudio with the dpkg command.
 
 ```bash
-sudo dpkg -i rstudio-2023.09.0-463-amd64.deb
+# Ubuntu 24
+sudo dpkg -i rstudio-2024.09.0-375-amd64.deb
+
+# Ubuntu 22
+sudo dpkg -i rstudio-2024.09.0-375-amd64.deb
 ```
 
 4. Resolve Dependencies (if any):
