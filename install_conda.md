@@ -58,7 +58,7 @@ If step 2 doesn't throw an error, then procede to step 3. Otherwise repeat the d
 
 Finish the installation based on the official Miniconda instructions.
 
-Tips
+Tips for selecting installation options:
 
 * use the `d` key to scroll down the license agreement more quickly
 * after accepting the agreement, hit `enter/return` to put miniconda in the default location
@@ -72,6 +72,8 @@ After restarting, if you see `(base)` before your command prompt, you were succe
 
 `base` is the miniconda evironment that you are currently in.  When you run `python`, you will be in the `python` inside of your `miniconda` `(base)` environment, rather than the one installed outside of miniconda in your OS.
 
+Go ahead and run `python`
+
 ```bash
 (base) cbird@xps13plus:~$ python
 ```
@@ -81,6 +83,10 @@ Python 3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
+
+Make sure that you are in python 3.x.  If you are in python 2.x, then exit (ctrl-d), and try `python3` instead of `python`
+
+To exit `python`, ctrl-d
 
 </p>
 </details>
