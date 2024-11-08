@@ -1,4 +1,4 @@
-## Install Anaconda
+## Install Miniconda/Anaconda
 
 [Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.  It does this by allow you to maintain several "environments", with each environment being dedicated to a particular task, and with the dependencies that are unique to that task.  If you only maintain one environment in which you install all packages, they and their dependencies will start to conflict with each other. 
 
@@ -30,9 +30,29 @@ In summary, for students, especially those in fields like data science, biology,
 
 ---
 
-<details><summary>Universal Miniconda Setup </summary>
+<details><summary>Universal Miniconda Setup (if you are unsure, install this one)</summary>
 <p>
 
+Goto your terminal and download the most appropriate installer from the [miniconda downloads page](https://docs.anaconda.com/miniconda/#miniconda-latest-installer-links). Use the command line installer. e.g. If you have ubuntu, then download the Linux x86 installer.
+
+```bash
+# last updated 2024-11-08, check the link above for the latest links
+
+cd Downloads
+
+# ubuntu command line installer
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+# mac with intel cpu command line installer
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+
+# mac with apple cpu (M1, M2, ..., etc) command line installer
+https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+```
+
+Visit the [Miniconda Installation Page](https://docs.anaconda.com/miniconda/miniconda-install/)
+
+Select the correct instructions for your computer.  For those with windows, use the Ubuntu terminal and follow the Linux instructions.
 
 </p>
 </details>
@@ -48,6 +68,8 @@ In summary, for students, especially those in fields like data science, biology,
 Goto your terminal and download the most appropriate installer from the [anaconda downloads page](https://www.anaconda.com/download#downloads). Use the command line installer.  
 
 ```bash
+# last updated 2023-11-08, check the link above for the latest links
+
 cd Downloads
 
 # ubuntu command line installer
