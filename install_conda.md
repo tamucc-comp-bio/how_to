@@ -259,3 +259,7 @@ And also see [Keeping Anaconda Up To Date](https://www.anaconda.com/blog/keeping
 
 </p>
 </details>
+
+---
+
+### [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
