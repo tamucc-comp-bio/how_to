@@ -52,9 +52,18 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
 ```
 
-Visit the [Miniconda Installation Instructions Page](https://docs.anaconda.com/miniconda/miniconda-install/) and **select the correct tab for your OS**.  You just completed step 1, so goto step 2.
+Visit the [Miniconda Installation Instructions Page](https://docs.anaconda.com/miniconda/miniconda-install/) and **select the Linux tab even if you have a Mac**.  You just completed step 1, so goto step 2.
 
-Select the correct instructions for your computer.  For those with windows, use the Ubuntu terminal and follow the Linux instructions.
+If step 2 doesn't throw an error, then procede to step 3. Otherwise repeat the download.
+
+Finish the installation based on the official Miniconda instructions.
+
+Tips
+
+* use the `d` key to scroll down the license agreement more quickly
+* after accepting the agreement, hit `enter/return` to put miniconda in the default location
+* say "yes" to updating your shell profile to automatically load miniconda
+
 
 </p>
 </details>
