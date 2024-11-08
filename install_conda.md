@@ -64,6 +64,23 @@ Tips
 * after accepting the agreement, hit `enter/return` to put miniconda in the default location
 * say "yes" to updating your shell profile to automatically load miniconda
 
+After restarting, if you see `(base)` before your command prompt, you were successful
+
+```bash
+(base) cbird@xps13plus:~$
+```
+
+`base` is the miniconda evironment that you are currently in.  When you run `python`, you will be in the `python` inside of your `miniconda` `(base)` environment, rather than the one installed outside of miniconda in your OS.
+
+```bash
+(base) cbird@xps13plus:~$ python
+```
+
+```python
+Python 3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
 
 </p>
 </details>
