@@ -38,6 +38,8 @@ Goto your terminal and download the most appropriate installer from the [minicon
 ```bash
 # last updated 2024-11-08, check the link above for the latest links
 
+cd ~
+mkdir Downloads # if this causes error, it means you already have downloads dir
 cd Downloads
 
 # ubuntu command line installer
@@ -50,7 +52,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
 ```
 
-Visit the [Miniconda Installation Page](https://docs.anaconda.com/miniconda/miniconda-install/)
+Visit the [Miniconda Installation Instructions Page](https://docs.anaconda.com/miniconda/miniconda-install/) and **select the correct tab for your OS**.  You just completed step 1, so goto step 2.
 
 Select the correct instructions for your computer.  For those with windows, use the Ubuntu terminal and follow the Linux instructions.
 
@@ -70,6 +72,8 @@ Goto your terminal and download the most appropriate installer from the [anacond
 ```bash
 # last updated 2023-11-08, check the link above for the latest links
 
+cd ~
+mkdir Downloads # if this causes error, it means you already have downloads dir
 cd Downloads
 
 # ubuntu command line installer
