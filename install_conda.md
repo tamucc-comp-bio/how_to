@@ -30,6 +30,18 @@ In summary, for students, especially those in fields like data science, biology,
 
 ---
 
+<details><summary>Universal Miniconda Setup </summary>
+<p>
+
+
+</p>
+</details>
+
+---
+
+> [!CAUTION]
+> Anaconda is quite large and could fill up your disk/ssd space. Don't procede unless you are sure you want the full version of Anaconda **AND** you've confirmed that you have enough space
+
 <details><summary>Universal Anaconda Setup </summary>
 <p>
 
