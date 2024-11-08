@@ -214,7 +214,9 @@ Type 'q()' to quit R.
 >
 ```
 
-That is it, you are in an `R` shell, and `bash` commands will no longer work.  Notice the command prompt is now a `>` instead of a `$` or a `%` depending on your computer.
+That is it, you are in an `R` shell, and `bash` commands will no longer work.  
+
+Notice the command prompt is now a `>` instead of a `$` or a `%` depending on your computer.
 
 ---
 </p>
