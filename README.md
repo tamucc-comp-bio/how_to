@@ -57,3 +57,5 @@ If you are a student in the lab of Dr. Chris Bird and your research involves gen
   
 * [Different Kinds of Git Merges](https://lukemerrett.com/different-merge-types-in-git/)
 
+* [The Linux Wiki](https://www.thelinuxwiki.net/index.php?title=The_Linux_Wiki)
+
