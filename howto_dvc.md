@@ -6,9 +6,7 @@ Ensure you have installed:
  
   - **DVC** : [Install DVC](https://dvc.org/)
  
- *** Note ***
- 
- On ODU-Wahab load DVC with `module load dvc` and prior to any DVC command use `crun.dvc <command>`
+ ***Note***: On ODU-Wahab load DVC with `module load dvc` and prior to any DVC command use `crun.dvc <command>`
  
 2. **Initialize a Git Repository:** 
 
@@ -153,7 +151,7 @@ dvc pull
 ```
 This will download the `data/` and `intermediate_files/` folders from the DVC remote.
 
-*** Note ***
+***Note***
 To pull ODU-Wahab hosted files you must do this to only require a single password entry
 ```
 eval "$(ssh-agent -s)"
