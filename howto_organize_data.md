@@ -175,8 +175,9 @@ For many projects, such as a short-term experiment, a class project, or even a M
 
 ``` css
 project_name/
-├── data/
+├── data_raw/
 ├── documentation/
+├── output/
 ├── scripts/
 ├── results/
 └── references/
