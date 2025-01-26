@@ -6,26 +6,23 @@ This repository contains all files necessary for understanding, processing, and 
 ### Directory Structure
 Below is a summary of the key directories and their contents:
 
+```
 project_name/
-
-  ├── data/
-  
-  ├── documentation/
-  
-  ├── scripts/
-  
-  ├── results/
-  
-  └── references/
+├── data_raw/  
+├── documentation/
+├── documentation/
+├── scripts/
+├── results/
+└── references/
+```
 
 ---
 
-### [`data/`](data/)
-- **Purpose**: This directory contains both raw and processed data files. Raw data files represent unaltered data as collected, while processed files are in tidy format, ready for analysis.
+### [`data_raw/`](data_raw/)
+- **Purpose**: This directory contains raw data files. Raw data files represent unaltered data as collected
 - **Key Files**:
   - `growth_measurements.csv`: Raw measurements of plant growth recorded in the field.
   - `soil_samples.csv`: Raw soil composition data collected from different plots.
-  - `growth_measurements_cleaned.csv`: Plant growth data after processing (outliers removed, normalization applied).
 - **Data Processing**: Includes steps such as outlier removal, normalization, and any transformations needed for analysis.
 
 ---
@@ -39,6 +36,13 @@ project_name/
 
 ---
 
+### [`output/`](output/)
+- **Purpose**: This directory contains processed data files and other products such as images.
+- **Key Files**:
+  - `growth_measurements_cleaned.csv`: Plant growth data after processing (outliers removed, normalization applied).
+- **Data Processing**: Includes steps such as outlier removal, normalization, and any transformations needed for analysis.
+
+---
 ### [`scripts/`](scripts/)
 - **Purpose**: Contains all scripts used to process, clean, and analyze the data. 
 - **Key Scripts**:
