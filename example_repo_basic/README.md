@@ -7,10 +7,15 @@ This repository contains all files necessary for understanding, processing, and 
 Below is a summary of the key directories and their contents:
 
 project_name/
+
 ├── data/
+
 ├── documentation/
+
 ├── scripts/
+
 ├── results/
+
 └── references/
 
 ---
