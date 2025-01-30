@@ -1,3 +1,15 @@
+# Data Version Control (DVC) Setup Tutorial
+
+## Introduction
+**Data Version Control (DVC)** is an open-source tool that complements Git by providing version control for large data files and machine learning models. While Git excels at tracking text-based code and small files, it can struggle with large binary files. DVC solves this issue by storing only small metadata files in your Git repository, while the large data itself is pushed to remote storage (such as SSH, AWS S3, or a local directory). This way, you can keep your large datasets or intermediate files under version control without bloating your Git repository.
+
+By using GitHub (or any other Git platform) in combination with DVC:
+1. **Git** tracks your code, metadata files, and configuration.
+2. **DVC** manages your large data files and shares them via a remote storage.
+
+Below is a step-by-step guide to set up a project with Git + DVC, organize your files, and sync your code and data across multiple machines.
+
+---
 
 **1. Initial Setup**  
 1. **Install Required Tools:** 
