@@ -16,6 +16,7 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 ---
 
+# IF YOU ARE CREATING A REPO FROM SCRATCH, START HERE
 <details><summary>IF YOU ARE CREATING A REPO FROM SCRATCH, START HERE</summary>
 <p>
 
@@ -158,6 +159,8 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 </details>
 
 ---
+
+# IF THE REPO EXISTS AND YOU ARE CLONING IT, START HERE
 
 <details><summary>IF THE REPO EXISTS AND YOU ARE CLONING IT, START HERE</summary>
 <p>
