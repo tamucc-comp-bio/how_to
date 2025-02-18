@@ -111,12 +111,13 @@ Supported options include S3, Azure, GCP, SSH, or local directories. For example
 ---
 
 ### **V. Configure `.gitignore`** 
+
 Add the following lines to `.gitignore` to exclude DVC-tracked files from Git:
 
-      ```kotlin
-      data/
-      intermediate_files/
-      ```
+  ```kotlin
+  data/
+  intermediate_files/
+  ```
 
 DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
