@@ -120,6 +120,7 @@ Add the following lines to `.gitignore` to exclude DVC-tracked files from Git:
       data/
       intermediate_files/
       ```
+
 DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
 ---
