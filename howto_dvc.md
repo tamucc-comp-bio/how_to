@@ -56,7 +56,7 @@ Structure your directory like this:
         ├── output/              # Final outputs (Git tracked)
         ├── README.md            # Documentation (Git tracked)
         └── .gitignore           # To specify ignored files and folders
-  ```
+   ```
 
 ---
 
