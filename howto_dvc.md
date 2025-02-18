@@ -125,10 +125,10 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
 ### **VI. Commit Code and Non-DVC Files** Add and commit all remaining files (e.g., `src/`, `output/`, and other project files) to Git:
 
-      ```bash
-      git add src/ output/ README.md
-      git commit -m "Add project code and outputs"
-      ```
+  ```bash
+  git add src/ output/ README.md
+  git commit -m "Add project code and outputs"
+  ```
 
 
 ---
@@ -184,11 +184,12 @@ This will download the `data/` and `intermediate_files/` folders from the DVC re
 
 > [!NOTE]
 > To pull ODU-Wahab hosted files you must do this to only require a single password entry
-      ```
-      eval "$(ssh-agent -s)"
-      ssh-add ~/.ssh/id_rsa
-      dvc pull
-      ```
+
+  ```
+  eval "$(ssh-agent -s)"
+  ssh-add ~/.ssh/id_rsa
+  dvc pull
+  ```
 
 ---
 
