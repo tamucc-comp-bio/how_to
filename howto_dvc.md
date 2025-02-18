@@ -142,10 +142,10 @@ Add the following lines to `.gitignore` to exclude DVC-tracked files from Git:
 
 DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
+---
+
 </p>
 </details>
-
----
 
 <details><summary>**VI. Commit Code and Non-DVC Files** Add and commit all remaining files (e.g., `src/`, `output/`, and other project files) to Git: </summary>
 <p>
