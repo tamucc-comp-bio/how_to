@@ -30,9 +30,9 @@ Ensure you have installed:
  
 2. **Initialize a Git Repository:** 
 
-  ```bash
-  git init
-  ```
+      ```bash
+      git init
+      ```
  
 3. **Initialize DVC in the Project:** 
 
