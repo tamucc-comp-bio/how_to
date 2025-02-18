@@ -181,10 +181,10 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
       git push -u origin master
       ```
 
----
-
 </p>
 </details>
+
+---
 
 # IF THE REPO EXISTS AND YOU ARE CLONING IT, START HERE
 
