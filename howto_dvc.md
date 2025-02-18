@@ -156,7 +156,7 @@ git push -u origin master
 
 ---
 
-<details><summary>IF REPO EXISTS ALREADY, START HERE</summary>
+<details><summary>IF THE REPO EXISTS ALREADY AND YOU ARE CLONING IT, START HERE</summary>
 <p>
 
 **8. Sync Across Machines**  
