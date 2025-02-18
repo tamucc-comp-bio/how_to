@@ -36,11 +36,11 @@ Ensure you have installed:
  
 3. **Initialize DVC in the Project:** 
 
-```bash
-dvc init
-git add .dvc
-git commit -m "Initialize DVC"
-```
+      ```bash
+      dvc init
+      git add .dvc
+      git commit -m "Initialize DVC"
+      ```
 
 
 ---
@@ -49,16 +49,16 @@ git commit -m "Initialize DVC"
 Structure your directory like this:
 
 
-```plaintext
-project/
-│
-├── data/                # Raw and processed data (DVC tracked)
-├── intermediate_files/  # Temporary or intermediate data (DVC tracked)
-├── src/                 # Code (Git tracked)
-├── output/              # Final outputs (Git tracked)
-├── README.md            # Documentation (Git tracked)
-└── .gitignore           # To specify ignored files and folders
-```
+      ```plaintext
+      project/
+      │
+      ├── data/                # Raw and processed data (DVC tracked)
+      ├── intermediate_files/  # Temporary or intermediate data (DVC tracked)
+      ├── src/                 # Code (Git tracked)
+      ├── output/              # Final outputs (Git tracked)
+      ├── README.md            # Documentation (Git tracked)
+      └── .gitignore           # To specify ignored files and folders
+      ```
 
 
 ---
@@ -66,18 +66,18 @@ project/
 ### **III. Configure DVC for `data/` and `intermediate_files/`**  
 1. **Track `data/` and `intermediate_files/` with DVC:** 
 
-```bash
-dvc add data/
-dvc add intermediate_files/
-```
+      ```bash
+      dvc add data/
+      dvc add intermediate_files/
+      ```
  
 2. **Store metadata in Git:** 
 Add the `.dvc` files (but not the actual data) to Git:
 
-```bash
-git add data.dvc intermediate_files.dvc .gitignore
-git commit -m "Track data and intermediate files with DVC"
-```
+      ```bash
+      git add data.dvc intermediate_files.dvc .gitignore
+      git commit -m "Track data and intermediate files with DVC"
+      ```
 
 ---
 
@@ -88,48 +88,48 @@ DVC remotes allow you to store large files externally.
 Supported options include S3, Azure, GCP, SSH, or local directories. For example: 
   - **Passwordless SSH** :
 
-```bash
-ssh-keygen -t rsa -b 4096 -C "myemail@email.edu"
-ssh-copy-id username@your-server
-```
+      ```bash
+      ssh-keygen -t rsa -b 4096 -C "myemail@email.edu"
+      ssh-copy-id username@your-server
+      ```
 
   - **SSH Remote** :
 
-```bash
-dvc remote add -d myremote ssh://username@your-server:/path/to/dvc-storage
-```
+      ```bash
+      dvc remote add -d myremote ssh://username@your-server:/path/to/dvc-storage
+      ```
  
   - **Local Directory Remote** :
 
-```bash
-dvc remote add -d myremote /path/to/external/dvc-storage
-```
+      ```bash
+      dvc remote add -d myremote /path/to/external/dvc-storage
+      ```
  
 2. **Push Data to the Remote:** 
-
-```bash
-dvc push
-```
+      
+      ```bash
+      dvc push
+      ```
 
 ---
 
 ### **V. Configure `.gitignore`** 
 Add the following lines to `.gitignore` to exclude DVC-tracked files from Git:
 
-```kotlin
-data/
-intermediate_files/
-```
+      ```kotlin
+      data/
+      intermediate_files/
+      ```
 DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
 ---
 
 ### **VI. Commit Code and Non-DVC Files** Add and commit all remaining files (e.g., `src/`, `output/`, and other project files) to Git:
 
-```bash
-git add src/ output/ README.md
-git commit -m "Add project code and outputs"
-```
+      ```bash
+      git add src/ output/ README.md
+      git commit -m "Add project code and outputs"
+      ```
 
 
 ---
@@ -142,15 +142,15 @@ git commit -m "Add project code and outputs"
  
 2. **Add GitHub Remote:** 
 
-```bash
-git remote add origin https://github.com/<username>/<project-repo>.git
-```
+      ```bash
+      git remote add origin https://github.com/<username>/<project-repo>.git
+      ```
  
 3. **Push to GitHub:** 
 
-```bash
-git push -u origin master
-```
+      ```bash
+      git push -u origin master
+      ```
 
 </p>
 </details>
@@ -164,32 +164,32 @@ git push -u origin master
 1. **Clone the GitHub Repository:** 
 On another machine:
 
-```bash
-git clone https://github.com/<username>/<project-repo>.git
-cd project-repo
-```
+      ```bash
+      git clone https://github.com/<username>/<project-repo>.git
+      cd project-repo
+      ```
  
  1.5 **Change User**
  If you are not the user who originally set-up the remote storage you will need to change the userID which uses SSH to download the files. You need to have proper access to the remote storage location to use
  
- ```
- dvc remote modify myremote user their_username
- ```
+       ```
+       dvc remote modify myremote user their_username
+       ```
  
 2. **Pull Data with DVC:** 
 
-```bash
-dvc pull
-```
+      ```bash
+      dvc pull
+      ```
 This will download the `data/` and `intermediate_files/` folders from the DVC remote.
 
-***Note***
-To pull ODU-Wahab hosted files you must do this to only require a single password entry
-```
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-dvc pull
-```
+> [!NOTE]
+> To pull ODU-Wahab hosted files you must do this to only require a single password entry
+      ```
+      eval "$(ssh-agent -s)"
+      ssh-add ~/.ssh/id_rsa
+      dvc pull
+      ```
 
 ---
 
@@ -199,37 +199,37 @@ dvc pull
  
   - Track them with:
 
-```bash
-dvc add data/ intermediate_files/
-```
+      ```bash
+      dvc add data/ intermediate_files/
+      ```
  
 2. **Push Changes:**  
   - Commit code or metadata to Git:
 
-```bash
-git add .
-git commit -m "Update code and data"
-git push
-```
+      ```bash
+      git add .
+      git commit -m "Update code and data"
+      git push
+      ```
  
   - Push data to the DVC remote:
 
-```bash
-dvc push
-```
+      ```bash
+      dvc push
+      ```
  
 3. **Sync Changes on Another Machine:**  
   - Pull Git updates:
 
-```bash
-git pull
-```
+      ```bash
+      git pull
+      ```
  
   - Pull data updates:
 
-```bash
-dvc pull
-```
+      ```bash
+      dvc pull
+      ```
 
 </p>
 </details>
