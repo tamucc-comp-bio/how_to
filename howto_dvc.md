@@ -157,7 +157,7 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
 ---
 
-<details><summary>IF THE REPO EXISTS ALREADY AND YOU ARE CLONING IT, START HERE</summary>
+<details><summary>IF THE REPO EXISTS AND YOU ARE CLONING IT, START HERE</summary>
 <p>
 
 ### **VIII. Sync Across Machines**  
