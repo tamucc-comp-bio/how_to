@@ -44,10 +44,10 @@ Ensure you have installed:
       git commit -m "Initialize DVC"
       ```
 
+---
+
 </p>
 </details>
-
----
 
 <details><summary>**II. Organize Your Directory** </summary>
 <p> 
@@ -65,10 +65,10 @@ Structure your directory like this:
         └── .gitignore           # To specify ignored files and folders
    ```
 
+---
+
 </p>
 </details>
-
----
 
 <details><summary>**III. Configure DVC for `data/` and `intermediate_files/`**  </summary>
 <p> 
@@ -88,10 +88,10 @@ Add the `.dvc` files (but not the actual data) to Git:
       git commit -m "Track data and intermediate files with DVC"
       ```
 
+---
+
 </p>
 </details>
-
----
 
 <details><summary>**IV. Set Up DVC Remote for Data Storage**  </summary>
 <p> 
@@ -125,10 +125,10 @@ Supported options include S3, Azure, GCP, SSH, or local directories. For example
       dvc push
       ```
 
+---
+
 </p>
 </details>
-
----
 
 <details><summary>**V. Configure `.gitignore`** </summary>
 <p> 
@@ -156,11 +156,10 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
   git commit -m "Add project code and outputs"
   ```
 
+---
 
 </p>
 </details>
-
----
 
 <details><summary>**VII. Push to GitHub** </summary>
 <p>
@@ -182,17 +181,15 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
       git push -u origin master
       ```
 
+---
+
 </p>
 </details>
 
----
-
 # IF THE REPO EXISTS AND YOU ARE CLONING IT, START HERE
 
-<details><summary>IF THE REPO EXISTS AND YOU ARE CLONING IT, START HERE</summary>
+<details><summary>**VIII. Sync Across Machines**</summary>
 <p>
-
-### **VIII. Sync Across Machines**  
 
 1. **Clone the GitHub Repository:** 
 On another machine:
@@ -227,7 +224,12 @@ This will download the `data/` and `intermediate_files/` folders from the DVC re
 
 ---
 
-### **IX. Workflow for Changes**  
+</p>
+</details>
+
+<details><summary>**IX. Workflow for Changes**  </summary>
+<p>
+
 1. **Add New Data:**  
   - Save new files in `data/` or `intermediate_files/`.
  
