@@ -199,14 +199,14 @@ On another machine:
       cd project-repo
       ```
  
- 1.5 **Change User**
+ 2. **Change User**
  If you are not the user who originally set-up the remote storage you will need to change the userID which uses SSH to download the files. You need to have proper access to the remote storage location to use:
  
    ```bash
    dvc remote modify myremote user their_username
    ```
  
-2. **Pull Data with DVC:** 
+3. **Pull Data with DVC:** 
 
       ```bash
       dvc pull
