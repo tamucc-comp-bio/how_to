@@ -5,6 +5,7 @@
 ![](https://dvc.org/static/fc45be68b6d7ea2eae90eda3ff00ba1e/5887a/Hero%20Visualization.avif)
 
 ## Introduction
+
 [**Data Version Control (DVC)**](https://dvc.org/) is an open-source tool that complements [Git](https://git-scm.com/) by providing version control for large data files and machine learning models. While Git excels at tracking text-based code and small files, it can struggle with large binary files. DVC solves this issue by storing only small metadata files in your Git repository, while the large data itself is pushed to remote storage (such as SSH, AWS S3, or a local directory). This way, you can keep your large datasets or intermediate files under version control without bloating your Git repository.
 
 By using GitHub (or any other Git platform) in combination with DVC:
@@ -19,6 +20,7 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 <p>
 
 ### **I. Initial Setup**  
+
 1. **Install Required Tools:** 
 Ensure you have installed: 
   - **Git** : [Download Git](https://git-scm.com/)
@@ -134,6 +136,7 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 ---
 
 ### **VII. Push to GitHub**  
+
 1. **Create a GitHub Repository** : 
   - Go to [GitHub](https://github.com/) .
  
@@ -160,6 +163,7 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 <p>
 
 ### **VIII. Sync Across Machines**  
+
 1. **Clone the GitHub Repository:** 
 On another machine:
 
@@ -169,11 +173,11 @@ On another machine:
       ```
  
  1.5 **Change User**
- If you are not the user who originally set-up the remote storage you will need to change the userID which uses SSH to download the files. You need to have proper access to the remote storage location to use
+ If you are not the user who originally set-up the remote storage you will need to change the userID which uses SSH to download the files. You need to have proper access to the remote storage location to use:
  
-       ```
-       dvc remote modify myremote user their_username
-       ```
+   ```bash
+   dvc remote modify myremote user their_username
+   ```
  
 2. **Pull Data with DVC:** 
 
@@ -185,7 +189,7 @@ This will download the `data/` and `intermediate_files/` folders from the DVC re
 > [!NOTE]
 > To pull ODU-Wahab hosted files you must do this to only require a single password entry
 
-  ```
+  ```bash
   eval "$(ssh-agent -s)"
   ssh-add ~/.ssh/id_rsa
   dvc pull
