@@ -44,9 +44,14 @@ Ensure you have installed:
       git commit -m "Initialize DVC"
       ```
 
+</p>
+</details>
+
 ---
 
-### **II. Organize Your Directory** 
+<details><summary>**II. Organize Your Directory** </summary>
+<p> 
+
 Structure your directory like this:
 
   ```plaintext
@@ -60,9 +65,14 @@ Structure your directory like this:
         └── .gitignore           # To specify ignored files and folders
    ```
 
+</p>
+</details>
+
 ---
 
-### **III. Configure DVC for `data/` and `intermediate_files/`**  
+<details><summary>**III. Configure DVC for `data/` and `intermediate_files/`**  </summary>
+<p> 
+  
 1. **Track `data/` and `intermediate_files/` with DVC:** 
 
       ```bash
@@ -78,9 +88,14 @@ Add the `.dvc` files (but not the actual data) to Git:
       git commit -m "Track data and intermediate files with DVC"
       ```
 
+</p>
+</details>
+
 ---
 
-### **IV. Set Up DVC Remote for Data Storage** 
+<details><summary>**IV. Set Up DVC Remote for Data Storage**  </summary>
+<p> 
+
 DVC remotes allow you to store large files externally.
  
 1. **Choose a Remote Backend:** 
@@ -110,9 +125,13 @@ Supported options include S3, Azure, GCP, SSH, or local directories. For example
       dvc push
       ```
 
+</p>
+</details>
+
 ---
 
-### **V. Configure `.gitignore`** 
+<details><summary>**V. Configure `.gitignore`** </summary>
+<p> 
 
 Add the following lines to `.gitignore` to exclude DVC-tracked files from Git:
 
@@ -123,9 +142,14 @@ Add the following lines to `.gitignore` to exclude DVC-tracked files from Git:
 
 DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
+</p>
+</details>
+
 ---
 
-### **VI. Commit Code and Non-DVC Files** Add and commit all remaining files (e.g., `src/`, `output/`, and other project files) to Git:
+<details><summary>**VI. Commit Code and Non-DVC Files** Add and commit all remaining files (e.g., `src/`, `output/`, and other project files) to Git: </summary>
+<p>
+ 
 
   ```bash
   git add src/ output/ README.md
@@ -133,9 +157,13 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
   ```
 
 
+</p>
+</details>
+
 ---
 
-### **VII. Push to GitHub**  
+<details><summary>**VII. Push to GitHub** </summary>
+<p>
 
 1. **Create a GitHub Repository** : 
   - Go to [GitHub](https://github.com/) .
