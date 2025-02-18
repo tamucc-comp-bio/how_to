@@ -15,6 +15,9 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 ---
 
+<details><summary>IF YOU ARE CREATING A REPO FROM SCRATCH, START HERE</summary>
+<p>
+
 **1. Initial Setup**  
 1. **Install Required Tools:** 
 Ensure you have installed: 
@@ -148,8 +151,13 @@ git remote add origin https://github.com/<username>/<project-repo>.git
 git push -u origin master
 ```
 
+</p>
+</details>
 
 ---
+
+<details><summary>IF REPO EXISTS ALREADY, START HERE</summary>
+<p>
 
 **8. Sync Across Machines**  
 1. **Clone the GitHub Repository:** 
@@ -221,3 +229,8 @@ git pull
 ```bash
 dvc pull
 ```
+
+</p>
+</details>
+
+---
