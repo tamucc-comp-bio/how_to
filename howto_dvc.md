@@ -202,9 +202,9 @@ On another machine:
  2. **Change User**
  If you are not the user who originally set-up the remote storage you will need to change the userID which uses SSH to download the files. You need to have proper access to the remote storage location to use:
  
-   ```bash
-   dvc remote modify myremote user their_username
-   ```
+     ```bash
+     dvc remote modify myremote user their_username
+     ```
  
 3. **Pull Data with DVC:** 
 
