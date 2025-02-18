@@ -42,24 +42,21 @@ Ensure you have installed:
       git commit -m "Initialize DVC"
       ```
 
-
 ---
 
 ### **II. Organize Your Directory** 
 Structure your directory like this:
 
-
-      ```plaintext
-      project/
-      │
-      ├── data/                # Raw and processed data (DVC tracked)
-      ├── intermediate_files/  # Temporary or intermediate data (DVC tracked)
-      ├── src/                 # Code (Git tracked)
-      ├── output/              # Final outputs (Git tracked)
-      ├── README.md            # Documentation (Git tracked)
-      └── .gitignore           # To specify ignored files and folders
-      ```
-
+  ```plaintext
+        project/
+        │
+        ├── data/                # Raw and processed data (DVC tracked)
+        ├── intermediate_files/  # Temporary or intermediate data (DVC tracked)
+        ├── src/                 # Code (Git tracked)
+        ├── output/              # Final outputs (Git tracked)
+        ├── README.md            # Documentation (Git tracked)
+        └── .gitignore           # To specify ignored files and folders
+  ```
 
 ---
 
