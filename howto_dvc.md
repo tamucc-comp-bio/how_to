@@ -25,7 +25,8 @@ Ensure you have installed:
  
   - **DVC** : [Install DVC](https://dvc.org/)
  
- ***Note***: On ODU-Wahab load DVC with `module load dvc` and prior to any DVC command use `crun.dvc <command>`
+ > [!NOTE]
+ > On ODU-Wahab load DVC with `module load dvc` and prior to any DVC command use `crun.dvc <command>`
  
 2. **Initialize a Git Repository:** 
 
