@@ -17,10 +17,9 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 ---
 
 # IF YOU ARE CREATING A REPO FROM SCRATCH, START HERE
-<details><summary>IF YOU ARE CREATING A REPO FROM SCRATCH, START HERE</summary>
-<p>
 
-### **I. Initial Setup**  
+<details><summary>**I. Initial Setup**</summary>
+<p>  
 
 1. **Install Required Tools:** 
 Ensure you have installed: 
