@@ -18,7 +18,7 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 <details><summary>IF YOU ARE CREATING A REPO FROM SCRATCH, START HERE</summary>
 <p>
 
-### **1. Initial Setup**  
+### **I. Initial Setup**  
 1. **Install Required Tools:** 
 Ensure you have installed: 
   - **Git** : [Download Git](https://git-scm.com/)
@@ -44,7 +44,7 @@ git commit -m "Initialize DVC"
 
 ---
 
-### **2. Organize Your Directory** 
+### **II. Organize Your Directory** 
 Structure your directory like this:
 
 
@@ -62,7 +62,7 @@ project/
 
 ---
 
-### **3. Configure DVC for `data/` and `intermediate_files/`**  
+### **III. Configure DVC for `data/` and `intermediate_files/`**  
 1. **Track `data/` and `intermediate_files/` with DVC:** 
 
 ```bash
@@ -80,7 +80,7 @@ git commit -m "Track data and intermediate files with DVC"
 
 ---
 
-### **4. Set Up DVC Remote for Data Storage** 
+### **IV. Set Up DVC Remote for Data Storage** 
 DVC remotes allow you to store large files externally.
  
 1. **Choose a Remote Backend:** 
@@ -112,7 +112,7 @@ dvc push
 
 ---
 
-### **5. Configure `.gitignore`** 
+### **V. Configure `.gitignore`** 
 Add the following lines to `.gitignore` to exclude DVC-tracked files from Git:
 
 ```kotlin
@@ -123,7 +123,7 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
 ---
 
-### **6. Commit Code and Non-DVC Files** Add and commit all remaining files (e.g., `src/`, `output/`, and other project files) to Git:
+### **VI. Commit Code and Non-DVC Files** Add and commit all remaining files (e.g., `src/`, `output/`, and other project files) to Git:
 
 ```bash
 git add src/ output/ README.md
@@ -133,7 +133,7 @@ git commit -m "Add project code and outputs"
 
 ---
 
-### **7. Push to GitHub**  
+### **VII. Push to GitHub**  
 1. **Create a GitHub Repository** : 
   - Go to [GitHub](https://github.com/) .
  
@@ -159,7 +159,7 @@ git push -u origin master
 <details><summary>IF THE REPO EXISTS ALREADY AND YOU ARE CLONING IT, START HERE</summary>
 <p>
 
-### **8. Sync Across Machines**  
+### **VIII. Sync Across Machines**  
 1. **Clone the GitHub Repository:** 
 On another machine:
 
@@ -192,7 +192,7 @@ dvc pull
 
 ---
 
-### **9. Workflow for Changes**  
+### **IX. Workflow for Changes**  
 1. **Add New Data:**  
   - Save new files in `data/` or `intermediate_files/`.
  
