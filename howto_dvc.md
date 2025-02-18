@@ -18,7 +18,7 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 # IF YOU ARE CREATING A REPO FROM SCRATCH, START HERE
 
-<details><summary>**I. Initial Setup**</summary>
+<details><summary>I. Initial Setup</summary>
 <p>  
 
 1. **Install Required Tools:** 
@@ -49,7 +49,7 @@ Ensure you have installed:
 </p>
 </details>
 
-<details><summary>**II. Organize Your Directory** </summary>
+<details><summary>II. Organize Your Directory</summary>
 <p> 
 
 Structure your directory like this:
@@ -70,7 +70,7 @@ Structure your directory like this:
 </p>
 </details>
 
-<details><summary>**III. Configure DVC for `data/` and `intermediate_files/`**  </summary>
+<details><summary>III. Configure DVC for `data/` and `intermediate_files/`</summary>
 <p> 
   
 1. **Track `data/` and `intermediate_files/` with DVC:** 
@@ -93,7 +93,7 @@ Add the `.dvc` files (but not the actual data) to Git:
 </p>
 </details>
 
-<details><summary>**IV. Set Up DVC Remote for Data Storage**  </summary>
+<details><summary>IV. Set Up DVC Remote for Data Storage</summary>
 <p> 
 
 DVC remotes allow you to store large files externally.
@@ -130,7 +130,7 @@ Supported options include S3, Azure, GCP, SSH, or local directories. For example
 </p>
 </details>
 
-<details><summary>**V. Configure `.gitignore`** </summary>
+<details><summary>V. Configure `.gitignore`</summary>
 <p> 
 
 Add the following lines to `.gitignore` to exclude DVC-tracked files from Git:
@@ -147,7 +147,7 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 </p>
 </details>
 
-<details><summary>**VI. Commit Code and Non-DVC Files** Add and commit all remaining files (e.g., `src/`, `output/`, and other project files) to Git: </summary>
+<details><summary>VI. Commit Code and Non-DVC Files, add, and commit all remaining files (e.g., `src/`, `output/`, and other project files) to Git: </summary>
 <p>
  
 
@@ -161,7 +161,7 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 </p>
 </details>
 
-<details><summary>**VII. Push to GitHub** </summary>
+<details><summary>VII. Push to GitHub</summary>
 <p>
 
 1. **Create a GitHub Repository** : 
@@ -188,7 +188,7 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
 # IF THE REPO EXISTS AND YOU ARE CLONING IT, START HERE
 
-<details><summary>**VIII. Sync Across Machines**</summary>
+<details><summary>VIII. Sync Across Machines</summary>
 <p>
 
 1. **Clone the GitHub Repository:** 
@@ -209,8 +209,12 @@ On another machine:
 3. **Pull Data with DVC:** 
 
       ```bash
-      dvc pull
-      ```
+       dvc remote modify myremote user <username> #There is no need to enclose the username in quotation marks.
+       ```
+ > [!NOTE]
+ > In ODU-Wahab, the `<username>` is the string before `@wahab.hpc.odu.edu`. For example, the `<username>` for `klab@wahab.hpc.odu.edu` is `klab`. 
+ 
+
 This will download the `data/` and `intermediate_files/` folders from the DVC remote.
 
 > [!NOTE]
@@ -227,7 +231,7 @@ This will download the `data/` and `intermediate_files/` folders from the DVC re
 </p>
 </details>
 
-<details><summary>**IX. Workflow for Changes**  </summary>
+<details><summary>IX. Workflow for Changes</summary>
 <p>
 
 1. **Add New Data:**  
