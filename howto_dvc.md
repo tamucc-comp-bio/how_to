@@ -16,6 +16,14 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 ---
 
+# BE SURE YOUR COMPUTER IS PROPERLY SET UP AND HAS THE REQUIRED SOFTWARE
+
+1. If you are unsure whether your Windows/MacOS/Linux computer is properly prepped, consult [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
+2. [Install DVC](https://dvc.org/doc/install).  Windows computers, use "Install on Linux" in you Ubuntu terminal.
+3. You need an account on our cloud server (e.g. `wahab.hpc.odu.edu`, `crest-login.tamucc.edu`) and need to be able to `ssh` into it
+
+---
+
 # IF YOU ARE CREATING A REPO FROM SCRATCH, START HERE
 
 <details><summary>I. Initial Setup</summary>
