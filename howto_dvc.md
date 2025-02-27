@@ -201,7 +201,7 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
 1. **Clone the GitHub Repository:** 
 
-  On machine other than the cloudserver set up in steps I-VII, such as your laptop:
+  Clone the repo, then `cd` into it
 
   ```bash
   git clone https://github.com/<username>/<project-repo>.git
@@ -210,18 +210,19 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
  
 2. **Change User**
 
-   If you are not the user who originally set-up the remote storage you will need to change the userID which uses SSH to download the files. You need to have proper access to the remote storage location to use:
+  If you are not the user who originally set-up the remote storage, you will need to change the userID which uses SSH to download the files. You need to have proper access to the remote storage location to use:
  
   ```bash
   dvc remote modify myremote user <username> #There is no need to enclose the username in quotation marks.
   ```
+
  > [!NOTE]
  > In ODU-Wahab, the `<username>` is the string before `@wahab.hpc.odu.edu`. For example, the `<username>` for `klab@wahab.hpc.odu.edu` is `klab`. 
  
 
 3. **Pull Data with DVC:** 
 
-This will download the `data/` and `intermediate_files/` folders from the DVC remote.
+  This will download the `data/` and `intermediate_files/` folders from the DVC remote.
 
 > [!NOTE]
 > To pull ODU-Wahab hosted files you must do this to only require a single password entry
