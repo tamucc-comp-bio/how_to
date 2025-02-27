@@ -200,7 +200,8 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 <p>
 
 1. **Clone the GitHub Repository:** 
-On another machine:
+
+On machine other than the cloudserver set up in steps I-VII, such as your laptop:
 
       ```bash
       git clone https://github.com/<username>/<project-repo>.git
@@ -208,6 +209,7 @@ On another machine:
       ```
  
  2. **Change User**
+
  If you are not the user who originally set-up the remote storage you will need to change the userID which uses SSH to download the files. You need to have proper access to the remote storage location to use:
  
       ```bash
