@@ -8,12 +8,16 @@ The terminal scripting language native to Windows was not adopted by biologists 
 
 You can install everything you need to run Windows Subsystem for Linux (WSL) by completing steps 1-3.
 
+---
+
 ## Step 1. Open Administrator/Elevated PowerShell Window
 
 1. Open the Start menu
 2. type `Windows PowerShell`
 3. select `Windows PowerShell`
 4. select `Run as administrator`.
+
+---
 
 ## Step 2. Install WSL and the Default Version of Ubuntu
 
@@ -24,14 +28,18 @@ You can install everything you need to run Windows Subsystem for Linux (WSL) by 
    ```
 
    * While this is running, check out the [About WSL](https://learn.microsoft.com/en-us/windows/wsl/about) and the [WSL FAQ](https://learn.microsoft.com/en-us/windows/wsl/faq) to learn more about WSL.
+  
+2. Restart your computer when the `wsl --install` command finishes.  Upon restart, if an Ubuntu window does not open, search your apps for `Ubuntu` and open it.
 
-2. Follow the prompts until you are asked to enter your User Name in the Ubuntu window, then move on to the next step.
+3. Follow the prompts until you are asked to enter your User Name in the Ubuntu window, then move on to the next step.
 
    * If you encounter errors while installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
    * If you have under 3GB of free space, then it is likely that you don't have enough space on your computer to istall Ubuntu (a fresh install takes up 1.6 GB). You should skip installing Ubuntu and use the TAMU Launch HPC which allows you to run Linux in a webpage.
   
    * If you have enough space, the troubleshooting link didn't solve your error, and you have an older version of Windows then try following the [manual installation steps for older versions of WSL](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
+
+---
 
 ## Step 3.  Create your User Name and Password for Ubuntu
 
