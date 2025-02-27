@@ -29,7 +29,7 @@ You can install everything you need to run Windows Subsystem for Linux (WSL) by 
 
    * While this is running, check out the [About WSL](https://learn.microsoft.com/en-us/windows/wsl/about) and the [WSL FAQ](https://learn.microsoft.com/en-us/windows/wsl/faq) to learn more about WSL.
   
-2. Restart your computer when the `wsl --install` command finishes.  Upon restart, if an Ubuntu window does not open, search your apps for `Ubuntu` and open it.
+2. Follow the prompts and restart your computer when the `wsl --install` command finishes.  Upon restart, if an Ubuntu window does not open, search your apps for `Ubuntu` and open it.
 
 3. Follow the prompts until you are asked to enter your User Name in the Ubuntu window, then move on to the next step.
 
