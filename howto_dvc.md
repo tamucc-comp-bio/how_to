@@ -19,8 +19,46 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 # BE SURE YOUR COMPUTER IS PROPERLY SET UP AND HAS THE REQUIRED SOFTWARE
 
 1. If you are unsure whether your Windows/MacOS/Linux computer is properly prepped, consult [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
-2. [Install DVC](https://dvc.org/doc/install).  Windows computers, use "Install on Linux" in you Ubuntu terminal.
-3. You need an account on our cloud server (e.g. `wahab.hpc.odu.edu`, `crest-login.tamucc.edu`) and need to be able to `ssh` into it
+
+<details><summary>[Install DVC](https://dvc.org/doc/install) in a Conda Environment</summary>
+<p>  
+
+The installation instructions for DVC are here: [Install DVC](https://dvc.org/doc/install), but it is not comprehensive, so follow the instruction here.  Windows computers, use "Install on Linux" in you Ubuntu terminal.
+
+1. Create a conda environment called 'dvc'
+
+  ```bash
+  conda activate dvc
+  ```
+2. Activate the enviornment
+
+  ```bash
+  conda activate dvc
+  ```
+  
+  Your terminal should now look something like this:
+
+  ```bash
+  (base) cbird@xps13plus:~/Downloads$ conda activate dvc
+  (dvc) cbird@xps13plus:~/Downloads$
+  ```
+
+3. Install `mamba` which installs much faster than conda
+
+  ```bash
+  conda install -c conda-forge mamba 
+  ```
+
+4. Install `dvc`
+
+  ```bash
+  mamba install -c conda-forge dvc
+  ```
+
+</p>
+</details>
+
+4. You need an account on our cloud server (e.g. `wahab.hpc.odu.edu`, `crest-login.tamucc.edu`) and need to be able to `ssh` into it
 
 ---
 
