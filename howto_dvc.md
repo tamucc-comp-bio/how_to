@@ -20,7 +20,7 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 1. If you are unsure whether your Windows/MacOS/Linux computer is properly prepped, consult [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
 
-<details><summary>[Install DVC](https://dvc.org/doc/install) in a Conda Environment</summary>
+<details><summary>2. [Install DVC](https://dvc.org/doc/install) in a Conda Environment</summary>
 <p>  
 
 The installation instructions for DVC are here: [Install DVC](https://dvc.org/doc/install), but it is not comprehensive, so follow the instruction here.  Windows computers, use "Install on Linux" in you Ubuntu terminal.
@@ -58,7 +58,7 @@ The installation instructions for DVC are here: [Install DVC](https://dvc.org/do
 </p>
 </details>
 
-4. You need an account on our cloud server (e.g. `wahab.hpc.odu.edu`, `crest-login.tamucc.edu`) and need to be able to `ssh` into it
+3. You need an account on our cloud server (e.g. `wahab.hpc.odu.edu`, `crest-login.tamucc.edu`) and need to be able to `ssh` into it
 
 ---
 
