@@ -20,7 +20,14 @@ If you see the following files (or something very similar), you have a key. Goto
    ```
    id_rsa  id_rsa.pub
    ```
-    
+
+If you get an error stating that `.ssh` doesn't exist , then create the directory named `.ssh`
+
+   ```bash
+   mkdir .ssh
+   ```
+then goto beginning of step 1
+
 If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
 
 ---
