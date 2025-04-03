@@ -28,7 +28,7 @@ The installation instructions for DVC are here: [Install DVC](https://dvc.org/do
 1. Create a conda environment called 'dvc'
 
   ```bash
-  conda activate dvc
+  conda create --name dvc
   ```
 2. Activate the enviornment
 
