@@ -313,26 +313,41 @@ Fetching
 <details><summary>IX. Tracking Edits to Repo w/ DVC & GIT</summary>
 <p>
 
-0. Navigate to your repo directory
+0. **Navigate to your repo directory and make sure that you activate  your `dvc` environment in `conda`**
 
    ```bash
    cd /mnt/c/users/cbird/Documents/my_repo
+   conda activate dvc
+   ```
+
+1. **Pull changes from github and the `dvc` storage servers before you start your work**
+
+   ```bash
+   git pull
+   dvc pull # you will be prompted to enter your password (tamucc crest or odu wahab)
    ```
    
 2. **Add New Data:**  
-  - Save new files in `data/` or `intermediate_files/`.
+  - Save new files in directories managed by `dvc`, e.g. `data/` or `intermediate_files/` or ...
  
   - Track them with:
 
       ```bash
       dvc add data/ intermediate_files/
       ```
+      
+  - Save new files in directories managed by `git`, e.g. `scripts`, ...
  
-2. **Push Changes:**  
+  - Track them with:
+
+      ```bash
+      git add scripts
+      ```
+ 
+3. **Push Changes:**  
   - Commit code or metadata to Git:
 
       ```bash
-      git add .
       git commit -m "Update code and data"
       git push
       ```
@@ -343,7 +358,7 @@ Fetching
       dvc push
       ```
  
-3. **Sync Changes on Another Machine:**  
+4. **Sync Changes on Another Machine:**  
   - Pull Git updates:
 
       ```bash
