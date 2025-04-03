@@ -298,10 +298,16 @@ Fetching
 </p>
 </details>
 
-<details><summary>IX. Workflow for Changes</summary>
+<details><summary>IX. Tracking Edits to Repo w/ DVC & GIT</summary>
 <p>
 
-1. **Add New Data:**  
+0. Navigate to your repo directory
+
+   ```bash
+   cd /mnt/c/users/cbird/Documents/my_repo
+   ```
+   
+2. **Add New Data:**  
   - Save new files in `data/` or `intermediate_files/`.
  
   - Track them with:
