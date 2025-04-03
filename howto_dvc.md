@@ -238,6 +238,8 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 <details><summary>VIII. Cloning Repo w/ DVC Already Set Up</summary>
 <p>
 
+If you do not complete steps 1-3 in totality, then you will have to remove the repo from you computer and start from step 1 here.
+
 1. **Clone the GitHub Repository:** 
 
   Clone the repo, then `cd` into it
@@ -271,6 +273,25 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
   ssh-add ~/.ssh/id_rsa
   dvc pull
   ```
+
+  Note that after you run dvc pull, you will be prompted for your remote server (wahab at odu or crest at tamucc) password several times.  Just keep typing it in, it is not rejecting the password you are typing.  The screen will look something like this:
+
+```bash
+dvc pull
+Agent pid 2339
+Identity added: /home/cbird/.ssh/id_rsa (cbird808@gmail.com)
+Collecting                                                                                                   |0.00 [00:00,    ?entry/s]
+(cbird@wahab.hpc.odu.edu) Password:
+
+Collecting                                                                                                   |2.00 [00:12, 6.12s/entry]
+(cbird@wahab.hpc.odu.edu) Password:
+
+Collecting                                                                                                  |1.91k [00:17,  190entry/s]
+(cbird@wahab.hpc.odu.edu) Password:
+
+Collecting                                                                                                  |1.91k [00:21, 88.4entry/s]
+Fetching
+```
 
 ---
 
