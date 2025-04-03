@@ -16,16 +16,16 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 ---
 
-# BE SURE YOUR COMPUTER IS PROPERLY SET UP AND HAS THE REQUIRED SOFTWARE
+# START HERE: BE SURE YOUR COMPUTER IS PROPERLY SET UP AND HAS THE REQUIRED SOFTWARE
 
 1. If you are unsure whether your Windows/MacOS/Linux computer is properly prepped, consult [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
 
-<details><summary>2. [Install DVC](https://dvc.org/doc/install) in a Conda Environment</summary>
+<details><summary>2. Install DVC in a Conda Environment</summary>
 <p>  
 
-The installation instructions for DVC are here: [Install DVC](https://dvc.org/doc/install), but it is not comprehensive, so follow the instruction here.  Windows computers, use "Install on Linux" in you Ubuntu terminal.
+The official installation instructions for DVC are not comprehensive, so follow the instruction here. 
 
-1. Create a conda environment called 'dvc'
+1. Create a conda environment called 'dvc'. 
 
   ```bash
   conda create --name dvc
@@ -55,6 +55,8 @@ The installation instructions for DVC are here: [Install DVC](https://dvc.org/do
   mamba install -c conda-forge dvc
   mamba install -c conda-forge dvc-ssh
   ```
+ > [!NOTE]
+ > If the above protocol didn't work, consult the [installation instructions for DVC](https://dvc.org/doc/install).  Windows computers, use "Install on Linux" in you Ubuntu terminal.
 
 </p>
 </details>
