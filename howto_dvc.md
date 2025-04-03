@@ -39,48 +39,48 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 2. Install DVC in a Conda Environment
 
-<details><summary>Expand for instructions</summary>
-<p>  
-
-The official installation instructions for DVC are not comprehensive, so follow the instruction here. 
-
-1. Create a conda environment called 'dvc'. 
-
-  ```bash
-  conda create --name dvc
-  ```
-2. Activate the enviornment
-
-  ```bash
-  conda activate dvc
-  ```
-  
-  Your terminal should now look something like this:
-
-  ```bash
-  (base) cbird@xps13plus:~/Downloads$ conda activate dvc
-  (dvc) cbird@xps13plus:~/Downloads$
-  ```
-
-3. Install `mamba` which installs much faster than conda
-
-  ```bash
-  conda install -c conda-forge mamba 
-  ```
-
-4. Install `dvc`
-
-  ```bash
-  mamba install -c conda-forge dvc
-  mamba install -c conda-forge dvc-ssh
-  ```
- > [!NOTE]
- > If the above protocol didn't work, consult the [installation instructions for DVC](https://dvc.org/doc/install).  Windows computers, use "Install on Linux" in you Ubuntu terminal.
-
----
-
-</p>
-</details>
+      <details><summary>Expand for instructions</summary>
+      <p>  
+      
+      The official installation instructions for DVC are not comprehensive, so follow the instruction here. 
+      
+      1. Create a conda environment called 'dvc'. 
+      
+        ```bash
+        conda create --name dvc
+        ```
+      2. Activate the enviornment
+      
+        ```bash
+        conda activate dvc
+        ```
+        
+        Your terminal should now look something like this:
+      
+        ```bash
+        (base) cbird@xps13plus:~/Downloads$ conda activate dvc
+        (dvc) cbird@xps13plus:~/Downloads$
+        ```
+      
+      3. Install `mamba` which installs much faster than conda
+      
+        ```bash
+        conda install -c conda-forge mamba 
+        ```
+      
+      4. Install `dvc`
+      
+        ```bash
+        mamba install -c conda-forge dvc
+        mamba install -c conda-forge dvc-ssh
+        ```
+       > [!NOTE]
+       > If the above protocol didn't work, consult the [installation instructions for DVC](https://dvc.org/doc/install).  Windows computers, use "Install on Linux" in you Ubuntu terminal.
+      
+      ---
+      
+      </p>
+      </details>
 
 3. You need an account on our cloud server (e.g. `wahab.hpc.odu.edu`, `crest-login.tamucc.edu`) and need to be able to `ssh` into it
 
