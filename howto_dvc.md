@@ -53,6 +53,7 @@ The installation instructions for DVC are here: [Install DVC](https://dvc.org/do
 
   ```bash
   mamba install -c conda-forge dvc
+  mamba install -c conda-forge dvc-ssh
   ```
 
 </p>
