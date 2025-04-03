@@ -20,22 +20,22 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 1. If you are unsure whether your Windows/MacOS/Linux computer is properly prepped, consult [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
 
-<details><summary>Expand for instructions</summary>
-<p>  
-You minimally need
-* linux/unix based os
-  * mac os is unix based, so you're good
-  * windows computers are not unix based, so install wsl ubuntu & windows terminal
-* github account
-* ssh keys
-* miniconda
-
-Just follow the instructions in the [how_to](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
-
----
-
-</p>
-</details>
+   <details><summary>Expand for instructions</summary>
+   <p>  
+   You minimally need
+   * linux/unix based os
+     * mac os is unix based, so you're good
+     * windows computers are not unix based, so install wsl ubuntu & windows terminal
+   * github account
+   * ssh keys
+   * miniconda
+   
+   Just follow the instructions in the [how_to](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
+   
+   ---
+   
+   </p>
+   </details>
 
 2. Install DVC in a Conda Environment
 
