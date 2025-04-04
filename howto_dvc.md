@@ -341,10 +341,20 @@ Fetching
 2. **Add New Data:**  
   - Save new files in directories managed by `dvc`, e.g. `data/` or `intermediate_files/` or ...
  
-  - Track them with:
+  - Track the new files and edits by "adding" them to `dvc`
+  - You do need to specify the directories tracked by `dvc`, they all have a matching file that ends with `.dvc`.  However, you cannot track the `*.dvc` files, just the directoreies
 
       ```bash
+      # list the dvc dirs
+      ls *dvc | sed 's/\.dvc//'
+
+      # you should add each of the directories output by the previous command
       dvc add data/ intermediate_files/
+      ```
+
+      ```bash
+      # you could also use this simple one liner to automatically add changes made to all dvc dirs
+       ls *dvc | sed 's/\.dvc//' | parallel -j1 'dvc add {}'
       ```
       
   - Save new files in directories managed by `git`, e.g. `scripts`, ...
