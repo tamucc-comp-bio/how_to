@@ -383,7 +383,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
       ```
 
       ```bash
-      # you could also use this simple one liner to automatically add changes made to all dvc dirs
+      # you could alternatively use this simple one liner to automatically add changes made to all dvc dirs
       # if you do not have `parallel`, add it:  sudo apt install parallel
        ls *dvc | sed 's/\.dvc//' | parallel -j1 'dvc add {}'
       ```
