@@ -397,7 +397,16 @@ Once your repo is cloned, then follow these general instructions to properly tra
   - Track them with:
 
       ```bash
-      git add scripts
+      # you must be sure that your dvc-tracked dirs
+       ls *dvc | sed 's/\.dvc//'
+      
+      # are specified in the .gitignore file
+      cat .gitignore
+      ```
+
+      ```bash
+      # before adding changes with git
+      git add --all
       ```
  
 3. **Push Changes:**  
