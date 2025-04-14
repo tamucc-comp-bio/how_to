@@ -262,6 +262,8 @@ DVC automatically updates `.gitignore` when you `dvc add` files or folders.
 
 # CLONING A REPO THAT UTILIZES DVC
 
+If you are cloning an existing GitHub repo, then follow these general instructions.
+
 <details><summary>VIII. Cloning Repo w/ DVC Already Set Up</summary>
 <p>
 
@@ -324,6 +326,10 @@ Fetching
 
 </p>
 </details>
+
+# WORKING IN A REPO THAT UTILIZES DVC
+
+Once your repo is cloned, then follow these general instructions to properly track your progress and push the changes to both GitHub and the `dvc` storage server.
 
 <details><summary>IX. Tracking Edits to Repo w/ DVC & GIT</summary>
 <p>
