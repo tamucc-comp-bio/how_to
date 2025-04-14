@@ -441,13 +441,13 @@ Once your repo is cloned, then follow these general instructions to properly tra
   > IMPORTANT!
   > Before adding changes to `git` you must be sure that your dvc-tracked dirs are specified in the `.gitignore` file 
 
-      ```bash
-      # list dvc dirs
-      ls *dvc | sed 's/\.dvc//'
-      
-      # confirm the dvc dirs are listed in the .gitignore
-      cat .gitignore
-      ```
+   ```bash
+   # list dvc dirs
+   ls *dvc | sed 's/\.dvc//'
+   
+   # confirm the dvc dirs are listed in the .gitignore
+   cat .gitignore
+   ```
 
   - Save edits and new files in directories managed by `git`, e.g. `scripts`, ...
 
