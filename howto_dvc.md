@@ -390,6 +390,8 @@ Once your repo is cloned, then follow these general instructions to properly tra
 <p>
 
   - It's important to write your code and perform all work in the repo so that the paths and changes you make are tracked and will work on any computer.
+
+  - It's perfectly fine to work on your dir through Windows or Mac GUI.  We use the terminal primarly for tracking with `git` and `dvc`.
    
   - Save new files in directories managed by `dvc`, e.g. `data/` or `intermediate_files/` or ... All `dvc`-tracked dirs have a matching file that ends with `.dvc`.  
 
