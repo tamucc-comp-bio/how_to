@@ -333,7 +333,7 @@ Fetching
 
 Once your repo is cloned, then follow these general instructions to properly track your progress and push the changes to both GitHub and the `dvc` storage server.  
 > NOTE!
-> If you create a new dir with large files that needs to be tracked by DVC, follow the instructions above
+> If you create a new dir with large files that needs to be tracked by DVC, follow the instructions above, starting with step III.
 
 <details><summary>IX. Tracking Edits to Repo w/ DVC & GIT</summary>
 <p>
