@@ -335,17 +335,25 @@ Once your repo is cloned, then follow these general instructions to properly tra
 > NOTE!
 > If you create a new dir with large files that needs to be tracked by DVC, follow the instructions above, starting with step III.
 
-<details><summary>IX. Tracking Edits to Repo w/ DVC & GIT</summary>
+<details><summary>IX. Navigate to Your Repo & Activate Your `dvc` Enironnment</summary>
 <p>
 
-0. **Navigate to your repo directory and make sure that you activate  your `dvc` environment in `conda`**
+   To run `git` and `dvc`, you must be inside of your repo and you must activate the `dvc` conda environment that we created previously.  Keeping `dvc` in a conda environment prevents its dependencies from interfering with those of other python packages.
 
    ```bash
    cd /mnt/c/users/cbird/Documents/my_repo
    conda activate dvc
    ```
 
-1. **Pull changes from github and the `dvc` storage servers before you start your work**
+---
+
+</p>
+</details>
+
+<details><summary>X. Pull changes from github and the `dvc`</summary>
+<p>
+   
+   It's important to pull changes from github and the `dvc` storage servers before you start your work because others may have updated the repo
 
    ```bash
    git pull
@@ -371,69 +379,91 @@ Once your repo is cloned, then follow these general instructions to properly tra
    M       intermediate_files/
    3 files modified
    ```
+
+---
+
+</p>
+</details>
+
+<details><summary>XI. Conduct Your Work in the Repo</summary>
+<p>
+
+   It's important to write your code and perform all work in the repo so that the paths and changes you make are tracked and will work on any computer.
    
-3. **Add New Data:**  
   - Save new files in directories managed by `dvc`, e.g. `data/` or `intermediate_files/` or ...
+
+---
+
+</p>
+</details>
+
+<details><summary>XII. Track the new files and edits by "adding" them to `dvc`</summary>
+<p>
  
-  - Track the new files and edits by "adding" them to `dvc`
   - You do need to specify the directories tracked by `dvc`, they all have a matching file that ends with `.dvc`.  However, you cannot track the `*.dvc` files, just the directoreies
 
       ```bash
       # list the dvc dirs
+      # be sure you are in the top level of your repo directory structure
+      
       ls *dvc | sed 's/\.dvc//'
+      ```
 
-      # you should add each of the directories output by the previous command
+      ```bash
+      # you could use this simple one liner to automatically add changes made to all dvc dirs
+      # be sure you are in the top level of your repo directory structure
+
+      ls *dvc | sed 's/\.dvc//' | parallel -j1 'dvc add {}'
+      ```
+
+      > NOTE!
+      > If you do not have `parallel`, add it:  `sudo apt install parallel`
+
+      ```bash
+      # you could alternatively specify each of the directories managed by dvc  
       dvc add data/ intermediate_files/
       ```
 
-      ```bash
-      # you could alternatively use this simple one liner to automatically add changes made to all dvc dirs
-      # if you do not have `parallel`, add it:  sudo apt install parallel
-       ls *dvc | sed 's/\.dvc//' | parallel -j1 'dvc add {}'
-      ```
-      
-  - Save new files in directories managed by `git`, e.g. `scripts`, ...
+---
+
+</p>
+</details>
+
+<details><summary>XIII. Track the new files and edits by adding & committing them to `git` & pushing them to GitHub</summary>
+<p>
  
-  - Track them with:
+  - Before adding changes to `git` you must be sure that your dvc-tracked dirs are specified in the `.gitignore` file 
 
       ```bash
-      # you must be sure that your dvc-tracked dirs
-       ls *dvc | sed 's/\.dvc//'
+      # list dvc dirs
+      ls *dvc | sed 's/\.dvc//'
       
-      # are specified in the .gitignore file
+      # confirm the dvc dirs are listed in the .gitignore
       cat .gitignore
       ```
 
-      ```bash
-      # before adding changes with git
-      git add --all
-      ```
- 
-3. **Push Changes:**  
-  - Commit code or metadata to Git:
+  - Save edits and new files in directories managed by `git`, e.g. `scripts`, ...
 
       ```bash
+      # if the .gitignore contains all of the dirs tracked by dvc, then add all changes to git
+      git add --all
       git commit -m "Update code and data"
       git push
       ```
  
-  - Push data to the DVC remote:
+---
+
+</p>
+</details>
+
+<details><summary>XIV. Push changes to `dvc` server</summary>
+<p>
+ 
+ 
+  - After pushing the changes to `git`, then push the `dvc`-tracked changes to the `dvc` server
 
       ```bash
       dvc push
-      ```
- 
-4. **Sync Changes on Another Machine:**  
-  - Pull Git updates:
-
-      ```bash
-      git pull
-      ```
- 
-  - Pull data updates:
-
-      ```bash
-      dvc pull
       ```
 
 </p>
