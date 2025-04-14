@@ -393,6 +393,13 @@ Once your repo is cloned, then follow these general instructions to properly tra
    
   - Save new files in directories managed by `dvc`, e.g. `data/` or `intermediate_files/` or ...
 
+      ```bash
+      # list the dvc dirs
+      # be sure you are in the top level of your repo directory structure
+      
+      ls *dvc | sed 's/\.dvc//'
+      ```
+
   > IMPORTANT!
   > Large files (> 50 MB) must be stored in directories tracked by `dvc`. Otherwise, GitHub will not accept them and it can be troublesome to fix your repo.
 
@@ -405,13 +412,6 @@ Once your repo is cloned, then follow these general instructions to properly tra
 <p>
  
   - To track the changes you made in `dvc`-tracked directories, you do need to specify the directories tracked by `dvc`, they all have a matching file that ends with `.dvc`.  
-
-      ```bash
-      # list the dvc dirs
-      # be sure you are in the top level of your repo directory structure
-      
-      ls *dvc | sed 's/\.dvc//'
-      ```
 
       ```bash
       # you could use this simple one liner to automatically add changes made to all dvc dirs
