@@ -16,7 +16,7 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 ---
 
-# START HERE: BE SURE YOUR COMPUTER IS PROPERLY SET UP AND HAS THE REQUIRED SOFTWARE
+# START HERE IF YOU ARE USING DVC FOR THE FIRST TIME: BE SURE YOUR COMPUTER IS PROPERLY SET UP AND HAS THE REQUIRED SOFTWARE
 
 1. If you are unsure whether your Windows/MacOS/Linux computer is properly prepped, consult [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
 
