@@ -338,7 +338,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 <details><summary>IX. Navigate to Your Repo & Activate Your `dvc` Enironnment</summary>
 <p>
 
-   To run `git` and `dvc`, you must be inside of your repo and you must activate the `dvc` conda environment that we created previously.  Keeping `dvc` in a conda environment prevents its dependencies from interfering with those of other python packages.
+  - To run `git` and `dvc`, you must be inside of your repo and you must activate the `dvc` conda environment that we created previously.  Keeping `dvc` in a conda environment prevents its dependencies from interfering with those of other python packages.
 
    ```bash
    cd /mnt/c/users/cbird/Documents/my_repo
@@ -353,7 +353,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 <details><summary>X. Pull changes from github and the `dvc`</summary>
 <p>
    
-   It's important to pull changes from github and the `dvc` storage servers before you start your work because others may have updated the repo
+  - It's important to pull changes from github and the `dvc` storage servers before you start your work because others may have updated the repo
 
    ```bash
    git pull
@@ -388,7 +388,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 <details><summary>XI. Conduct Your Work in the Repo</summary>
 <p>
 
-   It's important to write your code and perform all work in the repo so that the paths and changes you make are tracked and will work on any computer.
+  - It's important to write your code and perform all work in the repo so that the paths and changes you make are tracked and will work on any computer.
    
   - Save new files in directories managed by `dvc`, e.g. `data/` or `intermediate_files/` or ...
 
