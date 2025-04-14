@@ -86,7 +86,7 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 ---
 
-# IF YOU ARE CREATING A REPO FROM SCRATCH, START HERE
+# CREATING A REPO AND ADDING DVC
 
 <details><summary>I. Initial Setup</summary>
 <p>  
