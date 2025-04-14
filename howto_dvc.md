@@ -332,7 +332,8 @@ Fetching
 # WORKING IN A REPO THAT UTILIZES DVC
 
 Once your repo is cloned, then follow these general instructions to properly track your progress and push/pull the changes to both GitHub and the `dvc` storage server.  
-> NOTE!
+
+> IMPORTANT!
 > If you create a new dir with large files that needs to be tracked by DVC, follow the instructions above, starting with step III.
 
 <details><summary>IX. Navigate to Your Repo & Activate Your `dvc` Enironnment</summary>
@@ -431,8 +432,9 @@ Once your repo is cloned, then follow these general instructions to properly tra
 
 <details><summary>XIII. Track the new files and edits by adding & committing them to `git` & pushing them to GitHub</summary>
 <p>
- 
-  - Before adding changes to `git` you must be sure that your dvc-tracked dirs are specified in the `.gitignore` file 
+   
+  > IMPORTANT!
+  > Before adding changes to `git` you must be sure that your dvc-tracked dirs are specified in the `.gitignore` file 
 
       ```bash
       # list dvc dirs
