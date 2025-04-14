@@ -90,6 +90,8 @@ Start here if you are using DVC for the first time. Before utilizing `git` and `
 
 # CREATING A REPO THAT UTLIZES DVC 
 
+If you are creating a new GitHub repo and you know you have large files that require `dvc` management, you can follow this general protocol.  However, if you just need to clone an existing repo, then skip down to the next major section.
+
 <details><summary>I. Initial Setup</summary>
 <p>  
 
