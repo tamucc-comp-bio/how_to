@@ -347,8 +347,28 @@ Once your repo is cloned, then follow these general instructions to properly tra
    git pull
    dvc pull # you will be prompted to enter your password (tamucc crest or odu wahab)
    ```
+
+   Example, don't copy and paste.
    
-2. **Add New Data:**  
+   ```bash
+   (dvc) cbird@xps13plus:/mnt/c/Users/cbird/Downloads/spratelloides_delicatulus_phenotypes$ dvc pull
+   Collecting                                                                                                   |0.00 [00:00,    ?entry/s]
+   Fetching
+   (cbird@wahab.hpc.odu.edu) Password:
+   ```
+
+   ```
+   Fetching
+   Building workspace index                                                                                    |1.91k [00:03,  548entry/s]
+   Comparing indexes                                                                                          |1.91k [00:00, 52.0kentry/s]
+   Applying changes                                                                                             |0.00 [00:07,     ?file/s]
+   M       data_processed/
+   M       data_raw/
+   M       intermediate_files/
+   3 files modified
+   ```
+   
+3. **Add New Data:**  
   - Save new files in directories managed by `dvc`, e.g. `data/` or `intermediate_files/` or ...
  
   - Track the new files and edits by "adding" them to `dvc`
