@@ -393,6 +393,9 @@ Once your repo is cloned, then follow these general instructions to properly tra
    
   - Save new files in directories managed by `dvc`, e.g. `data/` or `intermediate_files/` or ...
 
+  > IMPORTANT!
+  > Large files (> 50 MB) must be stored in directories tracked by `dvc`. Otherwise, GitHub will not accept them and it can be troublesome to fix your repo.
+
 ---
 
 </p>
