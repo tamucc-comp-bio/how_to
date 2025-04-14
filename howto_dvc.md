@@ -360,7 +360,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
    dvc pull # you will be prompted to enter your password (tamucc crest or odu wahab)
    ```
 
-   Example, don't copy and paste.
+  - Example, don't copy and paste.
    
    ```bash
    (dvc) cbird@xps13plus:/mnt/c/Users/cbird/Downloads/spratelloides_delicatulus_phenotypes$ dvc pull
