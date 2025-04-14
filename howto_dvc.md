@@ -401,7 +401,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 <details><summary>XII. Track the new files and edits by "adding" them to `dvc`</summary>
 <p>
  
-  - You do need to specify the directories tracked by `dvc`, they all have a matching file that ends with `.dvc`.  However, you cannot track the `*.dvc` files, just the directoreies
+  - To track the changes you made in `dvc`-tracked directories, you do need to specify the directories tracked by `dvc`, they all have a matching file that ends with `.dvc`.  
 
       ```bash
       # list the dvc dirs
