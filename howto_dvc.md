@@ -86,7 +86,7 @@ Below is a step-by-step guide to set up a project with Git + DVC, organize your 
 
 ---
 
-# CREATING A REPO AND ADDING DVC
+# CREATING A REPO THAT UTLIZES DVC 
 
 <details><summary>I. Initial Setup</summary>
 <p>  
