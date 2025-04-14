@@ -391,7 +391,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 
   - It's important to write your code and perform all work in the repo so that the paths and changes you make are tracked and will work on any computer.
    
-  - Save new files in directories managed by `dvc`, e.g. `data/` or `intermediate_files/` or ...
+  - Save new files in directories managed by `dvc`, e.g. `data/` or `intermediate_files/` or ... All `dvc`-tracked dirs have a matching file that ends with `.dvc`.  
 
       ```bash
       # list the dvc dirs
@@ -411,7 +411,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 <details><summary>XII. Track the new files and edits by "adding" them to `dvc`</summary>
 <p>
  
-  - To track the changes you made in `dvc`-tracked directories, you do need to specify the directories tracked by `dvc`, they all have a matching file that ends with `.dvc`.  
+  - To track the changes you made in `dvc`-tracked directories, you do need to specify them
 
       ```bash
       # you could use this simple one liner to automatically add changes made to all dvc dirs
