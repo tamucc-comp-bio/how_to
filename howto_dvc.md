@@ -363,7 +363,10 @@ Once your repo is cloned, then follow these general instructions to properly tra
    ```
 
    > NOTE!
-   > If you are queried for another user's password, `ctrl-c` to cancel command, then run `dvc remote modify myremote user cbird --local`, replacing `cbird` with your username
+   > If you are queried for another user's password, `ctrl-c` to cancel command then run `dvc remote modify myremote user cbird --local`, replacing `cbird` with your username
+
+   > NOTE!
+   > If you can't see the characters you are typing after hitting `ctrl-c` then hit `enter` key followed by typing `reset` (you won't see the letters) and hit `enter` key again.  Now you should be able to see the letters you type.
 
   - Example, don't copy and paste.
    
