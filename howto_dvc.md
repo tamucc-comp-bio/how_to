@@ -361,6 +361,9 @@ Once your repo is cloned, then follow these general instructions to properly tra
    dvc pull # you will be prompted to enter your password (tamucc crest or odu wahab)
    ```
 
+   > NOTE!
+   > If you are queried for another user's password, `ctrl-c` to cancel command, then run `dvc remote modify myremote user cbird`, replacing `cbird` with your username
+
   - Example, don't copy and paste.
    
    ```bash
