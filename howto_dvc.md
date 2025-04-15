@@ -212,6 +212,7 @@ Add the following lines to `.gitignore` to exclude DVC-tracked files from Git:
   ```kotlin
   data/
   intermediate_files/
+  /.dvc/config.local
   ```
 
 DVC automatically updates `.gitignore` when you `dvc add` files or folders.
@@ -283,7 +284,7 @@ If you do not complete steps 1-3 in totality, then you will have to remove the r
   If you are not the user who originally set-up the remote storage, you will need to change the userID which uses SSH to download the files. You need to have proper access to the remote storage location to use:
  
   ```bash
-  dvc remote modify myremote user <username> #There is no need to enclose the username in quotation marks.
+  dvc remote modify myremote user <username> --local #There is no need to enclose the username in quotation marks nor <>.
   ```
 
  > [!NOTE]
@@ -362,7 +363,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
    ```
 
    > NOTE!
-   > If you are queried for another user's password, `ctrl-c` to cancel command, then run `dvc remote modify myremote user cbird`, replacing `cbird` with your username
+   > If you are queried for another user's password, `ctrl-c` to cancel command, then run `dvc remote modify myremote user cbird --local`, replacing `cbird` with your username
 
   - Example, don't copy and paste.
    
