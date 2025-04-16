@@ -9,7 +9,7 @@ Below is a summary of the key directories and their contents:
 ```
 project_name/
 ├── data_raw/  
-├── documentation/
+├── data_processed/
 ├── documentation/
 ├── scripts/
 ├── results/
