@@ -114,6 +114,10 @@ Figure 2. From [R for Data Science](https://r4ds.had.co.nz/relational-data.html)
 
 It is advisable to create an ERD such as that displayed in Fig. 2 for your research project _before_ you collect the data.  The less thought you put into organizing your data prior to collecting it, the more time and lines of code it will take to organize the data into a relational database that can be easily analyzed.  
 
+#### [Example: Use `dm` R package to connect dataframes into a relational database](howto_relational-database-R.md)
+
+![](howto_relational-database-R/erd_detailed.png)
+
 ---
 
 ## Naming of Files, Columns, and Directories
