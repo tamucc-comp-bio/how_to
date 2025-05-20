@@ -1,7 +1,4 @@
-# HowTo: Relational Databases in R with `dm`
-
-
-# Building Relational Data Models in **R** with the **{dm}** Package
+# Building Relational Data Models in **R** with the `dm` Package
 
 Create, validate, and visualise a relational database directly from your data frames/tibbles—no external SQL server required.
 
@@ -20,6 +17,8 @@ install.packages(c("dm", "tidyverse", "DiagrammeR"))   # DiagrammeR is pulled au
 ```
 
 ## 3 Example script and dataset
+
+![](howto_relational-database-R/erd_detailed.png)
 
 Run `howto_relational-database-R/example_2stage_pcr_reldb.R`
 
