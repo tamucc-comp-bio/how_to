@@ -32,3 +32,10 @@ how_to/
 ```
 
 [Breakdown of Script](https://chatgpt.com/share/682cb6e5-fc28-800f-99bc-70823efe326e)
+
+## 4 Consult the extensive and useful `dm` documentation
+
+There's so much more capability here, such as converting the dm object to a single tidy file.
+
+* [Present `dm` documentation](https://dm.cynkra.com/)
+* [Former `dm` documentation](https://krlmlr.github.io/dm/articles/dm.html)
