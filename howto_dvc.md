@@ -347,6 +347,9 @@ Once your repo is cloned, then follow these general instructions to properly tra
    conda activate dvc
    ```
 
+> NOTE!
+> In the `conda activate dvc` command, it is assumed that you set `dvc` as the name of the environment in which you installed the `dvc` package.
+
 ---
 
 </p>
@@ -356,6 +359,8 @@ Once your repo is cloned, then follow these general instructions to properly tra
 <p>
    
   - It's important to pull changes from github and the `dvc` storage servers before you start your work because others may have updated the repo
+  - `git pull` updates code and .dvc pointer files
+  - `dvc pull` gets the actual data files managed by `DVC`
 
    ```bash
    git pull
@@ -396,7 +401,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 <details><summary>XI. Conduct Your Work in the Repo</summary>
 <p>
 
-  - It's important to write your code and perform all work in the repo so that the paths and changes you make are tracked and will work on any computer.
+  - It's important to write your code and perform all work in the repo so that the file paths and changes you make are tracked and will work on any computer. Working in the repo ensures your relative file paths work for everyone on every machine
 
   - It's perfectly fine to work on your dir through Windows or Mac GUI.  We use the terminal primarly for tracking with `git` and `dvc`.
    
@@ -420,7 +425,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 <details><summary>XII. Track the new files and edits by "adding" them to `dvc`</summary>
 <p>
  
-  - To track the changes you made in `dvc`-tracked directories, you do need to specify them
+  - If you made changes to the dvc-tracked directories, then to track the changes, you do need to explicitly `dvc add` them
 
       ```bash
       # you could use this simple one liner to automatically add changes made to all dvc dirs
