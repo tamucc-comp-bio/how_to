@@ -449,7 +449,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 </p>
 </details>
 
-<details><summary>XIII. Track the new files and edits by adding & committing them to `git` & pushing them to GitHub</summary>
+<details><summary>XIII. Track the new files and edits by adding & committing them to `git`</summary>
 <p>
    
   > IMPORTANT!
@@ -476,7 +476,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 </p>
 </details>
 
-<details><summary>XIV. Push changes to `dvc` server</summary>
+<details><summary>XIV. Push changes to `dvc` server, then github</summary>
 <p>
  
  
