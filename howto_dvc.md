@@ -429,6 +429,11 @@ Once your repo is cloned, then follow these general instructions to properly tra
   - If you made changes to the dvc-tracked directories, then to track the changes, you do need to explicitly `dvc add` them
 
       ```bash
+      # you could alternatively specify each of the directories managed by dvc  
+      dvc add data_dvc intermediate_files_dvc data_processed_dvc
+      ```
+
+      ```bash
       # you could use this simple one liner to automatically add changes made to all dvc dirs
       # be sure you are in the top level of your repo directory structure
 
@@ -438,10 +443,6 @@ Once your repo is cloned, then follow these general instructions to properly tra
       > NOTE!
       > If you do not have `parallel`, add it:  `sudo apt install parallel`
 
-      ```bash
-      # you could alternatively specify each of the directories managed by dvc  
-      dvc add data/ intermediate_files/
-      ```
 
 ---
 
