@@ -491,7 +491,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 </p>
 </details>
 
-<details><summary>XV DVC Troubleshooting & Healthcheck</summary>
+<details><summary>XV. DVC Troubleshooting & Healthcheck</summary>
 <p>
  
 If the instructions above are not followed, you may get into a situation where the repo needs to be repaired.  YOu can show LLM like chatGPT the inputs and outputs from your terminal that led to the errors to try and resolve, but realize that it is possible to overwrite progress so proceed with caution.
