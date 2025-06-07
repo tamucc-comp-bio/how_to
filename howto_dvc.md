@@ -486,7 +486,39 @@ Once your repo is cloned, then follow these general instructions to properly tra
       dvc push
       ```
 
+---
+
 </p>
 </details>
 
+<details><summary>XV DVC Troubleshooting & Healthcheck</summary>
+<p>
+ 
+If the instructions above are not followed, you may get into a situation where the repo needs to be repaired.  YOu can show LLM like chatGPT the inputs and outputs from your terminal that led to the errors to try and resolve, but realize that it is possible to overwrite progress so proceed with caution.
+
+Before and after you make changes, it can be useful to run the following commands to assess the situation.
+ 
+  - Repo Health Check
+
+      ```bash
+      # 1. Workspace should be clean
+      git status          # → “nothing to commit, working tree clean”
+      dvc status          # → “Workspace is up to date.”
+      
+      # 2. Remote cache should be fully populated
+      dvc status -c       # (-c = cloud) → “Everything is up to date.”
+      # If it isn’t, just run:
+      dvc push
+      
+      # 3. Verify the two x-ray files really exist (symlink or full copy)
+      ls -lh data_processed_dvc/matnog_xrays | head
+      
+      # 4. Basic sanity on the DVC setup
+      dvc doctor          # shows version, cache dir, remotes; all should be “OK”
+      ```
+
+---
+
+</p>
+</details>
 ---
