@@ -293,7 +293,7 @@ If you do not complete steps 1-3 in totality, then you will have to remove the r
 
 3. **Pull Data with DVC:** 
 
-  This will download the `data/` and `intermediate_files/` folders from the DVC remote.
+  This will download the directories with large files from the DVC remote server.
 
 > [!NOTE]
 > To pull ODU-Wahab hosted files you must do this to only require a single password entry
