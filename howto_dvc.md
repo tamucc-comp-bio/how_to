@@ -469,7 +469,6 @@ Once your repo is cloned, then follow these general instructions to properly tra
       # if the .gitignore contains all of the dirs tracked by dvc, then add all changes to git
       git add --all
       git commit -m "Update code and data"
-      git push
       ```
  
 ---
@@ -485,6 +484,7 @@ Once your repo is cloned, then follow these general instructions to properly tra
 
       ```bash
       dvc push
+      git push
       ```
 
 ---
