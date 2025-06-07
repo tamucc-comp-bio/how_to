@@ -510,10 +510,7 @@ Before and after you make changes, it can be useful to run the following command
       # If it isn’t, just run:
       dvc push
       
-      # 3. Verify the two x-ray files really exist (symlink or full copy)
-      ls -lh data_processed_dvc/matnog_xrays | head
-      
-      # 4. Basic sanity on the DVC setup
+      # 3. Basic sanity on the DVC setup
       dvc doctor          # shows version, cache dir, remotes; all should be “OK”
       ```
 
