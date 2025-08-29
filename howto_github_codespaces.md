@@ -92,7 +92,7 @@ The Student Pack gives you **free access to premium tools and credits** (includi
 
 ---
 
-## 5. Verify Your Access
+## 6. Verify Your Access
 
 After you’re approved:  
 - Visit [education.github.com/benefits](https://education.github.com/benefits) to see your perks.  
@@ -100,7 +100,7 @@ After you’re approved:
 
 ---
 
-## 6. Tips for Using Codespaces
+## 7. Tips for Using Codespaces
 
 - Always **stop** your codespace when not in use (to save hours).  
 - Use **extensions** in Codespaces just like VS Code.  
