@@ -4,6 +4,11 @@ This repo was created to centralize tutorials for software installation, compute
 
 ---
 
+## [How To Set Up GitHub CodeSpaces IDE](howto_github_codespaces.md)
+
+
+---
+
 ## [How To Set Up Your Launch HPC Account (RStudio, Python & Terminal in a Web Page)](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
 Students in Computational Biology or the lab of Dr. Chris Bird should click the link above create an ACCESS account and apply for a Launch account. There will be a waiting period between when you apply for the Launch account and it is approved for you to log on.
