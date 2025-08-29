@@ -4,7 +4,7 @@ This guide will help you set up **GitHub Codespaces** for your projects and appl
 
 ---
 
-Please send me your github user id ASAP if you have not already given it to me, e.g. in the quiz. 
+:bangbang: Please send me your github user id ASAP if you have not already given it to me, e.g. in the quiz. 
 
 ---
 
