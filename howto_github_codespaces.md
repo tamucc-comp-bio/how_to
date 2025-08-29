@@ -39,7 +39,7 @@ This is the safe swimming pool :swimmer: before we jump into the open ocean :oce
 
 ## :magic_wand: 2. Create Your First Codespace  	
 
-1. [Initialize your Personal Lecture 0 Repo]()  (right click and open in new window)
+1. [Initialize your Personal Lecture 0 Repo](https://classroom.github.com/a/5tvV4uls)  (right click and open in new window)
 2. Click the green **Code** button (top right).
 3. Select the **Codespaces** tab.
 4. Click **Create codespace on main**.  
