@@ -1,8 +1,8 @@
-# How to Set Up GitHub Code Spaces
+# 🚀 Getting Started with GitHub Codespaces & the GitHub Student Developer Pack
+
+This guide will help you set up **GitHub Codespaces** for your projects and apply for the **GitHub Student Developer Pack**. You should already have a GitHub account before starting.
 
 ---
-
-To share your data, and track your analysis, we are going to utilize github. 
 
 Please send me your github user id ASAP if you have not already given it to me, e.g. in the quiz. 
 
@@ -11,9 +11,8 @@ Please send me your github user id ASAP if you have not already given it to me, 
 ## Step 0: Create a GitHub Account 
 - [Instructions](howto_github_acct.md) 
 
-# 🚀 Getting Started with GitHub Codespaces & the GitHub Student Developer Pack
 
-This guide will help you set up **GitHub Codespaces** for your projects and apply for the **GitHub Student Developer Pack**. You should already have a GitHub account before starting.  
+  
 
 ---
 
