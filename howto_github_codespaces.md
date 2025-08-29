@@ -31,15 +31,15 @@ This is the safe swimming pool :swimmer: before we jump into the open ocean :oce
 
 1. Go to [GitHub Codespaces](https://github.com/features/codespaces).
 2. Click **Get Started**.
-3. If prompted, sign in with your GitHub account.
-4. You’ll be directed to your [Codespaces dashboard](https://github.com/codespaces).  
+4. If prompted, sign in with your GitHub account.
+5. You’ll be directed to your [Codespaces dashboard](https://github.com/codespaces).  
    Here you can create and manage codespaces linked to your repositories.
 
 ---
 
 ## :magic_wand: 2. Create Your First Codespace  	
 
-1. [Initialize your Personal "Intro to CLI" Assignment Repo](https://classroom.github.com/a/EWxbhNfJ)  (right click and open in new window)
+1. [Initialize your Personal Lecture 0 Repo]()  (right click and open in new window)
 2. Click the green **Code** button (top right).
 3. Select the **Codespaces** tab.
 4. Click **Create codespace on main**.  
