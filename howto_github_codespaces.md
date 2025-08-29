@@ -16,7 +16,7 @@ This guide will help you set up **GitHub Codespaces** for your projects and appl
 
 ---
 
-## 1. Enable GitHub Codespaces
+## :weight_lifting_woman: 1. Enable GitHub Codespaces
 
 1. Go to [GitHub Codespaces](https://github.com/features/codespaces).
 2. Click **Get Started**.
