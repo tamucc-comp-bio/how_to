@@ -28,7 +28,7 @@ Please send me your github user id ASAP if you have not already given it to me, 
 
 ## 2. Create Your First Codespace
 
-1. [Initialize your CLI Assignment Due Next Week](https://classroom.github.com/a/EWxbhNfJ)  (right click and open in new window)
+1. [Initialize your Personal "Intro to CLI" Assignment Repo](https://classroom.github.com/a/EWxbhNfJ)  (right click and open in new window)
 2. Click the green **Code** button (top right).
 3. Select the **Codespaces** tab.
 4. Click **Create codespace on main**.  
