@@ -10,7 +10,7 @@ CodeSpaces is the quickest way to get a terminal up and going. Great for worksho
 
 ---
 
-## [How To Set Up Your Launch HPC Account (RStudio, Python & Terminal in a Web Page)](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
+## :desktop_computer: [How To Set Up Your Launch HPC Account (RStudio, Python & Terminal in a Web Page)](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
 Students in the lab of Dr. Chris Bird should click the link above create an ACCESS account and apply for a Launch account. There will be a waiting period between when you apply for the Launch account and it is approved for you to log on.
 
