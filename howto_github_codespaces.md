@@ -8,11 +8,20 @@ This guide will help you set up **GitHub Codespaces** for your projects and appl
 
 ---
 
-## Step 0: Create a GitHub Account 
+## ❓ What is GitHub Codespaces?  
+
+GitHub Codespaces is a **cloud-based development environment**.  
+It gives you a full Visual Studio Code editor running in the browser, connected directly to your GitHub repositories.  
+
+- No need to install anything on your computer.  
+- Preconfigured with common programming tools.  
+- Runs in the cloud, so you can code from any device with internet access.  
+- Saves your changes back to GitHub just like working locally.  
+
+---
+
+## ☑️ Step 0: Create a GitHub Account 
 - [Instructions](howto_github_acct.md) 
-
-
-  
 
 ---
 
@@ -45,7 +54,7 @@ This guide will help you set up **GitHub Codespaces** for your projects and appl
 
 Codespaces run on cloud resources and use up your free hours. To save hours, always stop your Codespace when you’re not working.  
 
-1. In GitHub, go to the **Codespaces** tab of your repository or your [Codespaces dashboard](https://github.com/codespaces).
+1. In GitHub, go to the **Codespaces** tab of your repository or your [Codespaces dashboard](https://github.com/codespaces). (right click and open in new tab)
 2. Find the Codespace you want to stop.
 3. Click the **… (three dots)** menu.
 4. Select **Stop codespace**.  
@@ -54,17 +63,17 @@ Codespaces run on cloud resources and use up your free hours. To save hours, alw
 
 ---
 
-## ⏳ Usage Limits
+## ⏳ 4. Usage Limits
 
 - **Free Accounts:** 120 hours of Codespaces per month on a basic machine type.  
 - **Student Developer Pack:** Increases your free hours and includes larger machine options.  
-- **Billing:** If you go over the free hours, Codespaces will not start unless you add a payment method.  
+- **Billing:** If you go over the free hours, Codespaces will not start unless you add a payment method.  (Don't pay!)
 
 🔎 You can track your usage on your [Billing & Plans page](https://github.com/settings/billing/summary).  
 
 ---
 
-## 4. Apply for the GitHub Student Developer Pack 🎓
+## 5. Apply for the GitHub Student Developer Pack 🎓
 
 The Student Pack gives you **free access to premium tools and credits** (including additional Codespaces hours).  
 
