@@ -6,6 +6,8 @@ This repo was created to centralize tutorials for software installation, compute
 
 ## :rocket: [How To Set Up GitHub CodeSpaces IDE](howto_github_codespaces.md)
 
+Students in Computational Biology, a workshop, or the lab of Dr. Chris Bird should click the link above to set up GitHub CodeSpaces
+
 CodeSpaces is the quickest way to get a terminal up and going. Great for workshops and learning concepts rather than setting up software.  However, you only get 30-45 hrs of codespaces per month, so be sure you turn off your codespace when you're not using it.
 
 ---
