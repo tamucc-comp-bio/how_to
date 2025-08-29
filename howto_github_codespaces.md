@@ -41,7 +41,30 @@ This guide will help you set up **GitHub Codespaces** for your projects and appl
 
 ---
 
-## 3. Apply for the GitHub Student Developer Pack 🎓
+## 🛑 3. Stopping Your Codespace
+
+Codespaces run on cloud resources and use up your free hours. To save hours, always stop your Codespace when you’re not working.  
+
+1. In GitHub, go to the **Codespaces** tab of your repository or your [Codespaces dashboard](https://github.com/codespaces).
+2. Find the Codespace you want to stop.
+3. Click the **… (three dots)** menu.
+4. Select **Stop codespace**.  
+
+💡TIP: Stopping is like closing your laptop — your files and environment are saved, but resources stop running.
+
+---
+
+## ⏳ Usage Limits
+
+- **Free Accounts:** 120 hours of Codespaces per month on a basic machine type.  
+- **Student Developer Pack:** Increases your free hours and includes larger machine options.  
+- **Billing:** If you go over the free hours, Codespaces will not start unless you add a payment method.  
+
+🔎 You can track your usage on your [Billing & Plans page](https://github.com/settings/billing/summary).  
+
+---
+
+## 4. Apply for the GitHub Student Developer Pack 🎓
 
 The Student Pack gives you **free access to premium tools and credits** (including additional Codespaces hours).  
 
@@ -58,7 +81,7 @@ The Student Pack gives you **free access to premium tools and credits** (includi
 
 ---
 
-## 4. Verify Your Access
+## 5. Verify Your Access
 
 After you’re approved:  
 - Visit [education.github.com/benefits](https://education.github.com/benefits) to see your perks.  
@@ -66,7 +89,7 @@ After you’re approved:
 
 ---
 
-## 5. Tips for Using Codespaces
+## 6. Tips for Using Codespaces
 
 - Always **stop** your codespace when not in use (to save hours).  
 - Use **extensions** in Codespaces just like VS Code.  
