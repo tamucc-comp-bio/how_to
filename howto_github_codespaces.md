@@ -16,7 +16,9 @@ It gives you a full Ubuntu Terminal and Visual Studio Code editor running in the
 - No need to install anything on your computer.  
 - Preconfigured with common programming tools.  
 - Runs in the cloud, so you can code from any device with internet access.  
-- Saves your changes back to GitHub just like working locally.  
+- Saves your changes back to GitHub just like working locally.
+
+This is the safe swimming pool before we jump into the open ocean of open-source software.
 
 ---
 
