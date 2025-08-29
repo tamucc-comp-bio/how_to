@@ -11,7 +11,7 @@ This guide will help you set up **GitHub Codespaces** for your projects and appl
 ## ❓ What is GitHub Codespaces?  
 
 GitHub Codespaces is a **cloud-based development environment**.  
-It gives you a full Visual Studio Code editor running in the browser, connected directly to your GitHub repositories.  
+It gives you a full Ubuntu Terminal and Visual Studio Code editor running in the browser, connected directly to your GitHub repositories. Codespaces can be set up to run nearly any coding language. We will use it to get you started with using the CLI as well as completeing and submitting your assignments.
 
 - No need to install anything on your computer.  
 - Preconfigured with common programming tools.  
