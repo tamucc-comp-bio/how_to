@@ -8,7 +8,7 @@ To share your data, and track your analysis, we are going to utilize github. Ple
 
 ### Step 1: Go to the GitHub Website
 - Open your web browser.
-- Navigate to [GitHub's website](https://github.com/).
+- Navigate to [GitHub's website](https://github.com/) (right click adn open in new window).
 
 ### Step 2: Sign Up
 - On the GitHub homepage, find the **Sign up** button, usually located at the top right corner.
