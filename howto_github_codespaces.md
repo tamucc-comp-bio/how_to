@@ -18,7 +18,7 @@ It gives you a full Ubuntu Terminal and Visual Studio Code editor running in the
 - Runs in the cloud, so you can code from any device with internet access.  
 - Saves your changes back to GitHub just like working locally.
 
-This is the safe swimming pool before we jump into the open ocean of open-source software.
+This is the safe swimming pool :swimmer: before we jump into the open ocean :ocean: of open-source software.  By the end of the course, this will be you :surfing_woman: :surfing_man:.
 
 ---
 
@@ -75,7 +75,7 @@ Codespaces run on cloud resources and use up your free hours. To save hours, alw
 
 ---
 
-## 5. Apply for the GitHub Student Developer Pack 🎓
+## 🎓 5. Apply for the GitHub Student Developer Pack 
 
 The Student Pack gives you **free access to premium tools and credits** (including additional Codespaces hours).  
 
