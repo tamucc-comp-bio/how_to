@@ -4,7 +4,7 @@ This repo was created to centralize tutorials for software installation, compute
 
 ---
 
-## [How To Set Up GitHub CodeSpaces IDE](howto_github_codespaces.md)
+## :rocket: [How To Set Up GitHub CodeSpaces IDE](howto_github_codespaces.md)
 
 CodeSpaces is the quickest way to get a terminal up and going. Great for workshops and learning concepts rather than setting up software.  However, you only get 30-45 hrs of codespaces per month, so be sure you turn off your codespace when you're not using it.
 
@@ -30,7 +30,7 @@ printf '\n# Load Nano Text Editor\nmodule load GCCcore/12.3.0\nmodule load nano/
 
 ---
 
-## [How To Set Up Your Computer for Computational Biology](howto_setup_computer.md)
+## :computer: [How To Set Up Your Computer for Computational Biology](howto_setup_computer.md)
 
 Students in Computational Biology, a workshop, or the lab of Dr. Chris Bird should click the link above to set up Win, Mac, or Linux computers. 
 
@@ -38,13 +38,13 @@ _Neither ChromeOS, iOS, nor Android are supported by R Studio, therefore it is g
 
 ---
 
-## [How To Organize Biological Data](howto_organize_data.md)
+## :file_folder: [How To Organize Biological Data](howto_organize_data.md)
 
 This is a quick orientation to modern principals of data organization for biologists.  
 
 ---
 
-## Manage Genetic Data With [Geome DB](https://geome-db.org/)
+## :dna: Manage Genetic Data With [Geome DB](https://geome-db.org/)
 
 If you are a student in the lab of Dr. Chris Bird and your research involves genetics/genomics of wild organisms, then
 
@@ -53,7 +53,7 @@ If you are a student in the lab of Dr. Chris Bird and your research involves gen
 
 ---
 
-## Additional Resources
+## :book: Additional Resources
 
 * [Git & GitHub for Beginners](https://www.freecodecamp.org/news/git-and-github-for-beginners/)
 
