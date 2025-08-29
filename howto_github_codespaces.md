@@ -26,7 +26,7 @@ This guide will help you set up **GitHub Codespaces** for your projects and appl
 
 ---
 
-## 2. Create Your First Codespace
+## 2. Create Your First Codespace  	:magic_wand:
 
 1. [Initialize your Personal "Intro to CLI" Assignment Repo](https://classroom.github.com/a/EWxbhNfJ)  (right click and open in new window)
 2. Click the green **Code** button (top right).
