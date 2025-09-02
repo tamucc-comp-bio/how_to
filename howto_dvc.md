@@ -24,12 +24,18 @@ Start here if you are using DVC for the first time. Before utilizing `git` and `
 
    <details><summary>Expand for instructions</summary>
    <p>  
-   You minimally need
+   You minimally need:
+      
    * linux/unix based os
+     
      * mac os is unix based, so you're good
+       
      * windows computers are not unix based, so install wsl ubuntu & windows terminal
+       
    * github account
+     
    * ssh keys
+     
    * miniconda
    
    Just follow the instructions in the [how_to](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
