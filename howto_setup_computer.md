@@ -34,6 +34,8 @@ For those with Windows OS, install a [linux](https://en.wikipedia.org/wiki/Linux
 
 * [Install RStudio](install_rstudio.md)
 
+* [Set Terminal in MS Windows RStudio to Ubuntu](howto_bashterminal-in-r.md)
+
 * [Install Conda](install_conda.md)
 
 ---
