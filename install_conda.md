@@ -33,38 +33,11 @@ In summary, for students, especially those in fields like data science, biology,
 <details><summary>Universal Miniconda Setup (if you are unsure, install this one)</summary>
 <p>
 
-Goto your terminal and download the most appropriate installer from the [miniconda downloads page](https://docs.anaconda.com/miniconda/#miniconda-latest-installer-links). Use the command line installer. e.g. If you have ubuntu, then download the Linux x86 installer.
+Follow the instructions for your OS and CPU in the [MiniConda QuickStart Guide](https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions).  Last updated 2025-11-07.
 
-```bash
-# last updated 2024-11-08, check the link above for the latest links
+If that doesn't work, goto your terminal and download the most appropriate installer from the [miniconda downloads page](https://docs.anaconda.com/miniconda/#miniconda-latest-installer-links). Use the command line installer. 
 
-cd ~
-mkdir Downloads # if this causes error, it means you already have downloads dir
-cd Downloads
-
-# ubuntu command line installer
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-
-# mac with intel cpu command line installer
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-
-# mac with apple cpu (M1, M2, ..., etc) command line installer
-https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
-```
-
-Visit the [Miniconda Installation Instructions Page](https://docs.anaconda.com/miniconda/miniconda-install/) and **select the Linux tab even if you have a Mac**.  You just completed step 1, so goto step 2.
-
-If step 2 doesn't throw an error, then procede to step 3. Otherwise repeat the download.
-
-Finish the installation based on the official Miniconda instructions.
-
-Tips for selecting installation options:
-
-* use the `d` key to scroll down the license agreement more quickly
-* after accepting the agreement, hit `enter/return` to put miniconda in the default location
-* say "yes" to updating your shell profile to automatically load miniconda
-
-After restarting, if you see `(base)` before your command prompt, you were successful
+Be sure to restart your terminal.  If you see `(base)` before your command prompt, you were successful.  If you don't see `(base)` then try the command `conda activate`.
 
 ```bash
 (base) cbird@xps13plus:~$
@@ -79,7 +52,7 @@ Go ahead and run `python`
 ```
 
 ```python
-Python 3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0] on linux
+Python 3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
