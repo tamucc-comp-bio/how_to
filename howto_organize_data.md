@@ -52,13 +52,18 @@ library(dplyr)
 raw_data <- read_csv("field_data.csv")
 
 # Clean the data
-clean_data <- raw_data %>%
+clean_data <-
+  raw_data %>%
   mutate(species = tolower(species)) %>%   # Standardize species names
-  filter(!is.na(location)) %>%              # Remove records with missing locations
-  distinct()                                # Remove duplicate records
+  filter(!is.na(location)) %>%             # Remove records with missing locations
+  distinct()                               # Remove duplicate records
 
 # Save the cleaned data
-write_csv(clean_data, "field_data_clean.csv", row.names = FALSE)
+write_csv(
+  clean_data,
+  "field_data_clean.csv",
+  row.names = FALSE
+)
 
 ```
 
@@ -72,29 +77,47 @@ Box 2. Example R code to join GPS waypoints stored in a `gpx` file with a tidy t
 
 # Load necessary packages
 library(dplyr)
-library(sf)      # For handling spatial data
-library(tidyverse) # For data wrangling
-library(tmaptools) # For reading GPX files
+library(sf)              # For handling spatial data
+library(tidyverse)       # For data wrangling
+library(tmaptools)       # For reading GPX files
 
 # Import GPS waypoints from GPX file
-gpx_data <- st_read("waypoints.gpx", layer = "waypoints")
+gpx_data <-
+  st_read(
+    "waypoints.gpx",
+    layer = "waypoints"
+  )
 
 # Import additional metadata from a CSV file
 metadata <- read_csv("field_data_clean.csv")
 
 # Clean and prepare data for joining
-gpx_data_clean <- gpx_data %>%
-  select(name, lat = coords.x1, lon = coords.x2)  # Select relevant columns and rename
+gpx_data_clean <-
+gpx_data %>%
+  select(                 # Select relevant columns and rename
+    name,
+    lat = coords.x1,
+    lon = coords.x2
+  )  
 
-metadata_clean <- metadata %>%
+metadata_clean <-
+  metadata %>%
   mutate(location_id = tolower(location_id))  # Standardize location IDs if needed
 
 # Join the GPX data with the metadata
-combined_data <- gpx_data_clean %>%
-  left_join(metadata_clean, by = c("name" = "location_id"))
+combined_data <-
+  gpx_data_clean %>%
+  left_join(
+    metadata_clean,
+    by = c("name" = "location_id")
+  )
 
 # Save the combined data to a CSV file for further analysis
-write_csv(combined_data, "combined_location_data.csv", row.names = FALSE)
+write_csv(
+  combined_data,
+  "combined_location_data.csv",
+  row.names = FALSE
+)
 
 ```
 
