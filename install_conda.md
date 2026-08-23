@@ -421,11 +421,7 @@ When installation finishes, **close Terminal completely and open a new Terminal 
 </p>
 </details>
 
----
-
-## Confirm Installation Worked
-
-<details><summary></summary>
+<details><summary>Confirm Installation Worked</summary>
 <p>
 
 Run:
