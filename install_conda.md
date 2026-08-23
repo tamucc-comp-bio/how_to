@@ -471,4 +471,96 @@ or, on a Mac, something similar inside your home directory.
 
 ---
 
-### [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
+## Troubleshooting
+
+<details><summary>`conda: command not found`</summary>
+<p>
+
+First, completely close your terminal and open it again.
+
+Then try:
+
+```bash
+conda --version
+```
+
+If Conda is still not found and Miniforge was installed in the normal location, run:
+
+```bash
+~/miniforge3/bin/conda init
+```
+
+Then close and reopen the terminal again.
+    
+---
+
+</p>
+</details>
+
+<details><summary>I Already Have Anaconda, Miniconda, or Another Conda Installation</summary>
+<p>
+
+Do not install additional Conda distributions on top of each other.
+
+Run:
+
+```bash
+which conda
+```
+
+and:
+
+```bash
+conda info --base
+```
+
+Show the output to your instructor before changing anything.
+
+---
+
+</p>
+</details>
+
+<details><summary>My Prompt Says `(base)`</summary>
+<p>
+
+This is not an error.
+
+Run:
+
+```bash
+conda config --set auto_activate_base false
+```
+
+Then close and reopen the terminal.
+
+---
+
+</p>
+</details>
+
+<details><summary>I Am on Windows and `conda` Works in PowerShell but Not Ubuntu</summary>
+<p>
+
+For this course, we want Miniforge installed **inside WSL Ubuntu**.
+
+A Windows installation and a WSL/Linux installation are separate.
+
+Open Ubuntu and follow the Linux / Windows WSL installation instructions above.
+
+---
+
+</p>
+</details>
+
+---
+
+## Official Miniforge Documentation
+
+The Miniforge project and current installers are maintained by the conda-forge community:
+
+https://github.com/conda-forge/miniforge
+
+---
+
+## [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
