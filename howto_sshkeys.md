@@ -37,7 +37,7 @@ If you get an error stating that `.ssh` doesn't exist , then create the director
    ssh-keygen -t ed25519 -C "TYPE_YOUR_GITHUB_EMAIL_HERE"
    ```
    
-    * you will be prompted for a pass phrase, etc..., I recommend not entering a pass phrase and hitting the `Enter/Return` key at each prompt
+   You will be prompted for a pass phrase, etc..., I recommend not entering a pass phrase and hitting the `Enter/Return` key at each prompt
 
    ```bash
    Enter file in which to save the key: [press Enter]
@@ -47,28 +47,27 @@ If you get an error stating that `.ssh` doesn't exist , then create the director
     
    When the key pair is created, you should see something like this:
     
-   ```
-    Generating public/private rsa key pair.
-    Enter file in which to save the key (/var/services/homes/Chris/.ssh/id_rsa): 
-    Enter passphrase (empty for no passphrase): 
-    Enter same passphrase again: 
-    Your identification has been saved in /var/services/homes/Chris/.ssh/id_rsa.
-    Your public key has been saved in /var/services/homes/Chris/.ssh/id_rsa.pub.
+   ```bash
+    Generating public/private ed25519 key pair.
+    Enter file in which to save the key (/home/cbird/.ssh/id_ed25519):
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    Your identification has been saved in /home/cbird/.ssh/id_ed25519
+    Your public key has been saved in /home/cbird/.ssh/id_ed25519.pub
     The key fingerprint is:
-    SHA256:rp5Z3rd6FenG7CZXjsERVhG5BODd4b3ReNcpr5/veq4 Chris@HOBIcloud
+    SHA256:VB5/qhanPct0C0tlbpZTTB0lnEWGv2Zgfpcy+dcLuAs cbird808@gmail.com
     The key's randomart image is:
-    +---[RSA 2048]----+
-    |           ....==|
-    |          . . =+*|
-    |           . +oBB|
-    |              *o+|
-    |        S    = = |
-    |       .      X .|
-    |        o    = = |
-    |       * .  + * +|
-    |     .= . o+.=EO=|
+    +--[ED25519 256]--+
+    |          o  ..**|
+    |         o o  +oo|
+    |        . . . ..o|
+    |       .     = o.|
+    |        S . = = =|
+    |           *.O O.|
+    |         E+.*.# o|
+    |         ..+.O.+o|
+    |           o= ..o|
     +----[SHA256]-----+
-
    ```
     
 1. Run the following commands in your terminal
@@ -81,7 +80,7 @@ If you get an error stating that `.ssh` doesn't exist , then create the director
    If you see the following files printed to the screen (or something very similar), you have a key. Goto step 3.
 
    ```
-   id_rsa  id_rsa.pub
+   id_ed25519  id_ed25519.pub
    ```
 
 ---
