@@ -29,15 +29,39 @@ You can install everything you need to run Windows Subsystem for Linux (WSL) by 
 
    * While this is running, check out the [About WSL](https://learn.microsoft.com/en-us/windows/wsl/about) and the [WSL FAQ](https://learn.microsoft.com/en-us/windows/wsl/faq) to learn more about WSL.
   
-2. Follow the prompts and restart your computer when the `wsl --install` command finishes.  Upon restart, if an Ubuntu window does not open, search your apps for `Ubuntu` and open it.
+2. Follow the prompts
+   
+   * if wsl --install hangs at 0%, try the following command in `powershell`:
 
-3. Follow the prompts until you are asked to enter your User Name in the Ubuntu window, then move on to the next step for instruction on entering your User Name.
+     ```
+     wsl --install --web-download -d Ubuntu
+     ```
+     
+   * If you encounter other errors while installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
-   * If you encounter errors while installing WSL Ubuntu, then consult [Troubleshooting Installation Issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
-
-   * If you have under 3GB of free space, then it is likely that you don't have enough space on your computer to istall Ubuntu (a fresh install takes up 1.6 GB). You should skip installing Ubuntu and use the TAMU Launch HPC which allows you to run Linux in a webpage.
+   * If you have under 3GB of free space, then it is likely that you don't have enough space on your computer to install Ubuntu (a fresh install takes 1+ GB). You should skip installing Ubuntu and use GitHub CodeSpaces.
   
    * If you have enough space, the troubleshooting link didn't solve your error, and you have an older version of Windows then try following the [manual installation steps for older versions of WSL](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
+     
+4. When the `wsl --install` command finishes, confirm successful installation of WSL Ubuntu in `powershell` as follows:
+
+   ```
+   wsl -l -v
+   ```
+   
+   should return
+   
+   ```
+   VERSION
+   2
+   ```
+   
+5. Upon successful installation, restart your computer .  Upon restart, if an Ubuntu window does not open, search your apps for `Ubuntu` and open it.
+
+6. Follow the prompts until you are asked to enter your User Name in the Ubuntu window, then move on to the next step for instruction on entering your User Name.
+
+
+     
 
 ---
 
