@@ -18,7 +18,7 @@ Run the following commands in your terminal
 If you see the following files (or something very similar), you have a key. Goto step 3.
 
    ```
-   id_rsa  id_rsa.pub
+   id_ed25519 id_ed25519.pub
    ```
 
 If you get an error stating that `.ssh` doesn't exist , then create the directory named `.ssh`
@@ -26,9 +26,6 @@ If you get an error stating that `.ssh` doesn't exist , then create the director
    ```bash
    mkdir .ssh
    ```
-then goto beginning of step 1
-
-If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
 
 ---
 
@@ -37,9 +34,15 @@ If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
 1. You only need 1 key pair, so if you *don't* have files named `id_???` and `id_???.pub` in your `~/.ssh` dir, then you need to generate them as follows:
     
    ```bash
-   ssh-keygen -t rsa
-   # you will be prompted for a pass phrase, etc
-   # i recommend not entering a pass phrase and hitting the `Enter/Return` key at each prompt
+   ssh-keygen -t ed25519 -C "TYPE_YOUR_GITHUB_EMAIL_HERE"
+   ```
+   
+    * you will be prompted for a pass phrase, etc..., I recommend not entering a pass phrase and hitting the `Enter/Return` key at each prompt
+
+   ```bash
+   Enter file in which to save the key: [press Enter]
+   Enter passphrase (empty for no passphrase): [press Enter]
+   Enter same passphrase again: [press Enter]
    ```
     
    When the key pair is created, you should see something like this:
@@ -68,7 +71,7 @@ If you don't see a key pair `id_???` and `id_???.pub`, then goto step 2
 
    ```
     
-2. Run the following commands in your terminal
+1. Run the following commands in your terminal
     
    ```bash
     cd ~
