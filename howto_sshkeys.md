@@ -110,7 +110,7 @@ If you get an error stating that `.ssh` doesn't exist , then create the director
    # you will be prompted for your password on the remote computer
    ```
         
-   Example: for me (`cbird`) on the new TAMUCC Crest HPC (`crest_login.tamucc.edu`)
+   Example: for me (`cbird`) on the new TAMUCC Crest HPC (`crest-login.tamucc.edu`)
         
    ```
    cbird@3950x:~$ ssh-copy-id cbird@crest_login.tamucc.edu
