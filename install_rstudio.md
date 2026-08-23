@@ -2,7 +2,7 @@
 
 It is important that you keep R Studio up to date on your computer.  If you do not, you will start to run into compatibility issues.  Also note that there are many versions of RStudio.  We are going to use "RStudio Desktop Open Source Edition".  It is free.
 
-_Note: you will not be installing R Studio on Ubuntu. If you have a Windows computer, you'll be working in windows._
+_Note: If you have a Windows computer, you can install RStudio in windows._
 
 <details><summary>Install `R`</summary>
 <p>
@@ -40,8 +40,8 @@ cd ~/Downloads
 # determine your ubunutu version
 lsb_release -a
 
-# Ubuntu 24 RStudio Download Link
-wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.09.0-375-amd64.deb
+# Ubuntu RStudio Download Link
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.08.1-195-amd64-debian.tar.gz
 
 # Ubuntu 22 RStudio Download Link
 wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.09.0-375-amd64.deb
