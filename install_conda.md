@@ -1,238 +1,475 @@
-## Install Miniconda/Anaconda
+# Install `Miniforge` (`conda` + `mamba`)
 
-[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.  It does this by allow you to maintain several "environments", with each environment being dedicated to a particular task, and with the dependencies that are unique to that task.  If you only maintain one environment in which you install all packages, they and their dependencies will start to conflict with each other. 
+[Miniforge](https://github.com/conda-forge/miniforge) provides the software-management tools `conda` and `mamba`, which we will use to install Python and other scientific software in isolated **environments**.
 
-<details><summary>Don't take it from me, hear what ChatGPT has to say</summary>
+---
+
+## Before You Install Anything: What Are We Doing?
+
+If you are just learning how to use the command line interface, words like *package*, *environment*, `conda`, and `mamba` may be completely new to you. That is okay.
+
+<details><summary>Python</summary>
 <p>
 
-Anaconda is a popular distribution of Python (and R) that offers several advantages, particularly for students who are new to programming or working in data science and machine learning. Here's why students might want to learn to use Anaconda:
+**Python** is a programming language. A basic Python installation contains the language itself and a collection of built-in tools.
 
-1. Simplified Package Management: Anaconda simplifies the process of installing, managing, and updating Python packages. It comes with a package manager called conda, which makes it easy to install both Python packages and their dependencies with a single command. This is especially beneficial for beginners who might find the management of dependencies challenging.
+Biologists often need additional software that is not included with basic Python. For example, you may eventually want software for:
 
-2. Pre-installed Packages: Anaconda comes with a large number of pre-installed packages, particularly those used in data science, machine learning, and scientific computing. This saves time and effort in setting up the environment and allows students to start working on projects more quickly.
+- manipulating tables
+- plotting data
+- working with DNA sequences
+- analyzing genomic data
+- reading specialized biological file formats
+- running bioinformatics programs
 
-3. Environment Management: With Anaconda, students can create isolated environments for different projects. Each environment can have its own set of packages and Python versions, which is crucial when working on multiple projects with different dependencies. This feature helps in avoiding conflicts between package versions and ensures reproducibility of projects.
+These additional pieces of software are often installed as **packages**.
 
-4. Ease of Use for Data Science Tools: Anaconda is particularly popular in the data science community. It includes packages like NumPy, Pandas, SciPy, Matplotlib, and Jupyter, which are staples in data analysis and visualization. Learning to use these tools within the Anaconda environment can be beneficial for students interested in data science.
+---
 
-5. Cross-Platform: Anaconda works across Windows, macOS, and Linux. This cross-platform support is beneficial for students as they can work in consistent environments regardless of their operating system.
+</p>
+</details>
 
-6. Community and Commercial Support: Anaconda has a large community and commercial support, making it a reliable choice for educational and professional purposes. The community provides numerous resources, tutorials, and forums for learners.
+<details><summary>Packages</summary>
+<p>
 
-7. Integrated Development Environment (IDE) Support: Anaconda Navigator, a graphical user interface included in Anaconda, makes it easier to launch applications and manage conda packages, environments, and channels without using command-line commands.
+A **package** is software that adds capabilities to your computing environment.
 
-8. Focus on Analytics and Computation: Since Anaconda is tailored for data science and machine learning, it helps students focus more on analytics and computation rather than the intricacies of package management and environment setup.
+For example, common Python packages include:
 
-In summary, for students, especially those in fields like data science, biology, engineering, and statistics, learning to use Anaconda can greatly facilitate their learning process by easing the setup and management of the tools they need for their studies and research.
+- `numpy` — numerical computing
+- `pandas` — working with tables and data
+- `matplotlib` — plotting
+- `biopython` — tools for biological sequence data
+
+Bioinformatics programs that are not themselves Python packages can also often be installed with Conda.
+
+Packages frequently depend on other packages. These required packages are called **dependencies**.
+
+For example, installing one program might require particular versions of five or ten other pieces of software.
+
+---
+
+</p>
+</details>
+
+<details><summary>Why This Becomes a Problem</summary>
+<p>
+
+Different research projects may require different versions of the same software.
+
+Imagine:
+
+- Project A requires `software_x` version 1
+- Project B requires `software_x` version 2
+- another program only works with an older version of Python
+- a newer program requires a newer version of Python
+
+If everything is installed into one giant software collection, programs can begin to conflict with one another.
+
+This is one of the most common sources of frustration in scientific computing.
+
+</p>
+</details>
+
+<details><summary>Environments</summary>
+<p>
+
+An **environment** is a self-contained software workspace.
+
+Each environment can contain its own:
+
+- version of Python
+- packages
+- bioinformatics programs
+- dependencies
+
+For example:
+
+```text
+computer
+│
+├── environment: population_genetics
+│   ├── Python 3.13
+│   ├── numpy
+│   ├── bcftools
+│   └── vcftools
+│
+├── environment: metabarcoding
+│   ├── Python 3.12
+│   ├── cutadapt
+│   └── other packages
+│
+└── environment: image_analysis
+    ├── Python 3.13
+    ├── numpy
+    └── scikit-image
+```
+
+The software in one environment generally does not interfere with software in another environment.
+
+For scientific work, this is extremely useful because different research projects often require different software.
+
+---
+
+</p>
+</details>
+
+<details><summary>What Are Conda, Mamba, Conda-Forge, and Miniforge?</summary>
+<p>
+
+These names are related but they are not the same thing.
+
+### `conda`
+
+`conda` is an **environment manager** and **package manager**.
+
+We can use it to:
+
+1. create an environment
+2. install software into that environment
+3. activate the environment
+4. remove software or environments
+5. record which software was used for a research project
+
+For example:
+
+```bash
+conda create -n fish_project python=3.13
+```
+
+creates an environment named `fish_project` containing Python 3.13.
+
+### `mamba`
+
+`mamba` performs many of the same tasks as `conda` and uses nearly the same commands.
+
+For example:
+
+```bash
+conda install numpy
+```
+
+and
+
+```bash
+mamba install numpy
+```
+
+perform the same general task.
+
+We will primarily use the word **Conda environment** because that terminology is extremely common in scientific and bioinformatics documentation. You may see either `conda` or `mamba` commands in tutorials.
+
+### Conda-Forge
+
+Software has to come from somewhere.
+
+A Conda **channel** is an online collection of packages.
+
+**conda-forge** is a large, community-maintained collection of scientific and general-purpose software packages.
+
+Later in computational biology you will also encounter **Bioconda**, which distributes thousands of bioinformatics packages.
+
+### Miniforge
+
+**Miniforge** is the installer we will use.
+
+It gives us:
+
+- `conda`
+- `mamba`
+- access to the `conda-forge` package collection
+- a minimal Python installation needed to run these tools
+
+Miniforge is much smaller than the full Anaconda distribution and gives us the tools we need without installing hundreds of packages that we may never use.
+
+---
 
 </p>
 </details>
 
 ---
 
-<details><summary>Universal Miniconda Setup (if you are unsure, install this one)</summary>
+## Installation of Miniforge
+
+<details><summary>Windows Students: Use WSL Ubuntu</summary>
 <p>
 
-Follow the instructions for your OS and CPU in the [MiniConda QuickStart Guide](https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions).  Last updated 2025-11-07.
+> [!IMPORTANT]
+> If you have Windows, **install Miniforge inside your WSL Ubuntu environment**, not directly in Windows.
 
-If that doesn't work, goto your terminal and download the most appropriate installer from the [miniconda downloads page](https://docs.anaconda.com/miniconda/#miniconda-latest-installer-links). Use the command line installer. 
+Open **Ubuntu** in Windows Terminal.
 
-Be sure to restart your terminal.  If you see `(base)` before your command prompt, you were successful.  If you don't see `(base)` then try the command `conda activate`.
+Your prompt should look something like:
 
-```bash
-(base) cbird@xps13plus:~$
+```text
+cbird@computer:~$
 ```
 
-`base` is the miniconda evironment that you are currently in.  When you run `python`, you will be in the `python` inside of your `miniconda` `(base)` environment, rather than the one installed outside of miniconda in your OS.
+Do **not** perform the following installation from PowerShell or Command Prompt.
 
-Go ahead and run `python`
+If you do not yet have WSL Ubuntu installed, return to the [computer setup instructions](howto_setup_computer.md) and complete the Windows/WSL setup first.
 
-```bash
-(base) cbird@xps13plus:~$ python
-```
+Windows students should then follow the **Linux / WSL** instructions below.
 
-```python
-Python 3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
-
-Make sure that you are in python 3.x.  If you are in python 2.x, then exit (ctrl-d), and try `python3` instead of `python`
-
-To exit `python`, ctrl-d
+---
 
 </p>
 </details>
 
----
-
-> [!CAUTION]
-> Anaconda is quite large and could fill up your disk/ssd space. Don't procede unless you are sure you want the full version of Anaconda **AND** you've confirmed that you have enough space
-
-<details><summary>Universal Anaconda Setup </summary>
+<details><summary>Linux / Windows WSL Installation</summary>
 <p>
 
-Goto your terminal and download the most appropriate installer from the [anaconda downloads page](https://www.anaconda.com/download#downloads). Use the command line installer.  
+### Step 1. Open Your Linux Terminal
+
+Windows students should open **Ubuntu in Windows Terminal**.
+
+Linux students should open their normal terminal.
+
+Move to your home directory:
 
 ```bash
-# last updated 2023-11-08, check the link above for the latest links
-
 cd ~
-mkdir Downloads # if this causes error, it means you already have downloads dir
-cd Downloads
-
-# ubuntu command line installer
-wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
-
-# mac with intel cpu command line installer
-wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-MacOSX-x86_64.sh
-
-# mac with apple cpu (M1, M2, ..., etc) command line installer
-https://repo.anaconda.com/archive/Anaconda3-2023.09-0-MacOSX-arm64.sh
 ```
 
-Visit the [Anaconda Installation Page](https://docs.anaconda.com/free/anaconda/install/index.html)
+Confirm your location:
 
-Select the correct instructions for your computer.  For those with windows, use the Ubuntu terminal and follow the Linux instructions.
+```bash
+pwd
+```
 
-Install 
+Your home directory will normally look something like:
 
-</p>
-</details>
+```text
+/home/yourusername
+```
 
-<details><summary>Old Win/Ubuntu Anaconda Setup </summary>
-<p>
- 
+> [!IMPORTANT]
+> Windows/WSL students should install Miniforge in the Linux home directory, **not** somewhere under `/mnt/c/`.
 
-  * In Win10-Ubuntu terminal, `Anaconda` installation is a bit more challenging than just simply following `Anaconda` [download instructions](http://computingskillsforbiologists.com/setup/basic-programming/).  Here is how to make it work:
+---
+
+### Step 2. Make Sure `curl` Is Available
+
+Run:
+
+```bash
+curl --version
+```
+
+If the command is not found, install it:
 
 ```bash
 sudo apt update
-sudo apt upgrade
-cd ~
-mkdir downloads
-cd downloads
-wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
-
-# check data integrity
-sha256sum Anaconda3-2020.07-Linux-x86_64.sh
-
-# install
-sudo bash Anaconda3-2020.07-Linux-x86_64.sh
+sudo apt install curl
 ```
 
-Review the license agreement.  Note that the `d` key allows you to go down page by page.
+---
 
-If you see this message:
+### Step 3. Download the Current Miniforge Installer
 
-```bash
-Anaconda3 will now be installed into this location:
-/root/anaconda3
-
-    - Press ENTER to confirm the location
-    - Press CTRL-C to abort the installation
-    - Or specify a different location below
-```
-
-We do not want to save to `/root/anaconda3`.  We want to save to `~/anaconda3`, but the installer does not recognize the ~. 
-
-```bash
-# if your installer is not pointed to ~/anaconda3, type the following
-/home/YOURUSERNAME/anaconda3
-```
-
-When asked to initialize conda, do it. Finish the install, then when back in ubuntu, exit 
-
-```bash
-exit
-```
-
-Restart ubunutu terminal
+Run:
 
 ```bash
 cd ~
 
-# make sure you have folder anaconda3
-ls -d */
-
-# set permissions
-sudo chmod -R 777 anaconda3
-
-# if it is still not on, you will see a (base) before your command prompt if it is on, then do this:
-export PATH=~/anaconda3/bin:$PATH
-conda init
-
-# lastly, you can install jupiter notebook if you want, but we wont be using it
-conda install jupyter
+curl -L -o Miniforge3.sh \
+"https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-$(uname -m).sh"
 ```
 
+The command automatically determines whether your Linux computer uses an `x86_64` or `aarch64` processor and downloads the current installer.
 
-  * Using *Python*
-  
-    * open ubuntu terminal and type `python3`
-	
-  * Using Jupyter Notebook  (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
-  
-    * In Win10-Ubunutu Terminal, first make sure the win10 `xming` app is running, then:
-    
-      ```bash
-      #navigate to directory where you want to launch programming/
-      jupyter notebook
-      ```
-      
-    * If you installed anaconda in Win10, goto start menu and select `Jupyter Notebook (Anaconda3)`
-	
-    * In either, click `new` button in upper right corner, then `python3`
-  
+Confirm that the installer exists:
+
+```bash
+ls -lh Miniforge3.sh
+```
+
+---
+
+### Step 4. Run the Installer
+
+Run:
+
+```bash
+bash Miniforge3.sh
+```
+
+The installer will ask you several questions.
+
+1. Press `Enter` to continue through the license information.
+2. Type:
+
+   ```text
+   yes
+   ```
+
+   when asked whether you accept the license.
+
+3. Accept the default installation location unless your instructor tells you otherwise. It will normally be:
+
+   ```text
+   /home/YOURUSERNAME/miniforge3
+   ```
+
+4. Near the end, the installer will ask whether it should initialize Conda.
+
+   Answer:
+
+   ```text
+   yes
+   ```
+
+When installation finishes, **close the terminal completely and open a new terminal**.
+
+---
+
 </p>
 </details>
 
-<details><summary>Old MacOS Anaconda Setup</summary>
+<details><summary>macOS Installation</summary>
 <p>
 
-[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+### Step 1. Open Terminal
 
-  *`Anaconda` should be installed following [instructions here](http://computingskillsforbiologists.com/setup/basic-programming/)
-  
-  * open terminal and type `python3`
-  
-  * To launch jupyter notebook (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
-  
+Open the macOS **Terminal** application.
 
-</p>
-</details>
-
-
-<details><summary>Old Updating Anaconda Installation on MacOS/Ubuntu</summary>
-<p>
-
-Confirm that conda is running by checking for `(base)` before command prompt
+Move to your home directory:
 
 ```bash
-(base) cbird@XPS15:~$
+cd ~
 ```
 
-To update to latest version:
+---
+
+### Step 2. Check Your Processor Type
+
+Run:
 
 ```bash
-# this will take a while
-conda update --all
+uname -m
 ```
 
-To update to a specific version ([see list of versions](https://repo.anaconda.com/archive/)): 
+Most newer Macs will report:
+
+```text
+arm64
+```
+
+which means the Mac has an Apple Silicon processor.
+
+Older Intel Macs will report:
+
+```text
+x86_64
+```
+
+You do not need to choose the installer manually; the command below will use this information automatically.
+
+---
+
+### Step 3. Download the Current Miniforge Installer
+
+Run:
 
 ```bash
-# this will take a while
-conda install anaconda=VERSIONNAME
+curl -L -o Miniforge3.sh \
+"https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-$(uname -m).sh"
 ```
 
-You can also consult the [official documentation](https://docs.anaconda.com/anaconda/install/update-version/)
+Confirm that the installer exists:
 
-And also see [Keeping Anaconda Up To Date](https://www.anaconda.com/blog/keeping-anaconda-date)
+```bash
+ls -lh Miniforge3.sh
+```
+
+---
+
+### Step 4. Run the Installer
+
+Run:
+
+```bash
+bash Miniforge3.sh
+```
+
+The installer will ask you several questions.
+
+1. Press `Enter` to continue through the license information.
+2. Type:
+
+   ```text
+   yes
+   ```
+
+   when asked whether you accept the license.
+
+3. Accept the default installation location unless your instructor tells you otherwise. It will normally be inside your home directory.
+
+4. Near the end, the installer will ask whether it should initialize Conda.
+
+   Answer:
+
+   ```text
+   yes
+   ```
+
+When installation finishes, **close Terminal completely and open a new Terminal window**.
+
+
+---
 
 </p>
 </details>
 
 ---
+
+## Confirm Installation Worked
+
+<details><summary></summary>
+<p>
+
+Run:
+
+```bash
+conda --version
+```
+
+You should see output similar to:
+
+```text
+conda 26.x.x
+```
+
+The exact version number will change over time.
+
+Now run:
+
+```bash
+mamba --version
+```
+
+You should also see a version number.
+
+Finally, run:
+
+```bash
+conda info --base
+```
+
+You should see the location where Miniforge was installed, such as:
+
+```text
+/home/yourusername/miniforge3
+```
+
+or, on a Mac, something similar inside your home directory.
+
+---
+
+</p>
+</details>
+---
+
+
 
 ### [Return to How to Setup Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md)
