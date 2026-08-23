@@ -16,7 +16,7 @@ It gives you a full Ubuntu Terminal and Visual Studio Code editor running in the
 - No need to install anything on your computer.  
 - Preconfigured with common programming tools.  
 - Runs in the cloud, so you can code from any device with internet access.  
-- Saves your changes back to GitHub just like working locally.
+- Your Codespace is connected to your GitHub repository; commit and push your changes to save them to the repository.
 
 This is the safe swimming pool :swimmer: before we jump into the open ocean :ocean: of open-source software.  By the end of the course, this will be you :surfing_woman: :surfing_man:.
 
