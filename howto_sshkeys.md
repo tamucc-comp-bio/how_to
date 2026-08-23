@@ -88,8 +88,19 @@ If you get an error stating that `.ssh` doesn't exist , then create the director
 ## Step 3.  Placing your public key on remote servers
     
 * For [GitHub](https://github.com) consult the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) (Required)
+    * You can test whether you were successful in adding your public key to github by running the following code:
+      
+      ```bash
+      ssh -T git@github.com
+      ```
+      
+      And you should get a response like this:
+      
+      ```bash
+      Hi cbird808! You've successfully authenticated, but GitHub does not provide shell access.
+      ```
     
-* For any remote server/computer, copy your public to your `~/.ssh` dir on the remote computer as follows (Optional: if you don't have a [TAMUCC Crest HPC](https://www.tamucc.edu/engineering/departments/computer-science/high-performance-computing/index.php) account or a remote server then don't do this now):
+* For any remote server/computer, copy your public key to your `~/.ssh` dir on the remote computer as follows (Optional: if you don't have a [TAMUCC Crest HPC](https://www.tamucc.edu/engineering/departments/computer-science/high-performance-computing/index.php) account or a remote server then don't do this now):
     
    ```bash
    # you must be on/in your laptop (or local machine) not the remote server when you run this command
