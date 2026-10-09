@@ -34,8 +34,7 @@ sudo apt upgrade
 
 Next, download the RStudio `.deb` package from the [RStudio website](https://posit.co/download/rstudio-desktop/). You can do this with the wget command along with the URL of the RStudio .deb package. 
 
-[!IMPORTANT] 
-> Make sure to replace the URL with the [latest version available from the RStudio website](https://posit.co/download/rstudio-desktop/).
+⚠️ **Important:** Make sure to use the URL for the latest Ubuntu `.deb` installer available from the [RStudio website](https://posit.co/download/rstudio-desktop/).
 
 ```bash
 cd ~/Downloads
