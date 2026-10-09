@@ -32,19 +32,17 @@ sudo apt upgrade
 
 2. Download R Studio
 
-Next, download the RStudio `.deb` package from the [RStudio website](https://posit.co/download/rstudio-desktop/). You can do this with the wget command along with the URL of the RStudio .deb package. Make sure to replace the URL with the latest version available from the RStudio website.
+Next, download the RStudio `.deb` package from the [RStudio website](https://posit.co/download/rstudio-desktop/). You can do this with the wget command along with the URL of the RStudio .deb package. 
+
+>[!IMPORTANT] 
+> Make sure to replace the URL with the [latest version available from the RStudio website](https://posit.co/download/rstudio-desktop/).
 
 ```bash
 cd ~/Downloads
 
-# determine your ubunutu version
-lsb_release -a
-
 # Ubuntu RStudio Download Link
-wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.08.1-195-amd64-debian.tar.gz
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.09.0-174-amd64.deb
 
-# Ubuntu 22 RStudio Download Link
-wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.09.0-375-amd64.deb
 ```
 
 3. Install R Studio
@@ -52,11 +50,9 @@ wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.09.0-375-am
 Once the download is complete, you can install RStudio with the dpkg command.
 
 ```bash
-# Ubuntu 24
-sudo dpkg -i rstudio-2024.09.0-375-amd64.deb
+# Ubuntu 
+sudo dpkg -i rstudio-2026.09.0-174-amd64.deb
 
-# Ubuntu 22
-sudo dpkg -i rstudio-2024.09.0-375-amd64.deb
 ```
 
 4. Resolve Dependencies (if any):
